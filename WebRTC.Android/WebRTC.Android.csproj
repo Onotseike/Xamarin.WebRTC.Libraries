@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{315A544B-BA4A-40E1-AD49-37EA261987FE}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{9ef11e43-1701-4396-8835-8392d57abb70}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebRTC.Android</RootNamespace>
+    <AssemblyName>WebRTC.Android</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>True</Deterministic>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
+    <AndroidUseAapt2>true</AndroidUseAapt2>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebRTC.Droid.Binding">
+      <HintPath>..\..\..\Documents\GitHub\webrtc-h113\src\WebRTC.Droid.Binding\bin\Release\WebRTC.Droid.Binding.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AudioSourceNative.cs" />
+    <Compile Include="MediaSourceNative.cs" />
+    <Compile Include="Extensions\EnumExtensions.cs" />
+    <Compile Include="AudioTrackNative.cs" />
+    <Compile Include="MediaStreamTrackNative.cs" />
+    <Compile Include="CameraVideoCapturerNative.cs" />
+    <Compile Include="VideoCapturerNative.cs" />
+    <Compile Include="DataChannelNative.cs" />
+    <Compile Include="EglBaseHelper.cs" />
+    <Compile Include="FileVideoCapturerNative.cs" />
+    <Compile Include="MediaStreamNative.cs" />
+    <Compile Include="VideoTrackNative.cs" />
+    <Compile Include="NativeFactory.cs" />
+    <Compile Include="PeerConnectionFactoryNative.cs" />
+    <Compile Include="Extensions\RTCCertificateExtension.cs" />
+    <Compile Include="Extensions\DataChannelConfigurationExtension.cs" />
+    <Compile Include="Extensions\IceCandidateExtension.cs" />
+    <Compile Include="PeerConnectionListenerProxy.cs" />
+    <Compile Include="PeerConnectionNative.cs" />
+    <Compile Include="Extensions\IceServerExtensions.cs" />
+    <Compile Include="Extensions\MediaConstraintsExtensions.cs" />
+    <Compile Include="Extensions\MediaStreamTrackExtensions.cs" />
+    <Compile Include="Extensions\RTCConfigurationExtensions.cs" />
+    <Compile Include="Extensions\ScalingTypeExtensions.cs" />
+    <Compile Include="Extensions\SessionDescriptionExtension.cs" />
+    <Compile Include="RtpReceiverNative.cs" />
+    <Compile Include="RtpSenderNative.cs" />
+    <Compile Include="RtpTransceiverNative.cs" />
+    <Compile Include="SdpObserverProxy.cs" />
+    <Compile Include="Platform.cs" />
+    <Compile Include="RptSenderNative.cs" />
+    <Compile Include="RTCAudioManager.cs" />
+    <Compile Include="VideoRendererNative.cs" />
+    <Compile Include="VideoSourceNative.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="28.0.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable\" />
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebRTC\WebRTC.csproj">
+      <Project>{0C591CC1-F9DB-4FE4-963C-3FFE4F79785B}</Project>
+      <Name>WebRTC</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

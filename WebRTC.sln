@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRTC", "WebRTC\WebRTC.csproj", "{0C591CC1-F9DB-4FE4-963C-3FFE4F79785B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRTC.Android", "WebRTC.Android\WebRTC.Android.csproj", "{315A544B-BA4A-40E1-AD49-37EA261987FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRTC.iOS", "WebRTC.iOS\WebRTC.iOS.csproj", "{D218ABE5-9D81-4B73-8F95-2245BAB56534}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C591CC1-F9DB-4FE4-963C-3FFE4F79785B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C591CC1-F9DB-4FE4-963C-3FFE4F79785B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C591CC1-F9DB-4FE4-963C-3FFE4F79785B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C591CC1-F9DB-4FE4-963C-3FFE4F79785B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{315A544B-BA4A-40E1-AD49-37EA261987FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{315A544B-BA4A-40E1-AD49-37EA261987FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{315A544B-BA4A-40E1-AD49-37EA261987FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{315A544B-BA4A-40E1-AD49-37EA261987FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D218ABE5-9D81-4B73-8F95-2245BAB56534}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D218ABE5-9D81-4B73-8F95-2245BAB56534}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D218ABE5-9D81-4B73-8F95-2245BAB56534}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D218ABE5-9D81-4B73-8F95-2245BAB56534}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
