@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRTC.Android", "WebRTC.An
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRTC.iOS", "WebRTC.iOS\WebRTC.iOS.csproj", "{D218ABE5-9D81-4B73-8F95-2245BAB56534}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRTC.Servers", "WebRTC.Servers\WebRTC.Servers.csproj", "{5B275740-4FED-4401-9627-FDD04E16F3E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,5 +27,9 @@ Global
 		{D218ABE5-9D81-4B73-8F95-2245BAB56534}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D218ABE5-9D81-4B73-8F95-2245BAB56534}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D218ABE5-9D81-4B73-8F95-2245BAB56534}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B275740-4FED-4401-9627-FDD04E16F3E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B275740-4FED-4401-9627-FDD04E16F3E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B275740-4FED-4401-9627-FDD04E16F3E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B275740-4FED-4401-9627-FDD04E16F3E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

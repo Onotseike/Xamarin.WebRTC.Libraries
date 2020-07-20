@@ -3,6 +3,9 @@
 using System.Runtime.Serialization;
 namespace WebRTC.Enums
 {
+    /// <summary>
+    /// SourceState 
+    /// </summary>
     public enum SourceState : long
     {
         Initializing,
