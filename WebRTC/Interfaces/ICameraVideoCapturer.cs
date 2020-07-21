@@ -4,5 +4,6 @@ namespace WebRTC.Interfaces
 {
     public interface ICameraVideoCapturer : IVideoCapturer
     {
+        void SwitchCamera();
     }
 }
