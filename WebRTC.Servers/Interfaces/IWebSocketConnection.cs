@@ -2,7 +2,7 @@
 using System;
 namespace WebRTC.Servers.Interfaces
 {
-    public interface IConnectionHub : IDisposable
+    public interface IWebSocketConnection : IDisposable
     {
         event EventHandler OnOpened;
         event EventHandler<(int code, string reason)> OnClosed;

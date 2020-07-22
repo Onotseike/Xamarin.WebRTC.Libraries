@@ -7,7 +7,7 @@ namespace WebRTC.Servers.ServerFxns
 {
     public static class ConnectionFactory
     {
-        public static Func<IConnectionHub> Factory { get; set; }
-        public static IConnectionHub CreateConnectionHub() => Factory();
+        public static Func<IWebSocketConnection> Factory { get; set; }
+        public static IWebSocketConnection CreateConnectionHub() => Factory();
     }
 }

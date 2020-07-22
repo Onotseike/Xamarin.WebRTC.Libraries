@@ -149,7 +149,7 @@ namespace WebRTC.Servers.ServerFxns
                 }
                 catch (Exception ex)
                 {
-                    ReportError($"FAILED TO CREATE PEER CONNECTION PIPLINE: {ex.Message}")
+                    ReportError($"FAILED TO CREATE PEER CONNECTION PIPLINE: {ex.Message}");
                     throw;
                 }
             });
