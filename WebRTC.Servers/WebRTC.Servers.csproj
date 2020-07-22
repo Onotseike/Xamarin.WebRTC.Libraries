@@ -16,5 +16,7 @@
     <Folder Include="Models\" />
     <Folder Include="ServerFxns\" />
     <Folder Include="Enums\" />
+    <Folder Include="ServerFxns\Core\" />
+    <Folder Include="ServerFxns\Core\Enum\" />
   </ItemGroup>
 </Project>
