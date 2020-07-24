@@ -11,7 +11,7 @@ namespace WebRTC.Servers.Interfaces
         void OnChannelClose();
         void OnChannelError(string Description);
         void OnRemoteDescription(SessionDescription sdp);
-        void OneRemoteIceCandidate(IceCandidate candidate);
+        void OnRemoteIceCandidate(IceCandidate candidate);
         void OnRemoteIceCandidateRemoved(IceCandidate[] candidates);
     }
 }

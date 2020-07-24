@@ -1,11 +1,16 @@
 ﻿// onotseike@hotmail.comPaula Aliu
 
+using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 using Newtonsoft.Json;
 
+using WebRTC.Classes;
 using WebRTC.Servers.Interfaces;
 using WebRTC.Servers.Models;
+using WebRTC.Servers.ServerFxns.Core.Enum;
+using WebRTC.Servers.ServerFxns.Core.JsonObjects;
 
 namespace WebRTC.Servers.ServerFxns.Core
 {
@@ -29,7 +34,7 @@ namespace WebRTC.Servers.ServerFxns.Core
 
         public void MakeRequest(RoomParametersFetcherCallback callback)
         {
-            var httpConnection = new AsyncHttpURLConnection(Enum.HttpMethodType.Post, roomURL, null, async (response, errorMessage) =>
+            var httpConnection = new AsyncHttpURLConnection(HttpMethodType.Post, roomURL, null, async (response, errorMessage) =>
             {
                 if (errorMessage != null)
                 {
@@ -50,9 +55,9 @@ namespace WebRTC.Servers.ServerFxns.Core
             logger.Debug(TAG, $"Room response: {response}");
             try
             {
-                var joinResponse = JsonConvert.DeserializeObject<ARDJoinResponse>(response);
+                var joinResponse = JsonConvert.DeserializeObject<JoinResponseHelper>(response);
 
-                if (joinResponse.Result != ARDJoinResultType.Success)
+                if (joinResponse.Result != JoinResponseType.Success)
                 {
                     callback?.Invoke(null, $"Room response error: {joinResponse.Result}");
                     return;
@@ -63,7 +68,7 @@ namespace WebRTC.Servers.ServerFxns.Core
 
                 SessionDescription offerSdp = null;
 
-                var serverParams = joinResponse.ServerParams;
+                var serverParams = joinResponse.ServerParameters;
 
                 if (!serverParams.IsInitiator)
                 {
@@ -87,7 +92,7 @@ namespace WebRTC.Servers.ServerFxns.Core
                                 iceCandidates.Add(iceCandidate);
                                 break;
                             default:
-                                _logger.Error(TAG, $"Unknown message: {messageString}");
+                                logger.Error(TAG, $"Unknown message: {messageString}");
                                 break;
                         }
 
@@ -95,20 +100,20 @@ namespace WebRTC.Servers.ServerFxns.Core
                     }
                 }
 
-                _logger.Debug(TAG, $"RoomId: {serverParams.RoomId}. ClientId: {serverParams.ClientId}");
-                _logger.Debug(TAG, $"Initiator: {serverParams.IsInitiator}");
-                _logger.Debug(TAG, $"WSS url: {serverParams.WssUrl}");
-                _logger.Debug(TAG, $"WSS POST url: {serverParams.WssPostUrl}");
+                logger.Debug(TAG, $"RoomId: {serverParams.RoomId}. ClientId: {serverParams.ClientId}");
+                logger.Debug(TAG, $"Initiator: {serverParams.IsInitiator}");
+                logger.Debug(TAG, $"WSS url: {serverParams.WssUrl}");
+                logger.Debug(TAG, $"WSS POST url: {serverParams.WssPostUrl}");
 
 
-                var iceServers = new List<IceServer>();
+                var iceServers = new List<Classes.IceServer>();
 
                 iceServers.AddRange(IceServersFromPCConfig(serverParams.PcConfig));
 
                 var isTurnPresent = false;
                 foreach (var iceServer in iceServers)
                 {
-                    _logger.Debug(TAG, $"IceServer: {iceServer}");
+                    logger.Debug(TAG, $"IceServer: {iceServer}");
                     foreach (var url in iceServer.Urls)
                     {
                         if (url.StartsWith("turn:"))
@@ -131,7 +136,7 @@ namespace WebRTC.Servers.ServerFxns.Core
 
                     foreach (var iceServer in turnsServers.iceServers)
                     {
-                        _logger.Debug(TAG, $"TurnServer: {iceServer}");
+                        logger.Debug(TAG, $"TURN Server: {iceServer}");
                     }
 
                     iceServers.AddRange(turnsServers.iceServers);
@@ -142,8 +147,8 @@ namespace WebRTC.Servers.ServerFxns.Core
                     IceServers = iceServers.ToArray(),
                     IsInitiator = serverParams.IsInitiator,
                     ClientId = serverParams.ClientId,
-                    WssUrl = serverParams.WssUrl,
-                    WssPostUrl = serverParams.WssPostUrl,
+                    WssURL = serverParams.WssUrl,
+                    WssPostURL = serverParams.WssPostUrl,
                     OfferSdp = offerSdp,
                     IceCandidates = iceCandidates.ToArray()
                 };
@@ -158,6 +163,41 @@ namespace WebRTC.Servers.ServerFxns.Core
             {
                 callback?.Invoke(null, $"Room error: {ex.Message}");
             }
+        }
+
+        private async Task<(Classes.IceServer[] iceServers, string error)> RequestTurnServersAsync(string iceServerUrl)
+        {
+            logger.Debug(TAG, $"REQUEST TURN from: {iceServerUrl}");
+
+            var turnClient = new TURNClient(iceServerUrl);
+
+            try
+            {
+                var turnServers = await turnClient.RequestServersAsync();
+                return (turnServers, null);
+            }
+            catch (Exception)
+            {
+                return (null, $"NON-200 Response when requesting TURN Server from: {iceServerUrl}");
+            }
+        }
+
+        private Classes.IceServer[] IceServersFromPCConfig(string json)
+        {
+            var pcConfig = JsonConvert.DeserializeObject<PCConfig>(json);
+            var iceServers = new List<Classes.IceServer>();
+
+            foreach (var iceServer in pcConfig.IceServers)
+            {
+                var server = JsonConvert.DeserializeObject<Dictionary<string, string>>(iceServer);
+
+                var url = server["urls"];
+                var credentials = server.ContainsKey("credential") ? server["credential"] : "";
+
+                iceServers.Add(new Classes.IceServer(uri: url, username: "", password: credentials));
+            }
+
+            return iceServers.ToArray();
         }
 
         #endregion

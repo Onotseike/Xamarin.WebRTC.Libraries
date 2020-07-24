@@ -1,12 +1,12 @@
 ﻿// onotseike@hotmail.comPaula Aliu
-using System;
-using System.Data;
+
 
 using WebRTC.Classes;
+using WebRTC.Servers.Enums;
 
 namespace WebRTC.Servers.Interfaces
 {
-    public interface IAppRTCClient<in TConnectionParam> where TConnectionParam : IConnectionParameters
+    public interface IRTCClient<in TConnectionParam> where TConnectionParam : IConnectionParameters
     {
         ConnectionState State { get; }
 
