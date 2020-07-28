@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="WebRTC.XFormsApp.MainPage">
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Entry x:Name="RoomIdEntry"
+               Placeholder="Please enter a room number here"/>
+        <Button x:Name="StartVoiceCall"
+                Text="Start Voice Call"
+                BackgroundColor="BlanchedAlmond"
+                Clicked="StartVoiceCall_Clicked"/>
+        <Button x:Name="StartVideoCall"
+                Text="Start Video Call"
+                BackgroundColor="RosyBrown"
+                Clicked="StartVideoCall_Clicked"/>
+    </StackLayout>
+</ContentPage>
