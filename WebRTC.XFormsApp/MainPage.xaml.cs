@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 
 using WebRTC.Servers.ServerFxns.Core;
+using WebRTC.XFormsApp.Model;
 
 using Xamarin.Forms;
 
@@ -27,7 +28,8 @@ namespace WebRTC.XFormsApp
         {
             var roomId = RoomIdEntry.Text ?? GenerateRoom.GenerateRoomName();
             RoomIdEntry.Text = roomId;
-            App.CallingService.StartVideoCall(roomId);
+            Navigation.PushModalAsync(new MyPage(roomId));
+            // App.CallingService.StartVideoCall(roomId);
         }
     }
 }

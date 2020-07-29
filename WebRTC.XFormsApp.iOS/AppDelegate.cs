@@ -16,6 +16,7 @@ namespace WebRTC.XFormsApp.iOS
     [Register("AppDelegate")]
     public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
     {
+        public static UIEdgeInsets SafeAreaInsets => UIApplication.SharedApplication.KeyWindow.SafeAreaInsets;
         //
         // This method is invoked when the application has loaded and is ready to run. In this 
         // method you should instantiate the window, load the UI into it and then make the window
@@ -35,7 +36,7 @@ namespace WebRTC.XFormsApp.iOS
         }
 
         [Export("applicationWillTerminate:")]
-        public void WillTerminate(UIApplication application)
+        public override void WillTerminate(UIApplication application)
         {
             Platform.Cleanup();
         }

@@ -3,6 +3,7 @@
 using System;
 
 using WebRTC.XFormsApp.Interfaces;
+using WebRTC.XFormsApp.iOS.Controllers;
 
 using Xamarin.Forms;
 
@@ -15,7 +16,9 @@ namespace WebRTC.XFormsApp.iOS.Implementation
 
         public void StartVideoCall(string roomId)
         {
-            throw new NotImplementedException();
+            var callController = new CallController(roomId);
+            //callController.CommenceCall();
+
         }
 
         public void StartVoiceCall(string roomId)
