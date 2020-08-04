@@ -10,7 +10,7 @@ namespace WebRTC.DemoApp.iOS.ViewControllers
     {
         private readonly string[] Files =
         {
-            "foreman.mp4",
+            "SampleVideo_1280x720_10mb.mp4",
             "SampleVideo_1280x720_10mb.mp4"
         };
 

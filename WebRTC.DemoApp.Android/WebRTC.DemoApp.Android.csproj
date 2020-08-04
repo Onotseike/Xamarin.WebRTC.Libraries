@@ -51,6 +51,9 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Numerics.Vectors" />
+    <Reference Include="WebRTC.Droid.Binding">
+      <HintPath>..\WebRTC.Android\bin\Release\WebRTC.Droid.Binding.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.7.0.1239" />
@@ -58,11 +61,20 @@
     <PackageReference Include="Newtonsoft.Json">
       <Version>12.0.3</Version>
     </PackageReference>
+    <PackageReference Include="Square.OkHttp3">
+      <Version>4.2.2</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Renderers\CallPageRenderer.cs" />
+    <Compile Include="Activities\BaseActivity.cs" />
+    <Compile Include="Fragments\CallFragment.cs" />
+    <Compile Include="CaptureQualityController.cs" />
+    <Compile Include="Helpers\WebRTCPlatform.cs" />
+    <Compile Include="Helpers\OkHttpWebSocket.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -86,14 +98,67 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\layout\activity_call.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\fragment_call.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\fragment_hud.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\values\strings.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\disconnect.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\ic_action_full_screen.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\ic_action_return_from_full_screen.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\ic_launcher.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\ic_loopback_call.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
+    <Folder Include="Renderers\" />
+    <Folder Include="Activities\" />
+    <Folder Include="Fragments\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WebRTC.DemoApp\WebRTC.DemoApp.csproj">
       <Project>{97F6807B-A98D-4BB7-BD76-9C21826B3088}</Project>
       <Name>WebRTC.DemoApp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebRTC.Android\WebRTC.Android.csproj">
+      <Project>{315A544B-BA4A-40E1-AD49-37EA261987FE}</Project>
+      <Name>WebRTC.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebRTC.RTC\WebRTC.RTC.csproj">
+      <Project>{2DADD006-767A-482E-83B3-21F1D0C045F9}</Project>
+      <Name>WebRTC.RTC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebRTC\WebRTC.csproj">
+      <Project>{0C591CC1-F9DB-4FE4-963C-3FFE4F79785B}</Project>
+      <Name>WebRTC</Name>
     </ProjectReference>
   </ItemGroup>
  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

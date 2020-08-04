@@ -25,6 +25,1613 @@ namespace WebRTC.DemoApp.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::WebRTC.Android.Resource.Animation.abc_fade_in = global::WebRTC.DemoApp.Droid.Resource.Animation.abc_fade_in;
+			global::WebRTC.Android.Resource.Animation.abc_fade_out = global::WebRTC.DemoApp.Droid.Resource.Animation.abc_fade_out;
+			global::WebRTC.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::WebRTC.DemoApp.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::WebRTC.Android.Resource.Animation.abc_popup_enter = global::WebRTC.DemoApp.Droid.Resource.Animation.abc_popup_enter;
+			global::WebRTC.Android.Resource.Animation.abc_popup_exit = global::WebRTC.DemoApp.Droid.Resource.Animation.abc_popup_exit;
+			global::WebRTC.Android.Resource.Animation.abc_shrink_fade_out_from_bottom = global::WebRTC.DemoApp.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::WebRTC.Android.Resource.Animation.abc_slide_in_bottom = global::WebRTC.DemoApp.Droid.Resource.Animation.abc_slide_in_bottom;
+			global::WebRTC.Android.Resource.Animation.abc_slide_in_top = global::WebRTC.DemoApp.Droid.Resource.Animation.abc_slide_in_top;
+			global::WebRTC.Android.Resource.Animation.abc_slide_out_bottom = global::WebRTC.DemoApp.Droid.Resource.Animation.abc_slide_out_bottom;
+			global::WebRTC.Android.Resource.Animation.abc_slide_out_top = global::WebRTC.DemoApp.Droid.Resource.Animation.abc_slide_out_top;
+			global::WebRTC.Android.Resource.Animation.abc_tooltip_enter = global::WebRTC.DemoApp.Droid.Resource.Animation.abc_tooltip_enter;
+			global::WebRTC.Android.Resource.Animation.abc_tooltip_exit = global::WebRTC.DemoApp.Droid.Resource.Animation.abc_tooltip_exit;
+			global::WebRTC.Android.Resource.Attribute.actionBarDivider = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionBarDivider;
+			global::WebRTC.Android.Resource.Attribute.actionBarItemBackground = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionBarItemBackground;
+			global::WebRTC.Android.Resource.Attribute.actionBarPopupTheme = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionBarPopupTheme;
+			global::WebRTC.Android.Resource.Attribute.actionBarSize = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionBarSize;
+			global::WebRTC.Android.Resource.Attribute.actionBarSplitStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionBarSplitStyle;
+			global::WebRTC.Android.Resource.Attribute.actionBarStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionBarStyle;
+			global::WebRTC.Android.Resource.Attribute.actionBarTabBarStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionBarTabBarStyle;
+			global::WebRTC.Android.Resource.Attribute.actionBarTabStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionBarTabStyle;
+			global::WebRTC.Android.Resource.Attribute.actionBarTabTextStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionBarTabTextStyle;
+			global::WebRTC.Android.Resource.Attribute.actionBarTheme = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionBarTheme;
+			global::WebRTC.Android.Resource.Attribute.actionBarWidgetTheme = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionBarWidgetTheme;
+			global::WebRTC.Android.Resource.Attribute.actionButtonStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionButtonStyle;
+			global::WebRTC.Android.Resource.Attribute.actionDropDownStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionDropDownStyle;
+			global::WebRTC.Android.Resource.Attribute.actionLayout = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionLayout;
+			global::WebRTC.Android.Resource.Attribute.actionMenuTextAppearance = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionMenuTextAppearance;
+			global::WebRTC.Android.Resource.Attribute.actionMenuTextColor = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionMenuTextColor;
+			global::WebRTC.Android.Resource.Attribute.actionModeBackground = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionModeBackground;
+			global::WebRTC.Android.Resource.Attribute.actionModeCloseButtonStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::WebRTC.Android.Resource.Attribute.actionModeCloseDrawable = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionModeCloseDrawable;
+			global::WebRTC.Android.Resource.Attribute.actionModeCopyDrawable = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionModeCopyDrawable;
+			global::WebRTC.Android.Resource.Attribute.actionModeCutDrawable = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionModeCutDrawable;
+			global::WebRTC.Android.Resource.Attribute.actionModeFindDrawable = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionModeFindDrawable;
+			global::WebRTC.Android.Resource.Attribute.actionModePasteDrawable = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionModePasteDrawable;
+			global::WebRTC.Android.Resource.Attribute.actionModePopupWindowStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionModePopupWindowStyle;
+			global::WebRTC.Android.Resource.Attribute.actionModeSelectAllDrawable = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::WebRTC.Android.Resource.Attribute.actionModeShareDrawable = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionModeShareDrawable;
+			global::WebRTC.Android.Resource.Attribute.actionModeSplitBackground = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionModeSplitBackground;
+			global::WebRTC.Android.Resource.Attribute.actionModeStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionModeStyle;
+			global::WebRTC.Android.Resource.Attribute.actionModeWebSearchDrawable = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::WebRTC.Android.Resource.Attribute.actionOverflowButtonStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionOverflowButtonStyle;
+			global::WebRTC.Android.Resource.Attribute.actionOverflowMenuStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionOverflowMenuStyle;
+			global::WebRTC.Android.Resource.Attribute.actionProviderClass = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionProviderClass;
+			global::WebRTC.Android.Resource.Attribute.actionViewClass = global::WebRTC.DemoApp.Droid.Resource.Attribute.actionViewClass;
+			global::WebRTC.Android.Resource.Attribute.activityChooserViewStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.activityChooserViewStyle;
+			global::WebRTC.Android.Resource.Attribute.alertDialogButtonGroupStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::WebRTC.Android.Resource.Attribute.alertDialogCenterButtons = global::WebRTC.DemoApp.Droid.Resource.Attribute.alertDialogCenterButtons;
+			global::WebRTC.Android.Resource.Attribute.alertDialogStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.alertDialogStyle;
+			global::WebRTC.Android.Resource.Attribute.alertDialogTheme = global::WebRTC.DemoApp.Droid.Resource.Attribute.alertDialogTheme;
+			global::WebRTC.Android.Resource.Attribute.allowStacking = global::WebRTC.DemoApp.Droid.Resource.Attribute.allowStacking;
+			global::WebRTC.Android.Resource.Attribute.alpha = global::WebRTC.DemoApp.Droid.Resource.Attribute.alpha;
+			global::WebRTC.Android.Resource.Attribute.alphabeticModifiers = global::WebRTC.DemoApp.Droid.Resource.Attribute.alphabeticModifiers;
+			global::WebRTC.Android.Resource.Attribute.arrowHeadLength = global::WebRTC.DemoApp.Droid.Resource.Attribute.arrowHeadLength;
+			global::WebRTC.Android.Resource.Attribute.arrowShaftLength = global::WebRTC.DemoApp.Droid.Resource.Attribute.arrowShaftLength;
+			global::WebRTC.Android.Resource.Attribute.autoCompleteTextViewStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::WebRTC.Android.Resource.Attribute.autoSizeMaxTextSize = global::WebRTC.DemoApp.Droid.Resource.Attribute.autoSizeMaxTextSize;
+			global::WebRTC.Android.Resource.Attribute.autoSizeMinTextSize = global::WebRTC.DemoApp.Droid.Resource.Attribute.autoSizeMinTextSize;
+			global::WebRTC.Android.Resource.Attribute.autoSizePresetSizes = global::WebRTC.DemoApp.Droid.Resource.Attribute.autoSizePresetSizes;
+			global::WebRTC.Android.Resource.Attribute.autoSizeStepGranularity = global::WebRTC.DemoApp.Droid.Resource.Attribute.autoSizeStepGranularity;
+			global::WebRTC.Android.Resource.Attribute.autoSizeTextType = global::WebRTC.DemoApp.Droid.Resource.Attribute.autoSizeTextType;
+			global::WebRTC.Android.Resource.Attribute.background = global::WebRTC.DemoApp.Droid.Resource.Attribute.background;
+			global::WebRTC.Android.Resource.Attribute.backgroundSplit = global::WebRTC.DemoApp.Droid.Resource.Attribute.backgroundSplit;
+			global::WebRTC.Android.Resource.Attribute.backgroundStacked = global::WebRTC.DemoApp.Droid.Resource.Attribute.backgroundStacked;
+			global::WebRTC.Android.Resource.Attribute.backgroundTint = global::WebRTC.DemoApp.Droid.Resource.Attribute.backgroundTint;
+			global::WebRTC.Android.Resource.Attribute.backgroundTintMode = global::WebRTC.DemoApp.Droid.Resource.Attribute.backgroundTintMode;
+			global::WebRTC.Android.Resource.Attribute.barLength = global::WebRTC.DemoApp.Droid.Resource.Attribute.barLength;
+			global::WebRTC.Android.Resource.Attribute.borderlessButtonStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::WebRTC.Android.Resource.Attribute.buttonBarButtonStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.buttonBarButtonStyle;
+			global::WebRTC.Android.Resource.Attribute.buttonBarNegativeButtonStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::WebRTC.Android.Resource.Attribute.buttonBarNeutralButtonStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::WebRTC.Android.Resource.Attribute.buttonBarPositiveButtonStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::WebRTC.Android.Resource.Attribute.buttonBarStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.buttonBarStyle;
+			global::WebRTC.Android.Resource.Attribute.buttonGravity = global::WebRTC.DemoApp.Droid.Resource.Attribute.buttonGravity;
+			global::WebRTC.Android.Resource.Attribute.buttonIconDimen = global::WebRTC.DemoApp.Droid.Resource.Attribute.buttonIconDimen;
+			global::WebRTC.Android.Resource.Attribute.buttonPanelSideLayout = global::WebRTC.DemoApp.Droid.Resource.Attribute.buttonPanelSideLayout;
+			global::WebRTC.Android.Resource.Attribute.buttonStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.buttonStyle;
+			global::WebRTC.Android.Resource.Attribute.buttonStyleSmall = global::WebRTC.DemoApp.Droid.Resource.Attribute.buttonStyleSmall;
+			global::WebRTC.Android.Resource.Attribute.buttonTint = global::WebRTC.DemoApp.Droid.Resource.Attribute.buttonTint;
+			global::WebRTC.Android.Resource.Attribute.buttonTintMode = global::WebRTC.DemoApp.Droid.Resource.Attribute.buttonTintMode;
+			global::WebRTC.Android.Resource.Attribute.checkboxStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.checkboxStyle;
+			global::WebRTC.Android.Resource.Attribute.checkedTextViewStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::WebRTC.Android.Resource.Attribute.closeIcon = global::WebRTC.DemoApp.Droid.Resource.Attribute.closeIcon;
+			global::WebRTC.Android.Resource.Attribute.closeItemLayout = global::WebRTC.DemoApp.Droid.Resource.Attribute.closeItemLayout;
+			global::WebRTC.Android.Resource.Attribute.collapseContentDescription = global::WebRTC.DemoApp.Droid.Resource.Attribute.collapseContentDescription;
+			global::WebRTC.Android.Resource.Attribute.collapseIcon = global::WebRTC.DemoApp.Droid.Resource.Attribute.collapseIcon;
+			global::WebRTC.Android.Resource.Attribute.color = global::WebRTC.DemoApp.Droid.Resource.Attribute.color;
+			global::WebRTC.Android.Resource.Attribute.colorAccent = global::WebRTC.DemoApp.Droid.Resource.Attribute.colorAccent;
+			global::WebRTC.Android.Resource.Attribute.colorBackgroundFloating = global::WebRTC.DemoApp.Droid.Resource.Attribute.colorBackgroundFloating;
+			global::WebRTC.Android.Resource.Attribute.colorButtonNormal = global::WebRTC.DemoApp.Droid.Resource.Attribute.colorButtonNormal;
+			global::WebRTC.Android.Resource.Attribute.colorControlActivated = global::WebRTC.DemoApp.Droid.Resource.Attribute.colorControlActivated;
+			global::WebRTC.Android.Resource.Attribute.colorControlHighlight = global::WebRTC.DemoApp.Droid.Resource.Attribute.colorControlHighlight;
+			global::WebRTC.Android.Resource.Attribute.colorControlNormal = global::WebRTC.DemoApp.Droid.Resource.Attribute.colorControlNormal;
+			global::WebRTC.Android.Resource.Attribute.colorError = global::WebRTC.DemoApp.Droid.Resource.Attribute.colorError;
+			global::WebRTC.Android.Resource.Attribute.colorPrimary = global::WebRTC.DemoApp.Droid.Resource.Attribute.colorPrimary;
+			global::WebRTC.Android.Resource.Attribute.colorPrimaryDark = global::WebRTC.DemoApp.Droid.Resource.Attribute.colorPrimaryDark;
+			global::WebRTC.Android.Resource.Attribute.colorSwitchThumbNormal = global::WebRTC.DemoApp.Droid.Resource.Attribute.colorSwitchThumbNormal;
+			global::WebRTC.Android.Resource.Attribute.commitIcon = global::WebRTC.DemoApp.Droid.Resource.Attribute.commitIcon;
+			global::WebRTC.Android.Resource.Attribute.contentDescription = global::WebRTC.DemoApp.Droid.Resource.Attribute.contentDescription;
+			global::WebRTC.Android.Resource.Attribute.contentInsetEnd = global::WebRTC.DemoApp.Droid.Resource.Attribute.contentInsetEnd;
+			global::WebRTC.Android.Resource.Attribute.contentInsetEndWithActions = global::WebRTC.DemoApp.Droid.Resource.Attribute.contentInsetEndWithActions;
+			global::WebRTC.Android.Resource.Attribute.contentInsetLeft = global::WebRTC.DemoApp.Droid.Resource.Attribute.contentInsetLeft;
+			global::WebRTC.Android.Resource.Attribute.contentInsetRight = global::WebRTC.DemoApp.Droid.Resource.Attribute.contentInsetRight;
+			global::WebRTC.Android.Resource.Attribute.contentInsetStart = global::WebRTC.DemoApp.Droid.Resource.Attribute.contentInsetStart;
+			global::WebRTC.Android.Resource.Attribute.contentInsetStartWithNavigation = global::WebRTC.DemoApp.Droid.Resource.Attribute.contentInsetStartWithNavigation;
+			global::WebRTC.Android.Resource.Attribute.controlBackground = global::WebRTC.DemoApp.Droid.Resource.Attribute.controlBackground;
+			global::WebRTC.Android.Resource.Attribute.coordinatorLayoutStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.coordinatorLayoutStyle;
+			global::WebRTC.Android.Resource.Attribute.customNavigationLayout = global::WebRTC.DemoApp.Droid.Resource.Attribute.customNavigationLayout;
+			global::WebRTC.Android.Resource.Attribute.defaultQueryHint = global::WebRTC.DemoApp.Droid.Resource.Attribute.defaultQueryHint;
+			global::WebRTC.Android.Resource.Attribute.dialogCornerRadius = global::WebRTC.DemoApp.Droid.Resource.Attribute.dialogCornerRadius;
+			global::WebRTC.Android.Resource.Attribute.dialogPreferredPadding = global::WebRTC.DemoApp.Droid.Resource.Attribute.dialogPreferredPadding;
+			global::WebRTC.Android.Resource.Attribute.dialogTheme = global::WebRTC.DemoApp.Droid.Resource.Attribute.dialogTheme;
+			global::WebRTC.Android.Resource.Attribute.displayOptions = global::WebRTC.DemoApp.Droid.Resource.Attribute.displayOptions;
+			global::WebRTC.Android.Resource.Attribute.divider = global::WebRTC.DemoApp.Droid.Resource.Attribute.divider;
+			global::WebRTC.Android.Resource.Attribute.dividerHorizontal = global::WebRTC.DemoApp.Droid.Resource.Attribute.dividerHorizontal;
+			global::WebRTC.Android.Resource.Attribute.dividerPadding = global::WebRTC.DemoApp.Droid.Resource.Attribute.dividerPadding;
+			global::WebRTC.Android.Resource.Attribute.dividerVertical = global::WebRTC.DemoApp.Droid.Resource.Attribute.dividerVertical;
+			global::WebRTC.Android.Resource.Attribute.drawableSize = global::WebRTC.DemoApp.Droid.Resource.Attribute.drawableSize;
+			global::WebRTC.Android.Resource.Attribute.drawerArrowStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.drawerArrowStyle;
+			global::WebRTC.Android.Resource.Attribute.dropdownListPreferredItemHeight = global::WebRTC.DemoApp.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::WebRTC.Android.Resource.Attribute.dropDownListViewStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.dropDownListViewStyle;
+			global::WebRTC.Android.Resource.Attribute.editTextBackground = global::WebRTC.DemoApp.Droid.Resource.Attribute.editTextBackground;
+			global::WebRTC.Android.Resource.Attribute.editTextColor = global::WebRTC.DemoApp.Droid.Resource.Attribute.editTextColor;
+			global::WebRTC.Android.Resource.Attribute.editTextStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.editTextStyle;
+			global::WebRTC.Android.Resource.Attribute.elevation = global::WebRTC.DemoApp.Droid.Resource.Attribute.elevation;
+			global::WebRTC.Android.Resource.Attribute.expandActivityOverflowButtonDrawable = global::WebRTC.DemoApp.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::WebRTC.Android.Resource.Attribute.firstBaselineToTopHeight = global::WebRTC.DemoApp.Droid.Resource.Attribute.firstBaselineToTopHeight;
+			global::WebRTC.Android.Resource.Attribute.font = global::WebRTC.DemoApp.Droid.Resource.Attribute.font;
+			global::WebRTC.Android.Resource.Attribute.fontFamily = global::WebRTC.DemoApp.Droid.Resource.Attribute.fontFamily;
+			global::WebRTC.Android.Resource.Attribute.fontProviderAuthority = global::WebRTC.DemoApp.Droid.Resource.Attribute.fontProviderAuthority;
+			global::WebRTC.Android.Resource.Attribute.fontProviderCerts = global::WebRTC.DemoApp.Droid.Resource.Attribute.fontProviderCerts;
+			global::WebRTC.Android.Resource.Attribute.fontProviderFetchStrategy = global::WebRTC.DemoApp.Droid.Resource.Attribute.fontProviderFetchStrategy;
+			global::WebRTC.Android.Resource.Attribute.fontProviderFetchTimeout = global::WebRTC.DemoApp.Droid.Resource.Attribute.fontProviderFetchTimeout;
+			global::WebRTC.Android.Resource.Attribute.fontProviderPackage = global::WebRTC.DemoApp.Droid.Resource.Attribute.fontProviderPackage;
+			global::WebRTC.Android.Resource.Attribute.fontProviderQuery = global::WebRTC.DemoApp.Droid.Resource.Attribute.fontProviderQuery;
+			global::WebRTC.Android.Resource.Attribute.fontStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.fontStyle;
+			global::WebRTC.Android.Resource.Attribute.fontVariationSettings = global::WebRTC.DemoApp.Droid.Resource.Attribute.fontVariationSettings;
+			global::WebRTC.Android.Resource.Attribute.fontWeight = global::WebRTC.DemoApp.Droid.Resource.Attribute.fontWeight;
+			global::WebRTC.Android.Resource.Attribute.gapBetweenBars = global::WebRTC.DemoApp.Droid.Resource.Attribute.gapBetweenBars;
+			global::WebRTC.Android.Resource.Attribute.goIcon = global::WebRTC.DemoApp.Droid.Resource.Attribute.goIcon;
+			global::WebRTC.Android.Resource.Attribute.height = global::WebRTC.DemoApp.Droid.Resource.Attribute.height;
+			global::WebRTC.Android.Resource.Attribute.hideOnContentScroll = global::WebRTC.DemoApp.Droid.Resource.Attribute.hideOnContentScroll;
+			global::WebRTC.Android.Resource.Attribute.homeAsUpIndicator = global::WebRTC.DemoApp.Droid.Resource.Attribute.homeAsUpIndicator;
+			global::WebRTC.Android.Resource.Attribute.homeLayout = global::WebRTC.DemoApp.Droid.Resource.Attribute.homeLayout;
+			global::WebRTC.Android.Resource.Attribute.icon = global::WebRTC.DemoApp.Droid.Resource.Attribute.icon;
+			global::WebRTC.Android.Resource.Attribute.iconifiedByDefault = global::WebRTC.DemoApp.Droid.Resource.Attribute.iconifiedByDefault;
+			global::WebRTC.Android.Resource.Attribute.iconTint = global::WebRTC.DemoApp.Droid.Resource.Attribute.iconTint;
+			global::WebRTC.Android.Resource.Attribute.iconTintMode = global::WebRTC.DemoApp.Droid.Resource.Attribute.iconTintMode;
+			global::WebRTC.Android.Resource.Attribute.imageButtonStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.imageButtonStyle;
+			global::WebRTC.Android.Resource.Attribute.indeterminateProgressStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.indeterminateProgressStyle;
+			global::WebRTC.Android.Resource.Attribute.initialActivityCount = global::WebRTC.DemoApp.Droid.Resource.Attribute.initialActivityCount;
+			global::WebRTC.Android.Resource.Attribute.isLightTheme = global::WebRTC.DemoApp.Droid.Resource.Attribute.isLightTheme;
+			global::WebRTC.Android.Resource.Attribute.itemPadding = global::WebRTC.DemoApp.Droid.Resource.Attribute.itemPadding;
+			global::WebRTC.Android.Resource.Attribute.keylines = global::WebRTC.DemoApp.Droid.Resource.Attribute.keylines;
+			global::WebRTC.Android.Resource.Attribute.lastBaselineToBottomHeight = global::WebRTC.DemoApp.Droid.Resource.Attribute.lastBaselineToBottomHeight;
+			global::WebRTC.Android.Resource.Attribute.layout = global::WebRTC.DemoApp.Droid.Resource.Attribute.layout;
+			global::WebRTC.Android.Resource.Attribute.layout_anchor = global::WebRTC.DemoApp.Droid.Resource.Attribute.layout_anchor;
+			global::WebRTC.Android.Resource.Attribute.layout_anchorGravity = global::WebRTC.DemoApp.Droid.Resource.Attribute.layout_anchorGravity;
+			global::WebRTC.Android.Resource.Attribute.layout_behavior = global::WebRTC.DemoApp.Droid.Resource.Attribute.layout_behavior;
+			global::WebRTC.Android.Resource.Attribute.layout_dodgeInsetEdges = global::WebRTC.DemoApp.Droid.Resource.Attribute.layout_dodgeInsetEdges;
+			global::WebRTC.Android.Resource.Attribute.layout_insetEdge = global::WebRTC.DemoApp.Droid.Resource.Attribute.layout_insetEdge;
+			global::WebRTC.Android.Resource.Attribute.layout_keyline = global::WebRTC.DemoApp.Droid.Resource.Attribute.layout_keyline;
+			global::WebRTC.Android.Resource.Attribute.lineHeight = global::WebRTC.DemoApp.Droid.Resource.Attribute.lineHeight;
+			global::WebRTC.Android.Resource.Attribute.listChoiceBackgroundIndicator = global::WebRTC.DemoApp.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::WebRTC.Android.Resource.Attribute.listDividerAlertDialog = global::WebRTC.DemoApp.Droid.Resource.Attribute.listDividerAlertDialog;
+			global::WebRTC.Android.Resource.Attribute.listItemLayout = global::WebRTC.DemoApp.Droid.Resource.Attribute.listItemLayout;
+			global::WebRTC.Android.Resource.Attribute.listLayout = global::WebRTC.DemoApp.Droid.Resource.Attribute.listLayout;
+			global::WebRTC.Android.Resource.Attribute.listMenuViewStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.listMenuViewStyle;
+			global::WebRTC.Android.Resource.Attribute.listPopupWindowStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.listPopupWindowStyle;
+			global::WebRTC.Android.Resource.Attribute.listPreferredItemHeight = global::WebRTC.DemoApp.Droid.Resource.Attribute.listPreferredItemHeight;
+			global::WebRTC.Android.Resource.Attribute.listPreferredItemHeightLarge = global::WebRTC.DemoApp.Droid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::WebRTC.Android.Resource.Attribute.listPreferredItemHeightSmall = global::WebRTC.DemoApp.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::WebRTC.Android.Resource.Attribute.listPreferredItemPaddingLeft = global::WebRTC.DemoApp.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::WebRTC.Android.Resource.Attribute.listPreferredItemPaddingRight = global::WebRTC.DemoApp.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::WebRTC.Android.Resource.Attribute.logo = global::WebRTC.DemoApp.Droid.Resource.Attribute.logo;
+			global::WebRTC.Android.Resource.Attribute.logoDescription = global::WebRTC.DemoApp.Droid.Resource.Attribute.logoDescription;
+			global::WebRTC.Android.Resource.Attribute.maxButtonHeight = global::WebRTC.DemoApp.Droid.Resource.Attribute.maxButtonHeight;
+			global::WebRTC.Android.Resource.Attribute.measureWithLargestChild = global::WebRTC.DemoApp.Droid.Resource.Attribute.measureWithLargestChild;
+			global::WebRTC.Android.Resource.Attribute.multiChoiceItemLayout = global::WebRTC.DemoApp.Droid.Resource.Attribute.multiChoiceItemLayout;
+			global::WebRTC.Android.Resource.Attribute.navigationContentDescription = global::WebRTC.DemoApp.Droid.Resource.Attribute.navigationContentDescription;
+			global::WebRTC.Android.Resource.Attribute.navigationIcon = global::WebRTC.DemoApp.Droid.Resource.Attribute.navigationIcon;
+			global::WebRTC.Android.Resource.Attribute.navigationMode = global::WebRTC.DemoApp.Droid.Resource.Attribute.navigationMode;
+			global::WebRTC.Android.Resource.Attribute.numericModifiers = global::WebRTC.DemoApp.Droid.Resource.Attribute.numericModifiers;
+			global::WebRTC.Android.Resource.Attribute.overlapAnchor = global::WebRTC.DemoApp.Droid.Resource.Attribute.overlapAnchor;
+			global::WebRTC.Android.Resource.Attribute.paddingBottomNoButtons = global::WebRTC.DemoApp.Droid.Resource.Attribute.paddingBottomNoButtons;
+			global::WebRTC.Android.Resource.Attribute.paddingEnd = global::WebRTC.DemoApp.Droid.Resource.Attribute.paddingEnd;
+			global::WebRTC.Android.Resource.Attribute.paddingStart = global::WebRTC.DemoApp.Droid.Resource.Attribute.paddingStart;
+			global::WebRTC.Android.Resource.Attribute.paddingTopNoTitle = global::WebRTC.DemoApp.Droid.Resource.Attribute.paddingTopNoTitle;
+			global::WebRTC.Android.Resource.Attribute.panelBackground = global::WebRTC.DemoApp.Droid.Resource.Attribute.panelBackground;
+			global::WebRTC.Android.Resource.Attribute.panelMenuListTheme = global::WebRTC.DemoApp.Droid.Resource.Attribute.panelMenuListTheme;
+			global::WebRTC.Android.Resource.Attribute.panelMenuListWidth = global::WebRTC.DemoApp.Droid.Resource.Attribute.panelMenuListWidth;
+			global::WebRTC.Android.Resource.Attribute.popupMenuStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.popupMenuStyle;
+			global::WebRTC.Android.Resource.Attribute.popupTheme = global::WebRTC.DemoApp.Droid.Resource.Attribute.popupTheme;
+			global::WebRTC.Android.Resource.Attribute.popupWindowStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.popupWindowStyle;
+			global::WebRTC.Android.Resource.Attribute.preserveIconSpacing = global::WebRTC.DemoApp.Droid.Resource.Attribute.preserveIconSpacing;
+			global::WebRTC.Android.Resource.Attribute.progressBarPadding = global::WebRTC.DemoApp.Droid.Resource.Attribute.progressBarPadding;
+			global::WebRTC.Android.Resource.Attribute.progressBarStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.progressBarStyle;
+			global::WebRTC.Android.Resource.Attribute.queryBackground = global::WebRTC.DemoApp.Droid.Resource.Attribute.queryBackground;
+			global::WebRTC.Android.Resource.Attribute.queryHint = global::WebRTC.DemoApp.Droid.Resource.Attribute.queryHint;
+			global::WebRTC.Android.Resource.Attribute.radioButtonStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.radioButtonStyle;
+			global::WebRTC.Android.Resource.Attribute.ratingBarStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.ratingBarStyle;
+			global::WebRTC.Android.Resource.Attribute.ratingBarStyleIndicator = global::WebRTC.DemoApp.Droid.Resource.Attribute.ratingBarStyleIndicator;
+			global::WebRTC.Android.Resource.Attribute.ratingBarStyleSmall = global::WebRTC.DemoApp.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::WebRTC.Android.Resource.Attribute.searchHintIcon = global::WebRTC.DemoApp.Droid.Resource.Attribute.searchHintIcon;
+			global::WebRTC.Android.Resource.Attribute.searchIcon = global::WebRTC.DemoApp.Droid.Resource.Attribute.searchIcon;
+			global::WebRTC.Android.Resource.Attribute.searchViewStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.searchViewStyle;
+			global::WebRTC.Android.Resource.Attribute.seekBarStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.seekBarStyle;
+			global::WebRTC.Android.Resource.Attribute.selectableItemBackground = global::WebRTC.DemoApp.Droid.Resource.Attribute.selectableItemBackground;
+			global::WebRTC.Android.Resource.Attribute.selectableItemBackgroundBorderless = global::WebRTC.DemoApp.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::WebRTC.Android.Resource.Attribute.showAsAction = global::WebRTC.DemoApp.Droid.Resource.Attribute.showAsAction;
+			global::WebRTC.Android.Resource.Attribute.showDividers = global::WebRTC.DemoApp.Droid.Resource.Attribute.showDividers;
+			global::WebRTC.Android.Resource.Attribute.showText = global::WebRTC.DemoApp.Droid.Resource.Attribute.showText;
+			global::WebRTC.Android.Resource.Attribute.showTitle = global::WebRTC.DemoApp.Droid.Resource.Attribute.showTitle;
+			global::WebRTC.Android.Resource.Attribute.singleChoiceItemLayout = global::WebRTC.DemoApp.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::WebRTC.Android.Resource.Attribute.spinBars = global::WebRTC.DemoApp.Droid.Resource.Attribute.spinBars;
+			global::WebRTC.Android.Resource.Attribute.spinnerDropDownItemStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::WebRTC.Android.Resource.Attribute.spinnerStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.spinnerStyle;
+			global::WebRTC.Android.Resource.Attribute.splitTrack = global::WebRTC.DemoApp.Droid.Resource.Attribute.splitTrack;
+			global::WebRTC.Android.Resource.Attribute.srcCompat = global::WebRTC.DemoApp.Droid.Resource.Attribute.srcCompat;
+			global::WebRTC.Android.Resource.Attribute.state_above_anchor = global::WebRTC.DemoApp.Droid.Resource.Attribute.state_above_anchor;
+			global::WebRTC.Android.Resource.Attribute.statusBarBackground = global::WebRTC.DemoApp.Droid.Resource.Attribute.statusBarBackground;
+			global::WebRTC.Android.Resource.Attribute.subMenuArrow = global::WebRTC.DemoApp.Droid.Resource.Attribute.subMenuArrow;
+			global::WebRTC.Android.Resource.Attribute.submitBackground = global::WebRTC.DemoApp.Droid.Resource.Attribute.submitBackground;
+			global::WebRTC.Android.Resource.Attribute.subtitle = global::WebRTC.DemoApp.Droid.Resource.Attribute.subtitle;
+			global::WebRTC.Android.Resource.Attribute.subtitleTextAppearance = global::WebRTC.DemoApp.Droid.Resource.Attribute.subtitleTextAppearance;
+			global::WebRTC.Android.Resource.Attribute.subtitleTextColor = global::WebRTC.DemoApp.Droid.Resource.Attribute.subtitleTextColor;
+			global::WebRTC.Android.Resource.Attribute.subtitleTextStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.subtitleTextStyle;
+			global::WebRTC.Android.Resource.Attribute.suggestionRowLayout = global::WebRTC.DemoApp.Droid.Resource.Attribute.suggestionRowLayout;
+			global::WebRTC.Android.Resource.Attribute.switchMinWidth = global::WebRTC.DemoApp.Droid.Resource.Attribute.switchMinWidth;
+			global::WebRTC.Android.Resource.Attribute.switchPadding = global::WebRTC.DemoApp.Droid.Resource.Attribute.switchPadding;
+			global::WebRTC.Android.Resource.Attribute.switchStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.switchStyle;
+			global::WebRTC.Android.Resource.Attribute.switchTextAppearance = global::WebRTC.DemoApp.Droid.Resource.Attribute.switchTextAppearance;
+			global::WebRTC.Android.Resource.Attribute.textAllCaps = global::WebRTC.DemoApp.Droid.Resource.Attribute.textAllCaps;
+			global::WebRTC.Android.Resource.Attribute.textAppearanceLargePopupMenu = global::WebRTC.DemoApp.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::WebRTC.Android.Resource.Attribute.textAppearanceListItem = global::WebRTC.DemoApp.Droid.Resource.Attribute.textAppearanceListItem;
+			global::WebRTC.Android.Resource.Attribute.textAppearanceListItemSecondary = global::WebRTC.DemoApp.Droid.Resource.Attribute.textAppearanceListItemSecondary;
+			global::WebRTC.Android.Resource.Attribute.textAppearanceListItemSmall = global::WebRTC.DemoApp.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::WebRTC.Android.Resource.Attribute.textAppearancePopupMenuHeader = global::WebRTC.DemoApp.Droid.Resource.Attribute.textAppearancePopupMenuHeader;
+			global::WebRTC.Android.Resource.Attribute.textAppearanceSearchResultSubtitle = global::WebRTC.DemoApp.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::WebRTC.Android.Resource.Attribute.textAppearanceSearchResultTitle = global::WebRTC.DemoApp.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::WebRTC.Android.Resource.Attribute.textAppearanceSmallPopupMenu = global::WebRTC.DemoApp.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::WebRTC.Android.Resource.Attribute.textColorAlertDialogListItem = global::WebRTC.DemoApp.Droid.Resource.Attribute.textColorAlertDialogListItem;
+			global::WebRTC.Android.Resource.Attribute.textColorSearchUrl = global::WebRTC.DemoApp.Droid.Resource.Attribute.textColorSearchUrl;
+			global::WebRTC.Android.Resource.Attribute.theme = global::WebRTC.DemoApp.Droid.Resource.Attribute.theme;
+			global::WebRTC.Android.Resource.Attribute.thickness = global::WebRTC.DemoApp.Droid.Resource.Attribute.thickness;
+			global::WebRTC.Android.Resource.Attribute.thumbTextPadding = global::WebRTC.DemoApp.Droid.Resource.Attribute.thumbTextPadding;
+			global::WebRTC.Android.Resource.Attribute.thumbTint = global::WebRTC.DemoApp.Droid.Resource.Attribute.thumbTint;
+			global::WebRTC.Android.Resource.Attribute.thumbTintMode = global::WebRTC.DemoApp.Droid.Resource.Attribute.thumbTintMode;
+			global::WebRTC.Android.Resource.Attribute.tickMark = global::WebRTC.DemoApp.Droid.Resource.Attribute.tickMark;
+			global::WebRTC.Android.Resource.Attribute.tickMarkTint = global::WebRTC.DemoApp.Droid.Resource.Attribute.tickMarkTint;
+			global::WebRTC.Android.Resource.Attribute.tickMarkTintMode = global::WebRTC.DemoApp.Droid.Resource.Attribute.tickMarkTintMode;
+			global::WebRTC.Android.Resource.Attribute.tint = global::WebRTC.DemoApp.Droid.Resource.Attribute.tint;
+			global::WebRTC.Android.Resource.Attribute.tintMode = global::WebRTC.DemoApp.Droid.Resource.Attribute.tintMode;
+			global::WebRTC.Android.Resource.Attribute.title = global::WebRTC.DemoApp.Droid.Resource.Attribute.title;
+			global::WebRTC.Android.Resource.Attribute.titleMargin = global::WebRTC.DemoApp.Droid.Resource.Attribute.titleMargin;
+			global::WebRTC.Android.Resource.Attribute.titleMarginBottom = global::WebRTC.DemoApp.Droid.Resource.Attribute.titleMarginBottom;
+			global::WebRTC.Android.Resource.Attribute.titleMarginEnd = global::WebRTC.DemoApp.Droid.Resource.Attribute.titleMarginEnd;
+			global::WebRTC.Android.Resource.Attribute.titleMargins = global::WebRTC.DemoApp.Droid.Resource.Attribute.titleMargins;
+			global::WebRTC.Android.Resource.Attribute.titleMarginStart = global::WebRTC.DemoApp.Droid.Resource.Attribute.titleMarginStart;
+			global::WebRTC.Android.Resource.Attribute.titleMarginTop = global::WebRTC.DemoApp.Droid.Resource.Attribute.titleMarginTop;
+			global::WebRTC.Android.Resource.Attribute.titleTextAppearance = global::WebRTC.DemoApp.Droid.Resource.Attribute.titleTextAppearance;
+			global::WebRTC.Android.Resource.Attribute.titleTextColor = global::WebRTC.DemoApp.Droid.Resource.Attribute.titleTextColor;
+			global::WebRTC.Android.Resource.Attribute.titleTextStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.titleTextStyle;
+			global::WebRTC.Android.Resource.Attribute.toolbarNavigationButtonStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::WebRTC.Android.Resource.Attribute.toolbarStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.toolbarStyle;
+			global::WebRTC.Android.Resource.Attribute.tooltipForegroundColor = global::WebRTC.DemoApp.Droid.Resource.Attribute.tooltipForegroundColor;
+			global::WebRTC.Android.Resource.Attribute.tooltipFrameBackground = global::WebRTC.DemoApp.Droid.Resource.Attribute.tooltipFrameBackground;
+			global::WebRTC.Android.Resource.Attribute.tooltipText = global::WebRTC.DemoApp.Droid.Resource.Attribute.tooltipText;
+			global::WebRTC.Android.Resource.Attribute.track = global::WebRTC.DemoApp.Droid.Resource.Attribute.track;
+			global::WebRTC.Android.Resource.Attribute.trackTint = global::WebRTC.DemoApp.Droid.Resource.Attribute.trackTint;
+			global::WebRTC.Android.Resource.Attribute.trackTintMode = global::WebRTC.DemoApp.Droid.Resource.Attribute.trackTintMode;
+			global::WebRTC.Android.Resource.Attribute.ttcIndex = global::WebRTC.DemoApp.Droid.Resource.Attribute.ttcIndex;
+			global::WebRTC.Android.Resource.Attribute.viewInflaterClass = global::WebRTC.DemoApp.Droid.Resource.Attribute.viewInflaterClass;
+			global::WebRTC.Android.Resource.Attribute.voiceIcon = global::WebRTC.DemoApp.Droid.Resource.Attribute.voiceIcon;
+			global::WebRTC.Android.Resource.Attribute.windowActionBar = global::WebRTC.DemoApp.Droid.Resource.Attribute.windowActionBar;
+			global::WebRTC.Android.Resource.Attribute.windowActionBarOverlay = global::WebRTC.DemoApp.Droid.Resource.Attribute.windowActionBarOverlay;
+			global::WebRTC.Android.Resource.Attribute.windowActionModeOverlay = global::WebRTC.DemoApp.Droid.Resource.Attribute.windowActionModeOverlay;
+			global::WebRTC.Android.Resource.Attribute.windowFixedHeightMajor = global::WebRTC.DemoApp.Droid.Resource.Attribute.windowFixedHeightMajor;
+			global::WebRTC.Android.Resource.Attribute.windowFixedHeightMinor = global::WebRTC.DemoApp.Droid.Resource.Attribute.windowFixedHeightMinor;
+			global::WebRTC.Android.Resource.Attribute.windowFixedWidthMajor = global::WebRTC.DemoApp.Droid.Resource.Attribute.windowFixedWidthMajor;
+			global::WebRTC.Android.Resource.Attribute.windowFixedWidthMinor = global::WebRTC.DemoApp.Droid.Resource.Attribute.windowFixedWidthMinor;
+			global::WebRTC.Android.Resource.Attribute.windowMinWidthMajor = global::WebRTC.DemoApp.Droid.Resource.Attribute.windowMinWidthMajor;
+			global::WebRTC.Android.Resource.Attribute.windowMinWidthMinor = global::WebRTC.DemoApp.Droid.Resource.Attribute.windowMinWidthMinor;
+			global::WebRTC.Android.Resource.Attribute.windowNoTitle = global::WebRTC.DemoApp.Droid.Resource.Attribute.windowNoTitle;
+			global::WebRTC.Android.Resource.Boolean.abc_action_bar_embed_tabs = global::WebRTC.DemoApp.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::WebRTC.Android.Resource.Boolean.abc_allow_stacked_button_bar = global::WebRTC.DemoApp.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::WebRTC.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::WebRTC.DemoApp.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::WebRTC.Android.Resource.Color.abc_background_cache_hint_selector_material_dark = global::WebRTC.DemoApp.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::WebRTC.Android.Resource.Color.abc_background_cache_hint_selector_material_light = global::WebRTC.DemoApp.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::WebRTC.Android.Resource.Color.abc_btn_colored_borderless_text_material = global::WebRTC.DemoApp.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
+			global::WebRTC.Android.Resource.Color.abc_btn_colored_text_material = global::WebRTC.DemoApp.Droid.Resource.Color.abc_btn_colored_text_material;
+			global::WebRTC.Android.Resource.Color.abc_color_highlight_material = global::WebRTC.DemoApp.Droid.Resource.Color.abc_color_highlight_material;
+			global::WebRTC.Android.Resource.Color.abc_hint_foreground_material_dark = global::WebRTC.DemoApp.Droid.Resource.Color.abc_hint_foreground_material_dark;
+			global::WebRTC.Android.Resource.Color.abc_hint_foreground_material_light = global::WebRTC.DemoApp.Droid.Resource.Color.abc_hint_foreground_material_light;
+			global::WebRTC.Android.Resource.Color.abc_input_method_navigation_guard = global::WebRTC.DemoApp.Droid.Resource.Color.abc_input_method_navigation_guard;
+			global::WebRTC.Android.Resource.Color.abc_primary_text_disable_only_material_dark = global::WebRTC.DemoApp.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::WebRTC.Android.Resource.Color.abc_primary_text_disable_only_material_light = global::WebRTC.DemoApp.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::WebRTC.Android.Resource.Color.abc_primary_text_material_dark = global::WebRTC.DemoApp.Droid.Resource.Color.abc_primary_text_material_dark;
+			global::WebRTC.Android.Resource.Color.abc_primary_text_material_light = global::WebRTC.DemoApp.Droid.Resource.Color.abc_primary_text_material_light;
+			global::WebRTC.Android.Resource.Color.abc_search_url_text = global::WebRTC.DemoApp.Droid.Resource.Color.abc_search_url_text;
+			global::WebRTC.Android.Resource.Color.abc_search_url_text_normal = global::WebRTC.DemoApp.Droid.Resource.Color.abc_search_url_text_normal;
+			global::WebRTC.Android.Resource.Color.abc_search_url_text_pressed = global::WebRTC.DemoApp.Droid.Resource.Color.abc_search_url_text_pressed;
+			global::WebRTC.Android.Resource.Color.abc_search_url_text_selected = global::WebRTC.DemoApp.Droid.Resource.Color.abc_search_url_text_selected;
+			global::WebRTC.Android.Resource.Color.abc_secondary_text_material_dark = global::WebRTC.DemoApp.Droid.Resource.Color.abc_secondary_text_material_dark;
+			global::WebRTC.Android.Resource.Color.abc_secondary_text_material_light = global::WebRTC.DemoApp.Droid.Resource.Color.abc_secondary_text_material_light;
+			global::WebRTC.Android.Resource.Color.abc_tint_btn_checkable = global::WebRTC.DemoApp.Droid.Resource.Color.abc_tint_btn_checkable;
+			global::WebRTC.Android.Resource.Color.abc_tint_default = global::WebRTC.DemoApp.Droid.Resource.Color.abc_tint_default;
+			global::WebRTC.Android.Resource.Color.abc_tint_edittext = global::WebRTC.DemoApp.Droid.Resource.Color.abc_tint_edittext;
+			global::WebRTC.Android.Resource.Color.abc_tint_seek_thumb = global::WebRTC.DemoApp.Droid.Resource.Color.abc_tint_seek_thumb;
+			global::WebRTC.Android.Resource.Color.abc_tint_spinner = global::WebRTC.DemoApp.Droid.Resource.Color.abc_tint_spinner;
+			global::WebRTC.Android.Resource.Color.abc_tint_switch_track = global::WebRTC.DemoApp.Droid.Resource.Color.abc_tint_switch_track;
+			global::WebRTC.Android.Resource.Color.accent_material_dark = global::WebRTC.DemoApp.Droid.Resource.Color.accent_material_dark;
+			global::WebRTC.Android.Resource.Color.accent_material_light = global::WebRTC.DemoApp.Droid.Resource.Color.accent_material_light;
+			global::WebRTC.Android.Resource.Color.background_floating_material_dark = global::WebRTC.DemoApp.Droid.Resource.Color.background_floating_material_dark;
+			global::WebRTC.Android.Resource.Color.background_floating_material_light = global::WebRTC.DemoApp.Droid.Resource.Color.background_floating_material_light;
+			global::WebRTC.Android.Resource.Color.background_material_dark = global::WebRTC.DemoApp.Droid.Resource.Color.background_material_dark;
+			global::WebRTC.Android.Resource.Color.background_material_light = global::WebRTC.DemoApp.Droid.Resource.Color.background_material_light;
+			global::WebRTC.Android.Resource.Color.bright_foreground_disabled_material_dark = global::WebRTC.DemoApp.Droid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::WebRTC.Android.Resource.Color.bright_foreground_disabled_material_light = global::WebRTC.DemoApp.Droid.Resource.Color.bright_foreground_disabled_material_light;
+			global::WebRTC.Android.Resource.Color.bright_foreground_inverse_material_dark = global::WebRTC.DemoApp.Droid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::WebRTC.Android.Resource.Color.bright_foreground_inverse_material_light = global::WebRTC.DemoApp.Droid.Resource.Color.bright_foreground_inverse_material_light;
+			global::WebRTC.Android.Resource.Color.bright_foreground_material_dark = global::WebRTC.DemoApp.Droid.Resource.Color.bright_foreground_material_dark;
+			global::WebRTC.Android.Resource.Color.bright_foreground_material_light = global::WebRTC.DemoApp.Droid.Resource.Color.bright_foreground_material_light;
+			global::WebRTC.Android.Resource.Color.button_material_dark = global::WebRTC.DemoApp.Droid.Resource.Color.button_material_dark;
+			global::WebRTC.Android.Resource.Color.button_material_light = global::WebRTC.DemoApp.Droid.Resource.Color.button_material_light;
+			global::WebRTC.Android.Resource.Color.dim_foreground_disabled_material_dark = global::WebRTC.DemoApp.Droid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::WebRTC.Android.Resource.Color.dim_foreground_disabled_material_light = global::WebRTC.DemoApp.Droid.Resource.Color.dim_foreground_disabled_material_light;
+			global::WebRTC.Android.Resource.Color.dim_foreground_material_dark = global::WebRTC.DemoApp.Droid.Resource.Color.dim_foreground_material_dark;
+			global::WebRTC.Android.Resource.Color.dim_foreground_material_light = global::WebRTC.DemoApp.Droid.Resource.Color.dim_foreground_material_light;
+			global::WebRTC.Android.Resource.Color.error_color_material_dark = global::WebRTC.DemoApp.Droid.Resource.Color.error_color_material_dark;
+			global::WebRTC.Android.Resource.Color.error_color_material_light = global::WebRTC.DemoApp.Droid.Resource.Color.error_color_material_light;
+			global::WebRTC.Android.Resource.Color.foreground_material_dark = global::WebRTC.DemoApp.Droid.Resource.Color.foreground_material_dark;
+			global::WebRTC.Android.Resource.Color.foreground_material_light = global::WebRTC.DemoApp.Droid.Resource.Color.foreground_material_light;
+			global::WebRTC.Android.Resource.Color.highlighted_text_material_dark = global::WebRTC.DemoApp.Droid.Resource.Color.highlighted_text_material_dark;
+			global::WebRTC.Android.Resource.Color.highlighted_text_material_light = global::WebRTC.DemoApp.Droid.Resource.Color.highlighted_text_material_light;
+			global::WebRTC.Android.Resource.Color.material_blue_grey_800 = global::WebRTC.DemoApp.Droid.Resource.Color.material_blue_grey_800;
+			global::WebRTC.Android.Resource.Color.material_blue_grey_900 = global::WebRTC.DemoApp.Droid.Resource.Color.material_blue_grey_900;
+			global::WebRTC.Android.Resource.Color.material_blue_grey_950 = global::WebRTC.DemoApp.Droid.Resource.Color.material_blue_grey_950;
+			global::WebRTC.Android.Resource.Color.material_deep_teal_200 = global::WebRTC.DemoApp.Droid.Resource.Color.material_deep_teal_200;
+			global::WebRTC.Android.Resource.Color.material_deep_teal_500 = global::WebRTC.DemoApp.Droid.Resource.Color.material_deep_teal_500;
+			global::WebRTC.Android.Resource.Color.material_grey_100 = global::WebRTC.DemoApp.Droid.Resource.Color.material_grey_100;
+			global::WebRTC.Android.Resource.Color.material_grey_300 = global::WebRTC.DemoApp.Droid.Resource.Color.material_grey_300;
+			global::WebRTC.Android.Resource.Color.material_grey_50 = global::WebRTC.DemoApp.Droid.Resource.Color.material_grey_50;
+			global::WebRTC.Android.Resource.Color.material_grey_600 = global::WebRTC.DemoApp.Droid.Resource.Color.material_grey_600;
+			global::WebRTC.Android.Resource.Color.material_grey_800 = global::WebRTC.DemoApp.Droid.Resource.Color.material_grey_800;
+			global::WebRTC.Android.Resource.Color.material_grey_850 = global::WebRTC.DemoApp.Droid.Resource.Color.material_grey_850;
+			global::WebRTC.Android.Resource.Color.material_grey_900 = global::WebRTC.DemoApp.Droid.Resource.Color.material_grey_900;
+			global::WebRTC.Android.Resource.Color.notification_action_color_filter = global::WebRTC.DemoApp.Droid.Resource.Color.notification_action_color_filter;
+			global::WebRTC.Android.Resource.Color.notification_icon_bg_color = global::WebRTC.DemoApp.Droid.Resource.Color.notification_icon_bg_color;
+			global::WebRTC.Android.Resource.Color.primary_dark_material_dark = global::WebRTC.DemoApp.Droid.Resource.Color.primary_dark_material_dark;
+			global::WebRTC.Android.Resource.Color.primary_dark_material_light = global::WebRTC.DemoApp.Droid.Resource.Color.primary_dark_material_light;
+			global::WebRTC.Android.Resource.Color.primary_material_dark = global::WebRTC.DemoApp.Droid.Resource.Color.primary_material_dark;
+			global::WebRTC.Android.Resource.Color.primary_material_light = global::WebRTC.DemoApp.Droid.Resource.Color.primary_material_light;
+			global::WebRTC.Android.Resource.Color.primary_text_default_material_dark = global::WebRTC.DemoApp.Droid.Resource.Color.primary_text_default_material_dark;
+			global::WebRTC.Android.Resource.Color.primary_text_default_material_light = global::WebRTC.DemoApp.Droid.Resource.Color.primary_text_default_material_light;
+			global::WebRTC.Android.Resource.Color.primary_text_disabled_material_dark = global::WebRTC.DemoApp.Droid.Resource.Color.primary_text_disabled_material_dark;
+			global::WebRTC.Android.Resource.Color.primary_text_disabled_material_light = global::WebRTC.DemoApp.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::WebRTC.Android.Resource.Color.ripple_material_dark = global::WebRTC.DemoApp.Droid.Resource.Color.ripple_material_dark;
+			global::WebRTC.Android.Resource.Color.ripple_material_light = global::WebRTC.DemoApp.Droid.Resource.Color.ripple_material_light;
+			global::WebRTC.Android.Resource.Color.secondary_text_default_material_dark = global::WebRTC.DemoApp.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::WebRTC.Android.Resource.Color.secondary_text_default_material_light = global::WebRTC.DemoApp.Droid.Resource.Color.secondary_text_default_material_light;
+			global::WebRTC.Android.Resource.Color.secondary_text_disabled_material_dark = global::WebRTC.DemoApp.Droid.Resource.Color.secondary_text_disabled_material_dark;
+			global::WebRTC.Android.Resource.Color.secondary_text_disabled_material_light = global::WebRTC.DemoApp.Droid.Resource.Color.secondary_text_disabled_material_light;
+			global::WebRTC.Android.Resource.Color.switch_thumb_disabled_material_dark = global::WebRTC.DemoApp.Droid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::WebRTC.Android.Resource.Color.switch_thumb_disabled_material_light = global::WebRTC.DemoApp.Droid.Resource.Color.switch_thumb_disabled_material_light;
+			global::WebRTC.Android.Resource.Color.switch_thumb_material_dark = global::WebRTC.DemoApp.Droid.Resource.Color.switch_thumb_material_dark;
+			global::WebRTC.Android.Resource.Color.switch_thumb_material_light = global::WebRTC.DemoApp.Droid.Resource.Color.switch_thumb_material_light;
+			global::WebRTC.Android.Resource.Color.switch_thumb_normal_material_dark = global::WebRTC.DemoApp.Droid.Resource.Color.switch_thumb_normal_material_dark;
+			global::WebRTC.Android.Resource.Color.switch_thumb_normal_material_light = global::WebRTC.DemoApp.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::WebRTC.Android.Resource.Color.tooltip_background_dark = global::WebRTC.DemoApp.Droid.Resource.Color.tooltip_background_dark;
+			global::WebRTC.Android.Resource.Color.tooltip_background_light = global::WebRTC.DemoApp.Droid.Resource.Color.tooltip_background_light;
+			global::WebRTC.Android.Resource.Dimension.abc_action_bar_content_inset_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::WebRTC.Android.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
+			global::WebRTC.Android.Resource.Dimension.abc_action_bar_default_height_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::WebRTC.Android.Resource.Dimension.abc_action_bar_default_padding_end_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::WebRTC.Android.Resource.Dimension.abc_action_bar_default_padding_start_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::WebRTC.Android.Resource.Dimension.abc_action_bar_elevation_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_action_bar_elevation_material;
+			global::WebRTC.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::WebRTC.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::WebRTC.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::WebRTC.Android.Resource.Dimension.abc_action_bar_stacked_max_height = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::WebRTC.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::WebRTC.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::WebRTC.Android.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::WebRTC.Android.Resource.Dimension.abc_action_button_min_height_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_action_button_min_height_material;
+			global::WebRTC.Android.Resource.Dimension.abc_action_button_min_width_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_action_button_min_width_material;
+			global::WebRTC.Android.Resource.Dimension.abc_action_button_min_width_overflow_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::WebRTC.Android.Resource.Dimension.abc_alert_dialog_button_bar_height = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::WebRTC.Android.Resource.Dimension.abc_alert_dialog_button_dimen = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_alert_dialog_button_dimen;
+			global::WebRTC.Android.Resource.Dimension.abc_button_inset_horizontal_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::WebRTC.Android.Resource.Dimension.abc_button_inset_vertical_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::WebRTC.Android.Resource.Dimension.abc_button_padding_horizontal_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::WebRTC.Android.Resource.Dimension.abc_button_padding_vertical_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::WebRTC.Android.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width;
+			global::WebRTC.Android.Resource.Dimension.abc_config_prefDialogWidth = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::WebRTC.Android.Resource.Dimension.abc_control_corner_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_control_corner_material;
+			global::WebRTC.Android.Resource.Dimension.abc_control_inset_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_control_inset_material;
+			global::WebRTC.Android.Resource.Dimension.abc_control_padding_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_control_padding_material;
+			global::WebRTC.Android.Resource.Dimension.abc_dialog_corner_radius_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_dialog_corner_radius_material;
+			global::WebRTC.Android.Resource.Dimension.abc_dialog_fixed_height_major = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::WebRTC.Android.Resource.Dimension.abc_dialog_fixed_height_minor = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::WebRTC.Android.Resource.Dimension.abc_dialog_fixed_width_major = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::WebRTC.Android.Resource.Dimension.abc_dialog_fixed_width_minor = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::WebRTC.Android.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
+			global::WebRTC.Android.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title;
+			global::WebRTC.Android.Resource.Dimension.abc_dialog_min_width_major = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_dialog_min_width_major;
+			global::WebRTC.Android.Resource.Dimension.abc_dialog_min_width_minor = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::WebRTC.Android.Resource.Dimension.abc_dialog_padding_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_dialog_padding_material;
+			global::WebRTC.Android.Resource.Dimension.abc_dialog_padding_top_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::WebRTC.Android.Resource.Dimension.abc_dialog_title_divider_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_dialog_title_divider_material;
+			global::WebRTC.Android.Resource.Dimension.abc_disabled_alpha_material_dark = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::WebRTC.Android.Resource.Dimension.abc_disabled_alpha_material_light = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::WebRTC.Android.Resource.Dimension.abc_dropdownitem_icon_width = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::WebRTC.Android.Resource.Dimension.abc_dropdownitem_text_padding_left = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::WebRTC.Android.Resource.Dimension.abc_dropdownitem_text_padding_right = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::WebRTC.Android.Resource.Dimension.abc_edit_text_inset_bottom_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::WebRTC.Android.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::WebRTC.Android.Resource.Dimension.abc_edit_text_inset_top_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::WebRTC.Android.Resource.Dimension.abc_floating_window_z = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_floating_window_z;
+			global::WebRTC.Android.Resource.Dimension.abc_list_item_padding_horizontal_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::WebRTC.Android.Resource.Dimension.abc_panel_menu_list_width = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_panel_menu_list_width;
+			global::WebRTC.Android.Resource.Dimension.abc_progress_bar_height_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_progress_bar_height_material;
+			global::WebRTC.Android.Resource.Dimension.abc_search_view_preferred_height = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_search_view_preferred_height;
+			global::WebRTC.Android.Resource.Dimension.abc_search_view_preferred_width = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_search_view_preferred_width;
+			global::WebRTC.Android.Resource.Dimension.abc_seekbar_track_background_height_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::WebRTC.Android.Resource.Dimension.abc_seekbar_track_progress_height_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::WebRTC.Android.Resource.Dimension.abc_select_dialog_padding_start_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::WebRTC.Android.Resource.Dimension.abc_switch_padding = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_switch_padding;
+			global::WebRTC.Android.Resource.Dimension.abc_text_size_body_1_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_text_size_body_1_material;
+			global::WebRTC.Android.Resource.Dimension.abc_text_size_body_2_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_text_size_body_2_material;
+			global::WebRTC.Android.Resource.Dimension.abc_text_size_button_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_text_size_button_material;
+			global::WebRTC.Android.Resource.Dimension.abc_text_size_caption_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_text_size_caption_material;
+			global::WebRTC.Android.Resource.Dimension.abc_text_size_display_1_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_text_size_display_1_material;
+			global::WebRTC.Android.Resource.Dimension.abc_text_size_display_2_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_text_size_display_2_material;
+			global::WebRTC.Android.Resource.Dimension.abc_text_size_display_3_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_text_size_display_3_material;
+			global::WebRTC.Android.Resource.Dimension.abc_text_size_display_4_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_text_size_display_4_material;
+			global::WebRTC.Android.Resource.Dimension.abc_text_size_headline_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_text_size_headline_material;
+			global::WebRTC.Android.Resource.Dimension.abc_text_size_large_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_text_size_large_material;
+			global::WebRTC.Android.Resource.Dimension.abc_text_size_medium_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_text_size_medium_material;
+			global::WebRTC.Android.Resource.Dimension.abc_text_size_menu_header_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_text_size_menu_header_material;
+			global::WebRTC.Android.Resource.Dimension.abc_text_size_menu_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_text_size_menu_material;
+			global::WebRTC.Android.Resource.Dimension.abc_text_size_small_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_text_size_small_material;
+			global::WebRTC.Android.Resource.Dimension.abc_text_size_subhead_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_text_size_subhead_material;
+			global::WebRTC.Android.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::WebRTC.Android.Resource.Dimension.abc_text_size_title_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_text_size_title_material;
+			global::WebRTC.Android.Resource.Dimension.abc_text_size_title_material_toolbar = global::WebRTC.DemoApp.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::WebRTC.Android.Resource.Dimension.compat_button_inset_horizontal_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::WebRTC.Android.Resource.Dimension.compat_button_inset_vertical_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.compat_button_inset_vertical_material;
+			global::WebRTC.Android.Resource.Dimension.compat_button_padding_horizontal_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::WebRTC.Android.Resource.Dimension.compat_button_padding_vertical_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.compat_button_padding_vertical_material;
+			global::WebRTC.Android.Resource.Dimension.compat_control_corner_material = global::WebRTC.DemoApp.Droid.Resource.Dimension.compat_control_corner_material;
+			global::WebRTC.Android.Resource.Dimension.compat_notification_large_icon_max_height = global::WebRTC.DemoApp.Droid.Resource.Dimension.compat_notification_large_icon_max_height;
+			global::WebRTC.Android.Resource.Dimension.compat_notification_large_icon_max_width = global::WebRTC.DemoApp.Droid.Resource.Dimension.compat_notification_large_icon_max_width;
+			global::WebRTC.Android.Resource.Dimension.disabled_alpha_material_dark = global::WebRTC.DemoApp.Droid.Resource.Dimension.disabled_alpha_material_dark;
+			global::WebRTC.Android.Resource.Dimension.disabled_alpha_material_light = global::WebRTC.DemoApp.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::WebRTC.Android.Resource.Dimension.highlight_alpha_material_colored = global::WebRTC.DemoApp.Droid.Resource.Dimension.highlight_alpha_material_colored;
+			global::WebRTC.Android.Resource.Dimension.highlight_alpha_material_dark = global::WebRTC.DemoApp.Droid.Resource.Dimension.highlight_alpha_material_dark;
+			global::WebRTC.Android.Resource.Dimension.highlight_alpha_material_light = global::WebRTC.DemoApp.Droid.Resource.Dimension.highlight_alpha_material_light;
+			global::WebRTC.Android.Resource.Dimension.hint_alpha_material_dark = global::WebRTC.DemoApp.Droid.Resource.Dimension.hint_alpha_material_dark;
+			global::WebRTC.Android.Resource.Dimension.hint_alpha_material_light = global::WebRTC.DemoApp.Droid.Resource.Dimension.hint_alpha_material_light;
+			global::WebRTC.Android.Resource.Dimension.hint_pressed_alpha_material_dark = global::WebRTC.DemoApp.Droid.Resource.Dimension.hint_pressed_alpha_material_dark;
+			global::WebRTC.Android.Resource.Dimension.hint_pressed_alpha_material_light = global::WebRTC.DemoApp.Droid.Resource.Dimension.hint_pressed_alpha_material_light;
+			global::WebRTC.Android.Resource.Dimension.notification_action_icon_size = global::WebRTC.DemoApp.Droid.Resource.Dimension.notification_action_icon_size;
+			global::WebRTC.Android.Resource.Dimension.notification_action_text_size = global::WebRTC.DemoApp.Droid.Resource.Dimension.notification_action_text_size;
+			global::WebRTC.Android.Resource.Dimension.notification_big_circle_margin = global::WebRTC.DemoApp.Droid.Resource.Dimension.notification_big_circle_margin;
+			global::WebRTC.Android.Resource.Dimension.notification_content_margin_start = global::WebRTC.DemoApp.Droid.Resource.Dimension.notification_content_margin_start;
+			global::WebRTC.Android.Resource.Dimension.notification_large_icon_height = global::WebRTC.DemoApp.Droid.Resource.Dimension.notification_large_icon_height;
+			global::WebRTC.Android.Resource.Dimension.notification_large_icon_width = global::WebRTC.DemoApp.Droid.Resource.Dimension.notification_large_icon_width;
+			global::WebRTC.Android.Resource.Dimension.notification_main_column_padding_top = global::WebRTC.DemoApp.Droid.Resource.Dimension.notification_main_column_padding_top;
+			global::WebRTC.Android.Resource.Dimension.notification_media_narrow_margin = global::WebRTC.DemoApp.Droid.Resource.Dimension.notification_media_narrow_margin;
+			global::WebRTC.Android.Resource.Dimension.notification_right_icon_size = global::WebRTC.DemoApp.Droid.Resource.Dimension.notification_right_icon_size;
+			global::WebRTC.Android.Resource.Dimension.notification_right_side_padding_top = global::WebRTC.DemoApp.Droid.Resource.Dimension.notification_right_side_padding_top;
+			global::WebRTC.Android.Resource.Dimension.notification_small_icon_background_padding = global::WebRTC.DemoApp.Droid.Resource.Dimension.notification_small_icon_background_padding;
+			global::WebRTC.Android.Resource.Dimension.notification_small_icon_size_as_large = global::WebRTC.DemoApp.Droid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::WebRTC.Android.Resource.Dimension.notification_subtext_size = global::WebRTC.DemoApp.Droid.Resource.Dimension.notification_subtext_size;
+			global::WebRTC.Android.Resource.Dimension.notification_top_pad = global::WebRTC.DemoApp.Droid.Resource.Dimension.notification_top_pad;
+			global::WebRTC.Android.Resource.Dimension.notification_top_pad_large_text = global::WebRTC.DemoApp.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::WebRTC.Android.Resource.Dimension.tooltip_corner_radius = global::WebRTC.DemoApp.Droid.Resource.Dimension.tooltip_corner_radius;
+			global::WebRTC.Android.Resource.Dimension.tooltip_horizontal_padding = global::WebRTC.DemoApp.Droid.Resource.Dimension.tooltip_horizontal_padding;
+			global::WebRTC.Android.Resource.Dimension.tooltip_margin = global::WebRTC.DemoApp.Droid.Resource.Dimension.tooltip_margin;
+			global::WebRTC.Android.Resource.Dimension.tooltip_precise_anchor_extra_offset = global::WebRTC.DemoApp.Droid.Resource.Dimension.tooltip_precise_anchor_extra_offset;
+			global::WebRTC.Android.Resource.Dimension.tooltip_precise_anchor_threshold = global::WebRTC.DemoApp.Droid.Resource.Dimension.tooltip_precise_anchor_threshold;
+			global::WebRTC.Android.Resource.Dimension.tooltip_vertical_padding = global::WebRTC.DemoApp.Droid.Resource.Dimension.tooltip_vertical_padding;
+			global::WebRTC.Android.Resource.Dimension.tooltip_y_offset_non_touch = global::WebRTC.DemoApp.Droid.Resource.Dimension.tooltip_y_offset_non_touch;
+			global::WebRTC.Android.Resource.Dimension.tooltip_y_offset_touch = global::WebRTC.DemoApp.Droid.Resource.Dimension.tooltip_y_offset_touch;
+			global::WebRTC.Android.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::WebRTC.Android.Resource.Drawable.abc_action_bar_item_background_material = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::WebRTC.Android.Resource.Drawable.abc_btn_borderless_material = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_btn_borderless_material;
+			global::WebRTC.Android.Resource.Drawable.abc_btn_check_material = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_btn_check_material;
+			global::WebRTC.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::WebRTC.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::WebRTC.Android.Resource.Drawable.abc_btn_colored_material = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_btn_colored_material;
+			global::WebRTC.Android.Resource.Drawable.abc_btn_default_mtrl_shape = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::WebRTC.Android.Resource.Drawable.abc_btn_radio_material = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::WebRTC.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::WebRTC.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::WebRTC.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::WebRTC.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::WebRTC.Android.Resource.Drawable.abc_cab_background_internal_bg = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::WebRTC.Android.Resource.Drawable.abc_cab_background_top_material = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_cab_background_top_material;
+			global::WebRTC.Android.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::WebRTC.Android.Resource.Drawable.abc_control_background_material = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_control_background_material;
+			global::WebRTC.Android.Resource.Drawable.abc_dialog_material_background = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_dialog_material_background;
+			global::WebRTC.Android.Resource.Drawable.abc_edit_text_material = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_edit_text_material;
+			global::WebRTC.Android.Resource.Drawable.abc_ic_ab_back_material = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_ic_ab_back_material;
+			global::WebRTC.Android.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
+			global::WebRTC.Android.Resource.Drawable.abc_ic_clear_material = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_ic_clear_material;
+			global::WebRTC.Android.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::WebRTC.Android.Resource.Drawable.abc_ic_go_search_api_material = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_ic_go_search_api_material;
+			global::WebRTC.Android.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::WebRTC.Android.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::WebRTC.Android.Resource.Drawable.abc_ic_menu_overflow_material = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_ic_menu_overflow_material;
+			global::WebRTC.Android.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::WebRTC.Android.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::WebRTC.Android.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::WebRTC.Android.Resource.Drawable.abc_ic_search_api_material = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_ic_search_api_material;
+			global::WebRTC.Android.Resource.Drawable.abc_ic_star_black_16dp = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::WebRTC.Android.Resource.Drawable.abc_ic_star_black_36dp = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::WebRTC.Android.Resource.Drawable.abc_ic_star_black_48dp = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_ic_star_black_48dp;
+			global::WebRTC.Android.Resource.Drawable.abc_ic_star_half_black_16dp = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::WebRTC.Android.Resource.Drawable.abc_ic_star_half_black_36dp = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::WebRTC.Android.Resource.Drawable.abc_ic_star_half_black_48dp = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_ic_star_half_black_48dp;
+			global::WebRTC.Android.Resource.Drawable.abc_ic_voice_search_api_material = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_ic_voice_search_api_material;
+			global::WebRTC.Android.Resource.Drawable.abc_item_background_holo_dark = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_item_background_holo_dark;
+			global::WebRTC.Android.Resource.Drawable.abc_item_background_holo_light = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::WebRTC.Android.Resource.Drawable.abc_list_divider_material = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_list_divider_material;
+			global::WebRTC.Android.Resource.Drawable.abc_list_divider_mtrl_alpha = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::WebRTC.Android.Resource.Drawable.abc_list_focused_holo = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_list_focused_holo;
+			global::WebRTC.Android.Resource.Drawable.abc_list_longpressed_holo = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_list_longpressed_holo;
+			global::WebRTC.Android.Resource.Drawable.abc_list_pressed_holo_dark = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::WebRTC.Android.Resource.Drawable.abc_list_pressed_holo_light = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::WebRTC.Android.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::WebRTC.Android.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::WebRTC.Android.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::WebRTC.Android.Resource.Drawable.abc_list_selector_disabled_holo_light = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::WebRTC.Android.Resource.Drawable.abc_list_selector_holo_dark = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::WebRTC.Android.Resource.Drawable.abc_list_selector_holo_light = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_list_selector_holo_light;
+			global::WebRTC.Android.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::WebRTC.Android.Resource.Drawable.abc_popup_background_mtrl_mult = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::WebRTC.Android.Resource.Drawable.abc_ratingbar_indicator_material = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::WebRTC.Android.Resource.Drawable.abc_ratingbar_material = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_ratingbar_material;
+			global::WebRTC.Android.Resource.Drawable.abc_ratingbar_small_material = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_ratingbar_small_material;
+			global::WebRTC.Android.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::WebRTC.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::WebRTC.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::WebRTC.Android.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::WebRTC.Android.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::WebRTC.Android.Resource.Drawable.abc_seekbar_thumb_material = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::WebRTC.Android.Resource.Drawable.abc_seekbar_tick_mark_material = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_seekbar_tick_mark_material;
+			global::WebRTC.Android.Resource.Drawable.abc_seekbar_track_material = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::WebRTC.Android.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::WebRTC.Android.Resource.Drawable.abc_spinner_textfield_background_material = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::WebRTC.Android.Resource.Drawable.abc_switch_thumb_material = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_switch_thumb_material;
+			global::WebRTC.Android.Resource.Drawable.abc_switch_track_mtrl_alpha = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::WebRTC.Android.Resource.Drawable.abc_tab_indicator_material = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_tab_indicator_material;
+			global::WebRTC.Android.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::WebRTC.Android.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::WebRTC.Android.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::WebRTC.Android.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::WebRTC.Android.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::WebRTC.Android.Resource.Drawable.abc_textfield_search_material = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_textfield_search_material;
+			global::WebRTC.Android.Resource.Drawable.abc_text_cursor_material = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_text_cursor_material;
+			global::WebRTC.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
+			global::WebRTC.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
+			global::WebRTC.Android.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
+			global::WebRTC.Android.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
+			global::WebRTC.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
+			global::WebRTC.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
+			global::WebRTC.Android.Resource.Drawable.abc_vector_test = global::WebRTC.DemoApp.Droid.Resource.Drawable.abc_vector_test;
+			global::WebRTC.Android.Resource.Drawable.notification_action_background = global::WebRTC.DemoApp.Droid.Resource.Drawable.notification_action_background;
+			global::WebRTC.Android.Resource.Drawable.notification_bg = global::WebRTC.DemoApp.Droid.Resource.Drawable.notification_bg;
+			global::WebRTC.Android.Resource.Drawable.notification_bg_low = global::WebRTC.DemoApp.Droid.Resource.Drawable.notification_bg_low;
+			global::WebRTC.Android.Resource.Drawable.notification_bg_low_normal = global::WebRTC.DemoApp.Droid.Resource.Drawable.notification_bg_low_normal;
+			global::WebRTC.Android.Resource.Drawable.notification_bg_low_pressed = global::WebRTC.DemoApp.Droid.Resource.Drawable.notification_bg_low_pressed;
+			global::WebRTC.Android.Resource.Drawable.notification_bg_normal = global::WebRTC.DemoApp.Droid.Resource.Drawable.notification_bg_normal;
+			global::WebRTC.Android.Resource.Drawable.notification_bg_normal_pressed = global::WebRTC.DemoApp.Droid.Resource.Drawable.notification_bg_normal_pressed;
+			global::WebRTC.Android.Resource.Drawable.notification_icon_background = global::WebRTC.DemoApp.Droid.Resource.Drawable.notification_icon_background;
+			global::WebRTC.Android.Resource.Drawable.notification_template_icon_bg = global::WebRTC.DemoApp.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::WebRTC.Android.Resource.Drawable.notification_template_icon_low_bg = global::WebRTC.DemoApp.Droid.Resource.Drawable.notification_template_icon_low_bg;
+			global::WebRTC.Android.Resource.Drawable.notification_tile_bg = global::WebRTC.DemoApp.Droid.Resource.Drawable.notification_tile_bg;
+			global::WebRTC.Android.Resource.Drawable.notify_panel_notification_icon_bg = global::WebRTC.DemoApp.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::WebRTC.Android.Resource.Drawable.tooltip_frame_dark = global::WebRTC.DemoApp.Droid.Resource.Drawable.tooltip_frame_dark;
+			global::WebRTC.Android.Resource.Drawable.tooltip_frame_light = global::WebRTC.DemoApp.Droid.Resource.Drawable.tooltip_frame_light;
+			global::WebRTC.Android.Resource.Id.actions = global::WebRTC.DemoApp.Droid.Resource.Id.actions;
+			global::WebRTC.Android.Resource.Id.action_bar = global::WebRTC.DemoApp.Droid.Resource.Id.action_bar;
+			global::WebRTC.Android.Resource.Id.action_bar_activity_content = global::WebRTC.DemoApp.Droid.Resource.Id.action_bar_activity_content;
+			global::WebRTC.Android.Resource.Id.action_bar_container = global::WebRTC.DemoApp.Droid.Resource.Id.action_bar_container;
+			global::WebRTC.Android.Resource.Id.action_bar_root = global::WebRTC.DemoApp.Droid.Resource.Id.action_bar_root;
+			global::WebRTC.Android.Resource.Id.action_bar_spinner = global::WebRTC.DemoApp.Droid.Resource.Id.action_bar_spinner;
+			global::WebRTC.Android.Resource.Id.action_bar_subtitle = global::WebRTC.DemoApp.Droid.Resource.Id.action_bar_subtitle;
+			global::WebRTC.Android.Resource.Id.action_bar_title = global::WebRTC.DemoApp.Droid.Resource.Id.action_bar_title;
+			global::WebRTC.Android.Resource.Id.action_container = global::WebRTC.DemoApp.Droid.Resource.Id.action_container;
+			global::WebRTC.Android.Resource.Id.action_context_bar = global::WebRTC.DemoApp.Droid.Resource.Id.action_context_bar;
+			global::WebRTC.Android.Resource.Id.action_divider = global::WebRTC.DemoApp.Droid.Resource.Id.action_divider;
+			global::WebRTC.Android.Resource.Id.action_image = global::WebRTC.DemoApp.Droid.Resource.Id.action_image;
+			global::WebRTC.Android.Resource.Id.action_menu_divider = global::WebRTC.DemoApp.Droid.Resource.Id.action_menu_divider;
+			global::WebRTC.Android.Resource.Id.action_menu_presenter = global::WebRTC.DemoApp.Droid.Resource.Id.action_menu_presenter;
+			global::WebRTC.Android.Resource.Id.action_mode_bar = global::WebRTC.DemoApp.Droid.Resource.Id.action_mode_bar;
+			global::WebRTC.Android.Resource.Id.action_mode_bar_stub = global::WebRTC.DemoApp.Droid.Resource.Id.action_mode_bar_stub;
+			global::WebRTC.Android.Resource.Id.action_mode_close_button = global::WebRTC.DemoApp.Droid.Resource.Id.action_mode_close_button;
+			global::WebRTC.Android.Resource.Id.action_text = global::WebRTC.DemoApp.Droid.Resource.Id.action_text;
+			global::WebRTC.Android.Resource.Id.activity_chooser_view_content = global::WebRTC.DemoApp.Droid.Resource.Id.activity_chooser_view_content;
+			global::WebRTC.Android.Resource.Id.add = global::WebRTC.DemoApp.Droid.Resource.Id.add;
+			global::WebRTC.Android.Resource.Id.alertTitle = global::WebRTC.DemoApp.Droid.Resource.Id.alertTitle;
+			global::WebRTC.Android.Resource.Id.all = global::WebRTC.DemoApp.Droid.Resource.Id.all;
+			global::WebRTC.Android.Resource.Id.ALT = global::WebRTC.DemoApp.Droid.Resource.Id.ALT;
+			global::WebRTC.Android.Resource.Id.always = global::WebRTC.DemoApp.Droid.Resource.Id.always;
+			global::WebRTC.Android.Resource.Id.async = global::WebRTC.DemoApp.Droid.Resource.Id.async;
+			global::WebRTC.Android.Resource.Id.beginning = global::WebRTC.DemoApp.Droid.Resource.Id.beginning;
+			global::WebRTC.Android.Resource.Id.blocking = global::WebRTC.DemoApp.Droid.Resource.Id.blocking;
+			global::WebRTC.Android.Resource.Id.bottom = global::WebRTC.DemoApp.Droid.Resource.Id.bottom;
+			global::WebRTC.Android.Resource.Id.buttonPanel = global::WebRTC.DemoApp.Droid.Resource.Id.buttonPanel;
+			global::WebRTC.Android.Resource.Id.center = global::WebRTC.DemoApp.Droid.Resource.Id.center;
+			global::WebRTC.Android.Resource.Id.center_horizontal = global::WebRTC.DemoApp.Droid.Resource.Id.center_horizontal;
+			global::WebRTC.Android.Resource.Id.center_vertical = global::WebRTC.DemoApp.Droid.Resource.Id.center_vertical;
+			global::WebRTC.Android.Resource.Id.checkbox = global::WebRTC.DemoApp.Droid.Resource.Id.checkbox;
+			global::WebRTC.Android.Resource.Id.chronometer = global::WebRTC.DemoApp.Droid.Resource.Id.chronometer;
+			global::WebRTC.Android.Resource.Id.clip_horizontal = global::WebRTC.DemoApp.Droid.Resource.Id.clip_horizontal;
+			global::WebRTC.Android.Resource.Id.clip_vertical = global::WebRTC.DemoApp.Droid.Resource.Id.clip_vertical;
+			global::WebRTC.Android.Resource.Id.collapseActionView = global::WebRTC.DemoApp.Droid.Resource.Id.collapseActionView;
+			global::WebRTC.Android.Resource.Id.content = global::WebRTC.DemoApp.Droid.Resource.Id.content;
+			global::WebRTC.Android.Resource.Id.contentPanel = global::WebRTC.DemoApp.Droid.Resource.Id.contentPanel;
+			global::WebRTC.Android.Resource.Id.CTRL = global::WebRTC.DemoApp.Droid.Resource.Id.CTRL;
+			global::WebRTC.Android.Resource.Id.custom = global::WebRTC.DemoApp.Droid.Resource.Id.custom;
+			global::WebRTC.Android.Resource.Id.customPanel = global::WebRTC.DemoApp.Droid.Resource.Id.customPanel;
+			global::WebRTC.Android.Resource.Id.decor_content_parent = global::WebRTC.DemoApp.Droid.Resource.Id.decor_content_parent;
+			global::WebRTC.Android.Resource.Id.default_activity_button = global::WebRTC.DemoApp.Droid.Resource.Id.default_activity_button;
+			global::WebRTC.Android.Resource.Id.disableHome = global::WebRTC.DemoApp.Droid.Resource.Id.disableHome;
+			global::WebRTC.Android.Resource.Id.edit_query = global::WebRTC.DemoApp.Droid.Resource.Id.edit_query;
+			global::WebRTC.Android.Resource.Id.end = global::WebRTC.DemoApp.Droid.Resource.Id.end;
+			global::WebRTC.Android.Resource.Id.expanded_menu = global::WebRTC.DemoApp.Droid.Resource.Id.expanded_menu;
+			global::WebRTC.Android.Resource.Id.expand_activities_button = global::WebRTC.DemoApp.Droid.Resource.Id.expand_activities_button;
+			global::WebRTC.Android.Resource.Id.fill = global::WebRTC.DemoApp.Droid.Resource.Id.fill;
+			global::WebRTC.Android.Resource.Id.fill_horizontal = global::WebRTC.DemoApp.Droid.Resource.Id.fill_horizontal;
+			global::WebRTC.Android.Resource.Id.fill_vertical = global::WebRTC.DemoApp.Droid.Resource.Id.fill_vertical;
+			global::WebRTC.Android.Resource.Id.forever = global::WebRTC.DemoApp.Droid.Resource.Id.forever;
+			global::WebRTC.Android.Resource.Id.FUNCTION = global::WebRTC.DemoApp.Droid.Resource.Id.FUNCTION;
+			global::WebRTC.Android.Resource.Id.group_divider = global::WebRTC.DemoApp.Droid.Resource.Id.group_divider;
+			global::WebRTC.Android.Resource.Id.home = global::WebRTC.DemoApp.Droid.Resource.Id.home;
+			global::WebRTC.Android.Resource.Id.homeAsUp = global::WebRTC.DemoApp.Droid.Resource.Id.homeAsUp;
+			global::WebRTC.Android.Resource.Id.icon = global::WebRTC.DemoApp.Droid.Resource.Id.icon;
+			global::WebRTC.Android.Resource.Id.icon_group = global::WebRTC.DemoApp.Droid.Resource.Id.icon_group;
+			global::WebRTC.Android.Resource.Id.ifRoom = global::WebRTC.DemoApp.Droid.Resource.Id.ifRoom;
+			global::WebRTC.Android.Resource.Id.image = global::WebRTC.DemoApp.Droid.Resource.Id.image;
+			global::WebRTC.Android.Resource.Id.info = global::WebRTC.DemoApp.Droid.Resource.Id.info;
+			global::WebRTC.Android.Resource.Id.italic = global::WebRTC.DemoApp.Droid.Resource.Id.italic;
+			global::WebRTC.Android.Resource.Id.left = global::WebRTC.DemoApp.Droid.Resource.Id.left;
+			global::WebRTC.Android.Resource.Id.line1 = global::WebRTC.DemoApp.Droid.Resource.Id.line1;
+			global::WebRTC.Android.Resource.Id.line3 = global::WebRTC.DemoApp.Droid.Resource.Id.line3;
+			global::WebRTC.Android.Resource.Id.listMode = global::WebRTC.DemoApp.Droid.Resource.Id.listMode;
+			global::WebRTC.Android.Resource.Id.list_item = global::WebRTC.DemoApp.Droid.Resource.Id.list_item;
+			global::WebRTC.Android.Resource.Id.message = global::WebRTC.DemoApp.Droid.Resource.Id.message;
+			global::WebRTC.Android.Resource.Id.META = global::WebRTC.DemoApp.Droid.Resource.Id.META;
+			global::WebRTC.Android.Resource.Id.middle = global::WebRTC.DemoApp.Droid.Resource.Id.middle;
+			global::WebRTC.Android.Resource.Id.multiply = global::WebRTC.DemoApp.Droid.Resource.Id.multiply;
+			global::WebRTC.Android.Resource.Id.never = global::WebRTC.DemoApp.Droid.Resource.Id.never;
+			global::WebRTC.Android.Resource.Id.none = global::WebRTC.DemoApp.Droid.Resource.Id.none;
+			global::WebRTC.Android.Resource.Id.normal = global::WebRTC.DemoApp.Droid.Resource.Id.normal;
+			global::WebRTC.Android.Resource.Id.notification_background = global::WebRTC.DemoApp.Droid.Resource.Id.notification_background;
+			global::WebRTC.Android.Resource.Id.notification_main_column = global::WebRTC.DemoApp.Droid.Resource.Id.notification_main_column;
+			global::WebRTC.Android.Resource.Id.notification_main_column_container = global::WebRTC.DemoApp.Droid.Resource.Id.notification_main_column_container;
+			global::WebRTC.Android.Resource.Id.parentPanel = global::WebRTC.DemoApp.Droid.Resource.Id.parentPanel;
+			global::WebRTC.Android.Resource.Id.progress_circular = global::WebRTC.DemoApp.Droid.Resource.Id.progress_circular;
+			global::WebRTC.Android.Resource.Id.progress_horizontal = global::WebRTC.DemoApp.Droid.Resource.Id.progress_horizontal;
+			global::WebRTC.Android.Resource.Id.radio = global::WebRTC.DemoApp.Droid.Resource.Id.radio;
+			global::WebRTC.Android.Resource.Id.right = global::WebRTC.DemoApp.Droid.Resource.Id.right;
+			global::WebRTC.Android.Resource.Id.right_icon = global::WebRTC.DemoApp.Droid.Resource.Id.right_icon;
+			global::WebRTC.Android.Resource.Id.right_side = global::WebRTC.DemoApp.Droid.Resource.Id.right_side;
+			global::WebRTC.Android.Resource.Id.screen = global::WebRTC.DemoApp.Droid.Resource.Id.screen;
+			global::WebRTC.Android.Resource.Id.scrollIndicatorDown = global::WebRTC.DemoApp.Droid.Resource.Id.scrollIndicatorDown;
+			global::WebRTC.Android.Resource.Id.scrollIndicatorUp = global::WebRTC.DemoApp.Droid.Resource.Id.scrollIndicatorUp;
+			global::WebRTC.Android.Resource.Id.scrollView = global::WebRTC.DemoApp.Droid.Resource.Id.scrollView;
+			global::WebRTC.Android.Resource.Id.search_badge = global::WebRTC.DemoApp.Droid.Resource.Id.search_badge;
+			global::WebRTC.Android.Resource.Id.search_bar = global::WebRTC.DemoApp.Droid.Resource.Id.search_bar;
+			global::WebRTC.Android.Resource.Id.search_button = global::WebRTC.DemoApp.Droid.Resource.Id.search_button;
+			global::WebRTC.Android.Resource.Id.search_close_btn = global::WebRTC.DemoApp.Droid.Resource.Id.search_close_btn;
+			global::WebRTC.Android.Resource.Id.search_edit_frame = global::WebRTC.DemoApp.Droid.Resource.Id.search_edit_frame;
+			global::WebRTC.Android.Resource.Id.search_go_btn = global::WebRTC.DemoApp.Droid.Resource.Id.search_go_btn;
+			global::WebRTC.Android.Resource.Id.search_mag_icon = global::WebRTC.DemoApp.Droid.Resource.Id.search_mag_icon;
+			global::WebRTC.Android.Resource.Id.search_plate = global::WebRTC.DemoApp.Droid.Resource.Id.search_plate;
+			global::WebRTC.Android.Resource.Id.search_src_text = global::WebRTC.DemoApp.Droid.Resource.Id.search_src_text;
+			global::WebRTC.Android.Resource.Id.search_voice_btn = global::WebRTC.DemoApp.Droid.Resource.Id.search_voice_btn;
+			global::WebRTC.Android.Resource.Id.select_dialog_listview = global::WebRTC.DemoApp.Droid.Resource.Id.select_dialog_listview;
+			global::WebRTC.Android.Resource.Id.SHIFT = global::WebRTC.DemoApp.Droid.Resource.Id.SHIFT;
+			global::WebRTC.Android.Resource.Id.shortcut = global::WebRTC.DemoApp.Droid.Resource.Id.shortcut;
+			global::WebRTC.Android.Resource.Id.showCustom = global::WebRTC.DemoApp.Droid.Resource.Id.showCustom;
+			global::WebRTC.Android.Resource.Id.showHome = global::WebRTC.DemoApp.Droid.Resource.Id.showHome;
+			global::WebRTC.Android.Resource.Id.showTitle = global::WebRTC.DemoApp.Droid.Resource.Id.showTitle;
+			global::WebRTC.Android.Resource.Id.spacer = global::WebRTC.DemoApp.Droid.Resource.Id.spacer;
+			global::WebRTC.Android.Resource.Id.split_action_bar = global::WebRTC.DemoApp.Droid.Resource.Id.split_action_bar;
+			global::WebRTC.Android.Resource.Id.src_atop = global::WebRTC.DemoApp.Droid.Resource.Id.src_atop;
+			global::WebRTC.Android.Resource.Id.src_in = global::WebRTC.DemoApp.Droid.Resource.Id.src_in;
+			global::WebRTC.Android.Resource.Id.src_over = global::WebRTC.DemoApp.Droid.Resource.Id.src_over;
+			global::WebRTC.Android.Resource.Id.start = global::WebRTC.DemoApp.Droid.Resource.Id.start;
+			global::WebRTC.Android.Resource.Id.submenuarrow = global::WebRTC.DemoApp.Droid.Resource.Id.submenuarrow;
+			global::WebRTC.Android.Resource.Id.submit_area = global::WebRTC.DemoApp.Droid.Resource.Id.submit_area;
+			global::WebRTC.Android.Resource.Id.SYM = global::WebRTC.DemoApp.Droid.Resource.Id.SYM;
+			global::WebRTC.Android.Resource.Id.tabMode = global::WebRTC.DemoApp.Droid.Resource.Id.tabMode;
+			global::WebRTC.Android.Resource.Id.tag_transition_group = global::WebRTC.DemoApp.Droid.Resource.Id.tag_transition_group;
+			global::WebRTC.Android.Resource.Id.tag_unhandled_key_event_manager = global::WebRTC.DemoApp.Droid.Resource.Id.tag_unhandled_key_event_manager;
+			global::WebRTC.Android.Resource.Id.tag_unhandled_key_listeners = global::WebRTC.DemoApp.Droid.Resource.Id.tag_unhandled_key_listeners;
+			global::WebRTC.Android.Resource.Id.text = global::WebRTC.DemoApp.Droid.Resource.Id.text;
+			global::WebRTC.Android.Resource.Id.text2 = global::WebRTC.DemoApp.Droid.Resource.Id.text2;
+			global::WebRTC.Android.Resource.Id.textSpacerNoButtons = global::WebRTC.DemoApp.Droid.Resource.Id.textSpacerNoButtons;
+			global::WebRTC.Android.Resource.Id.textSpacerNoTitle = global::WebRTC.DemoApp.Droid.Resource.Id.textSpacerNoTitle;
+			global::WebRTC.Android.Resource.Id.time = global::WebRTC.DemoApp.Droid.Resource.Id.time;
+			global::WebRTC.Android.Resource.Id.title = global::WebRTC.DemoApp.Droid.Resource.Id.title;
+			global::WebRTC.Android.Resource.Id.titleDividerNoCustom = global::WebRTC.DemoApp.Droid.Resource.Id.titleDividerNoCustom;
+			global::WebRTC.Android.Resource.Id.title_template = global::WebRTC.DemoApp.Droid.Resource.Id.title_template;
+			global::WebRTC.Android.Resource.Id.top = global::WebRTC.DemoApp.Droid.Resource.Id.top;
+			global::WebRTC.Android.Resource.Id.topPanel = global::WebRTC.DemoApp.Droid.Resource.Id.topPanel;
+			global::WebRTC.Android.Resource.Id.uniform = global::WebRTC.DemoApp.Droid.Resource.Id.uniform;
+			global::WebRTC.Android.Resource.Id.up = global::WebRTC.DemoApp.Droid.Resource.Id.up;
+			global::WebRTC.Android.Resource.Id.useLogo = global::WebRTC.DemoApp.Droid.Resource.Id.useLogo;
+			global::WebRTC.Android.Resource.Id.withText = global::WebRTC.DemoApp.Droid.Resource.Id.withText;
+			global::WebRTC.Android.Resource.Id.wrap_content = global::WebRTC.DemoApp.Droid.Resource.Id.wrap_content;
+			global::WebRTC.Android.Resource.Integer.abc_config_activityDefaultDur = global::WebRTC.DemoApp.Droid.Resource.Integer.abc_config_activityDefaultDur;
+			global::WebRTC.Android.Resource.Integer.abc_config_activityShortDur = global::WebRTC.DemoApp.Droid.Resource.Integer.abc_config_activityShortDur;
+			global::WebRTC.Android.Resource.Integer.cancel_button_image_alpha = global::WebRTC.DemoApp.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::WebRTC.Android.Resource.Integer.config_tooltipAnimTime = global::WebRTC.DemoApp.Droid.Resource.Integer.config_tooltipAnimTime;
+			global::WebRTC.Android.Resource.Integer.status_bar_notification_info_maxnum = global::WebRTC.DemoApp.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::WebRTC.Android.Resource.Layout.abc_action_bar_title_item = global::WebRTC.DemoApp.Droid.Resource.Layout.abc_action_bar_title_item;
+			global::WebRTC.Android.Resource.Layout.abc_action_bar_up_container = global::WebRTC.DemoApp.Droid.Resource.Layout.abc_action_bar_up_container;
+			global::WebRTC.Android.Resource.Layout.abc_action_menu_item_layout = global::WebRTC.DemoApp.Droid.Resource.Layout.abc_action_menu_item_layout;
+			global::WebRTC.Android.Resource.Layout.abc_action_menu_layout = global::WebRTC.DemoApp.Droid.Resource.Layout.abc_action_menu_layout;
+			global::WebRTC.Android.Resource.Layout.abc_action_mode_bar = global::WebRTC.DemoApp.Droid.Resource.Layout.abc_action_mode_bar;
+			global::WebRTC.Android.Resource.Layout.abc_action_mode_close_item_material = global::WebRTC.DemoApp.Droid.Resource.Layout.abc_action_mode_close_item_material;
+			global::WebRTC.Android.Resource.Layout.abc_activity_chooser_view = global::WebRTC.DemoApp.Droid.Resource.Layout.abc_activity_chooser_view;
+			global::WebRTC.Android.Resource.Layout.abc_activity_chooser_view_list_item = global::WebRTC.DemoApp.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::WebRTC.Android.Resource.Layout.abc_alert_dialog_button_bar_material = global::WebRTC.DemoApp.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::WebRTC.Android.Resource.Layout.abc_alert_dialog_material = global::WebRTC.DemoApp.Droid.Resource.Layout.abc_alert_dialog_material;
+			global::WebRTC.Android.Resource.Layout.abc_alert_dialog_title_material = global::WebRTC.DemoApp.Droid.Resource.Layout.abc_alert_dialog_title_material;
+			global::WebRTC.Android.Resource.Layout.abc_cascading_menu_item_layout = global::WebRTC.DemoApp.Droid.Resource.Layout.abc_cascading_menu_item_layout;
+			global::WebRTC.Android.Resource.Layout.abc_dialog_title_material = global::WebRTC.DemoApp.Droid.Resource.Layout.abc_dialog_title_material;
+			global::WebRTC.Android.Resource.Layout.abc_expanded_menu_layout = global::WebRTC.DemoApp.Droid.Resource.Layout.abc_expanded_menu_layout;
+			global::WebRTC.Android.Resource.Layout.abc_list_menu_item_checkbox = global::WebRTC.DemoApp.Droid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::WebRTC.Android.Resource.Layout.abc_list_menu_item_icon = global::WebRTC.DemoApp.Droid.Resource.Layout.abc_list_menu_item_icon;
+			global::WebRTC.Android.Resource.Layout.abc_list_menu_item_layout = global::WebRTC.DemoApp.Droid.Resource.Layout.abc_list_menu_item_layout;
+			global::WebRTC.Android.Resource.Layout.abc_list_menu_item_radio = global::WebRTC.DemoApp.Droid.Resource.Layout.abc_list_menu_item_radio;
+			global::WebRTC.Android.Resource.Layout.abc_popup_menu_header_item_layout = global::WebRTC.DemoApp.Droid.Resource.Layout.abc_popup_menu_header_item_layout;
+			global::WebRTC.Android.Resource.Layout.abc_popup_menu_item_layout = global::WebRTC.DemoApp.Droid.Resource.Layout.abc_popup_menu_item_layout;
+			global::WebRTC.Android.Resource.Layout.abc_screen_content_include = global::WebRTC.DemoApp.Droid.Resource.Layout.abc_screen_content_include;
+			global::WebRTC.Android.Resource.Layout.abc_screen_simple = global::WebRTC.DemoApp.Droid.Resource.Layout.abc_screen_simple;
+			global::WebRTC.Android.Resource.Layout.abc_screen_simple_overlay_action_mode = global::WebRTC.DemoApp.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::WebRTC.Android.Resource.Layout.abc_screen_toolbar = global::WebRTC.DemoApp.Droid.Resource.Layout.abc_screen_toolbar;
+			global::WebRTC.Android.Resource.Layout.abc_search_dropdown_item_icons_2line = global::WebRTC.DemoApp.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::WebRTC.Android.Resource.Layout.abc_search_view = global::WebRTC.DemoApp.Droid.Resource.Layout.abc_search_view;
+			global::WebRTC.Android.Resource.Layout.abc_select_dialog_material = global::WebRTC.DemoApp.Droid.Resource.Layout.abc_select_dialog_material;
+			global::WebRTC.Android.Resource.Layout.abc_tooltip = global::WebRTC.DemoApp.Droid.Resource.Layout.abc_tooltip;
+			global::WebRTC.Android.Resource.Layout.notification_action = global::WebRTC.DemoApp.Droid.Resource.Layout.notification_action;
+			global::WebRTC.Android.Resource.Layout.notification_action_tombstone = global::WebRTC.DemoApp.Droid.Resource.Layout.notification_action_tombstone;
+			global::WebRTC.Android.Resource.Layout.notification_template_custom_big = global::WebRTC.DemoApp.Droid.Resource.Layout.notification_template_custom_big;
+			global::WebRTC.Android.Resource.Layout.notification_template_icon_group = global::WebRTC.DemoApp.Droid.Resource.Layout.notification_template_icon_group;
+			global::WebRTC.Android.Resource.Layout.notification_template_part_chronometer = global::WebRTC.DemoApp.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::WebRTC.Android.Resource.Layout.notification_template_part_time = global::WebRTC.DemoApp.Droid.Resource.Layout.notification_template_part_time;
+			global::WebRTC.Android.Resource.Layout.select_dialog_item_material = global::WebRTC.DemoApp.Droid.Resource.Layout.select_dialog_item_material;
+			global::WebRTC.Android.Resource.Layout.select_dialog_multichoice_material = global::WebRTC.DemoApp.Droid.Resource.Layout.select_dialog_multichoice_material;
+			global::WebRTC.Android.Resource.Layout.select_dialog_singlechoice_material = global::WebRTC.DemoApp.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::WebRTC.Android.Resource.Layout.support_simple_spinner_dropdown_item = global::WebRTC.DemoApp.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::WebRTC.Android.Resource.String.abc_action_bar_home_description = global::WebRTC.DemoApp.Droid.Resource.String.abc_action_bar_home_description;
+			global::WebRTC.Android.Resource.String.abc_action_bar_up_description = global::WebRTC.DemoApp.Droid.Resource.String.abc_action_bar_up_description;
+			global::WebRTC.Android.Resource.String.abc_action_menu_overflow_description = global::WebRTC.DemoApp.Droid.Resource.String.abc_action_menu_overflow_description;
+			global::WebRTC.Android.Resource.String.abc_action_mode_done = global::WebRTC.DemoApp.Droid.Resource.String.abc_action_mode_done;
+			global::WebRTC.Android.Resource.String.abc_activitychooserview_choose_application = global::WebRTC.DemoApp.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::WebRTC.Android.Resource.String.abc_activity_chooser_view_see_all = global::WebRTC.DemoApp.Droid.Resource.String.abc_activity_chooser_view_see_all;
+			global::WebRTC.Android.Resource.String.abc_capital_off = global::WebRTC.DemoApp.Droid.Resource.String.abc_capital_off;
+			global::WebRTC.Android.Resource.String.abc_capital_on = global::WebRTC.DemoApp.Droid.Resource.String.abc_capital_on;
+			global::WebRTC.Android.Resource.String.abc_font_family_body_1_material = global::WebRTC.DemoApp.Droid.Resource.String.abc_font_family_body_1_material;
+			global::WebRTC.Android.Resource.String.abc_font_family_body_2_material = global::WebRTC.DemoApp.Droid.Resource.String.abc_font_family_body_2_material;
+			global::WebRTC.Android.Resource.String.abc_font_family_button_material = global::WebRTC.DemoApp.Droid.Resource.String.abc_font_family_button_material;
+			global::WebRTC.Android.Resource.String.abc_font_family_caption_material = global::WebRTC.DemoApp.Droid.Resource.String.abc_font_family_caption_material;
+			global::WebRTC.Android.Resource.String.abc_font_family_display_1_material = global::WebRTC.DemoApp.Droid.Resource.String.abc_font_family_display_1_material;
+			global::WebRTC.Android.Resource.String.abc_font_family_display_2_material = global::WebRTC.DemoApp.Droid.Resource.String.abc_font_family_display_2_material;
+			global::WebRTC.Android.Resource.String.abc_font_family_display_3_material = global::WebRTC.DemoApp.Droid.Resource.String.abc_font_family_display_3_material;
+			global::WebRTC.Android.Resource.String.abc_font_family_display_4_material = global::WebRTC.DemoApp.Droid.Resource.String.abc_font_family_display_4_material;
+			global::WebRTC.Android.Resource.String.abc_font_family_headline_material = global::WebRTC.DemoApp.Droid.Resource.String.abc_font_family_headline_material;
+			global::WebRTC.Android.Resource.String.abc_font_family_menu_material = global::WebRTC.DemoApp.Droid.Resource.String.abc_font_family_menu_material;
+			global::WebRTC.Android.Resource.String.abc_font_family_subhead_material = global::WebRTC.DemoApp.Droid.Resource.String.abc_font_family_subhead_material;
+			global::WebRTC.Android.Resource.String.abc_font_family_title_material = global::WebRTC.DemoApp.Droid.Resource.String.abc_font_family_title_material;
+			global::WebRTC.Android.Resource.String.abc_menu_alt_shortcut_label = global::WebRTC.DemoApp.Droid.Resource.String.abc_menu_alt_shortcut_label;
+			global::WebRTC.Android.Resource.String.abc_menu_ctrl_shortcut_label = global::WebRTC.DemoApp.Droid.Resource.String.abc_menu_ctrl_shortcut_label;
+			global::WebRTC.Android.Resource.String.abc_menu_delete_shortcut_label = global::WebRTC.DemoApp.Droid.Resource.String.abc_menu_delete_shortcut_label;
+			global::WebRTC.Android.Resource.String.abc_menu_enter_shortcut_label = global::WebRTC.DemoApp.Droid.Resource.String.abc_menu_enter_shortcut_label;
+			global::WebRTC.Android.Resource.String.abc_menu_function_shortcut_label = global::WebRTC.DemoApp.Droid.Resource.String.abc_menu_function_shortcut_label;
+			global::WebRTC.Android.Resource.String.abc_menu_meta_shortcut_label = global::WebRTC.DemoApp.Droid.Resource.String.abc_menu_meta_shortcut_label;
+			global::WebRTC.Android.Resource.String.abc_menu_shift_shortcut_label = global::WebRTC.DemoApp.Droid.Resource.String.abc_menu_shift_shortcut_label;
+			global::WebRTC.Android.Resource.String.abc_menu_space_shortcut_label = global::WebRTC.DemoApp.Droid.Resource.String.abc_menu_space_shortcut_label;
+			global::WebRTC.Android.Resource.String.abc_menu_sym_shortcut_label = global::WebRTC.DemoApp.Droid.Resource.String.abc_menu_sym_shortcut_label;
+			global::WebRTC.Android.Resource.String.abc_prepend_shortcut_label = global::WebRTC.DemoApp.Droid.Resource.String.abc_prepend_shortcut_label;
+			global::WebRTC.Android.Resource.String.abc_searchview_description_clear = global::WebRTC.DemoApp.Droid.Resource.String.abc_searchview_description_clear;
+			global::WebRTC.Android.Resource.String.abc_searchview_description_query = global::WebRTC.DemoApp.Droid.Resource.String.abc_searchview_description_query;
+			global::WebRTC.Android.Resource.String.abc_searchview_description_search = global::WebRTC.DemoApp.Droid.Resource.String.abc_searchview_description_search;
+			global::WebRTC.Android.Resource.String.abc_searchview_description_submit = global::WebRTC.DemoApp.Droid.Resource.String.abc_searchview_description_submit;
+			global::WebRTC.Android.Resource.String.abc_searchview_description_voice = global::WebRTC.DemoApp.Droid.Resource.String.abc_searchview_description_voice;
+			global::WebRTC.Android.Resource.String.abc_search_hint = global::WebRTC.DemoApp.Droid.Resource.String.abc_search_hint;
+			global::WebRTC.Android.Resource.String.abc_shareactionprovider_share_with = global::WebRTC.DemoApp.Droid.Resource.String.abc_shareactionprovider_share_with;
+			global::WebRTC.Android.Resource.String.abc_shareactionprovider_share_with_application = global::WebRTC.DemoApp.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::WebRTC.Android.Resource.String.abc_toolbar_collapse_description = global::WebRTC.DemoApp.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::WebRTC.Android.Resource.String.app_name = global::WebRTC.DemoApp.Droid.Resource.String.app_name;
+			global::WebRTC.Android.Resource.String.hello = global::WebRTC.DemoApp.Droid.Resource.String.hello;
+			global::WebRTC.Android.Resource.String.search_menu_title = global::WebRTC.DemoApp.Droid.Resource.String.search_menu_title;
+			global::WebRTC.Android.Resource.String.status_bar_notification_info_overflow = global::WebRTC.DemoApp.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::WebRTC.Android.Resource.Style.AlertDialog_AppCompat = global::WebRTC.DemoApp.Droid.Resource.Style.AlertDialog_AppCompat;
+			global::WebRTC.Android.Resource.Style.AlertDialog_AppCompat_Light = global::WebRTC.DemoApp.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::WebRTC.Android.Resource.Style.Animation_AppCompat_Dialog = global::WebRTC.DemoApp.Droid.Resource.Style.Animation_AppCompat_Dialog;
+			global::WebRTC.Android.Resource.Style.Animation_AppCompat_DropDownUp = global::WebRTC.DemoApp.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::WebRTC.Android.Resource.Style.Animation_AppCompat_Tooltip = global::WebRTC.DemoApp.Droid.Resource.Style.Animation_AppCompat_Tooltip;
+			global::WebRTC.Android.Resource.Style.Base_AlertDialog_AppCompat = global::WebRTC.DemoApp.Droid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::WebRTC.Android.Resource.Style.Base_AlertDialog_AppCompat_Light = global::WebRTC.DemoApp.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::WebRTC.Android.Resource.Style.Base_Animation_AppCompat_Dialog = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::WebRTC.Android.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::WebRTC.Android.Resource.Style.Base_Animation_AppCompat_Tooltip = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Animation_AppCompat_Tooltip;
+			global::WebRTC.Android.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::WebRTC.DemoApp.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::WebRTC.Android.Resource.Style.Base_DialogWindowTitle_AppCompat = global::WebRTC.DemoApp.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Button = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Large = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Small = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Title = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Tooltip = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Tooltip;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::WebRTC.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::WebRTC.DemoApp.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::WebRTC.Android.Resource.Style.Base_ThemeOverlay_AppCompat = global::WebRTC.DemoApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::WebRTC.Android.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::WebRTC.DemoApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::WebRTC.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::WebRTC.DemoApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::WebRTC.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::WebRTC.DemoApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::WebRTC.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::WebRTC.DemoApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
+			global::WebRTC.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::WebRTC.DemoApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
+			global::WebRTC.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::WebRTC.DemoApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::WebRTC.Android.Resource.Style.Base_Theme_AppCompat = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::WebRTC.Android.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::WebRTC.Android.Resource.Style.Base_Theme_AppCompat_Dialog = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::WebRTC.Android.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::WebRTC.Android.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::WebRTC.Android.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::WebRTC.Android.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::WebRTC.Android.Resource.Style.Base_Theme_AppCompat_Light = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::WebRTC.Android.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::WebRTC.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::WebRTC.Android.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::WebRTC.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::WebRTC.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::WebRTC.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::WebRTC.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::WebRTC.DemoApp.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
+			global::WebRTC.Android.Resource.Style.Base_V21_Theme_AppCompat = global::WebRTC.DemoApp.Droid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::WebRTC.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::WebRTC.DemoApp.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::WebRTC.Android.Resource.Style.Base_V21_Theme_AppCompat_Light = global::WebRTC.DemoApp.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::WebRTC.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::WebRTC.DemoApp.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::WebRTC.Android.Resource.Style.Base_V22_Theme_AppCompat = global::WebRTC.DemoApp.Droid.Resource.Style.Base_V22_Theme_AppCompat;
+			global::WebRTC.Android.Resource.Style.Base_V22_Theme_AppCompat_Light = global::WebRTC.DemoApp.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::WebRTC.Android.Resource.Style.Base_V23_Theme_AppCompat = global::WebRTC.DemoApp.Droid.Resource.Style.Base_V23_Theme_AppCompat;
+			global::WebRTC.Android.Resource.Style.Base_V23_Theme_AppCompat_Light = global::WebRTC.DemoApp.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::WebRTC.Android.Resource.Style.Base_V26_Theme_AppCompat = global::WebRTC.DemoApp.Droid.Resource.Style.Base_V26_Theme_AppCompat;
+			global::WebRTC.Android.Resource.Style.Base_V26_Theme_AppCompat_Light = global::WebRTC.DemoApp.Droid.Resource.Style.Base_V26_Theme_AppCompat_Light;
+			global::WebRTC.Android.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::WebRTC.DemoApp.Droid.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
+			global::WebRTC.Android.Resource.Style.Base_V28_Theme_AppCompat = global::WebRTC.DemoApp.Droid.Resource.Style.Base_V28_Theme_AppCompat;
+			global::WebRTC.Android.Resource.Style.Base_V28_Theme_AppCompat_Light = global::WebRTC.DemoApp.Droid.Resource.Style.Base_V28_Theme_AppCompat_Light;
+			global::WebRTC.Android.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::WebRTC.DemoApp.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
+			global::WebRTC.Android.Resource.Style.Base_V7_Theme_AppCompat = global::WebRTC.DemoApp.Droid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::WebRTC.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::WebRTC.DemoApp.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::WebRTC.Android.Resource.Style.Base_V7_Theme_AppCompat_Light = global::WebRTC.DemoApp.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::WebRTC.Android.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::WebRTC.DemoApp.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::WebRTC.Android.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::WebRTC.DemoApp.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::WebRTC.Android.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::WebRTC.DemoApp.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::WebRTC.Android.Resource.Style.Base_V7_Widget_AppCompat_Toolbar = global::WebRTC.DemoApp.Droid.Resource.Style.Base_V7_Widget_AppCompat_Toolbar;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_ActionBar = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_ActionButton = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_ActionMode = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_Button = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_Button_Small = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_EditText = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_ImageButton = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_ListView = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_RatingBar = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_SearchView = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_SeekBar = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_Spinner = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_Toolbar = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::WebRTC.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::WebRTC.DemoApp.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::WebRTC.Android.Resource.Style.Platform_AppCompat = global::WebRTC.DemoApp.Droid.Resource.Style.Platform_AppCompat;
+			global::WebRTC.Android.Resource.Style.Platform_AppCompat_Light = global::WebRTC.DemoApp.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::WebRTC.Android.Resource.Style.Platform_ThemeOverlay_AppCompat = global::WebRTC.DemoApp.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::WebRTC.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::WebRTC.DemoApp.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::WebRTC.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::WebRTC.DemoApp.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::WebRTC.Android.Resource.Style.Platform_V21_AppCompat = global::WebRTC.DemoApp.Droid.Resource.Style.Platform_V21_AppCompat;
+			global::WebRTC.Android.Resource.Style.Platform_V21_AppCompat_Light = global::WebRTC.DemoApp.Droid.Resource.Style.Platform_V21_AppCompat_Light;
+			global::WebRTC.Android.Resource.Style.Platform_V25_AppCompat = global::WebRTC.DemoApp.Droid.Resource.Style.Platform_V25_AppCompat;
+			global::WebRTC.Android.Resource.Style.Platform_V25_AppCompat_Light = global::WebRTC.DemoApp.Droid.Resource.Style.Platform_V25_AppCompat_Light;
+			global::WebRTC.Android.Resource.Style.Platform_Widget_AppCompat_Spinner = global::WebRTC.DemoApp.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::WebRTC.Android.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::WebRTC.DemoApp.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::WebRTC.Android.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::WebRTC.DemoApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::WebRTC.Android.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::WebRTC.DemoApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::WebRTC.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::WebRTC.DemoApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::WebRTC.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::WebRTC.DemoApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::WebRTC.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut = global::WebRTC.DemoApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut;
+			global::WebRTC.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow = global::WebRTC.DemoApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow;
+			global::WebRTC.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::WebRTC.DemoApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::WebRTC.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Title = global::WebRTC.DemoApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Title;
+			global::WebRTC.Android.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::WebRTC.DemoApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::WebRTC.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::WebRTC.DemoApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::WebRTC.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::WebRTC.DemoApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::WebRTC.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::WebRTC.DemoApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::WebRTC.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::WebRTC.DemoApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::WebRTC.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::WebRTC.DemoApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::WebRTC.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::WebRTC.DemoApp.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::WebRTC.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::WebRTC.DemoApp.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Body1 = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Body2 = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Button = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Caption = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Display1 = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Display2 = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Display3 = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Display4 = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Headline = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Inverse = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Large = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Medium = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Menu = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Small = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Subhead = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Title = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Tooltip = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Tooltip;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::WebRTC.Android.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::WebRTC.Android.Resource.Style.TextAppearance_Compat_Notification = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_Compat_Notification;
+			global::WebRTC.Android.Resource.Style.TextAppearance_Compat_Notification_Info = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::WebRTC.Android.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::WebRTC.Android.Resource.Style.TextAppearance_Compat_Notification_Time = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::WebRTC.Android.Resource.Style.TextAppearance_Compat_Notification_Title = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::WebRTC.Android.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::WebRTC.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::WebRTC.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::WebRTC.DemoApp.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::WebRTC.Android.Resource.Style.ThemeOverlay_AppCompat = global::WebRTC.DemoApp.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::WebRTC.Android.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::WebRTC.DemoApp.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::WebRTC.Android.Resource.Style.ThemeOverlay_AppCompat_Dark = global::WebRTC.DemoApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::WebRTC.Android.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::WebRTC.DemoApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::WebRTC.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::WebRTC.DemoApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
+			global::WebRTC.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::WebRTC.DemoApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
+			global::WebRTC.Android.Resource.Style.ThemeOverlay_AppCompat_Light = global::WebRTC.DemoApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::WebRTC.Android.Resource.Style.Theme_AppCompat = global::WebRTC.DemoApp.Droid.Resource.Style.Theme_AppCompat;
+			global::WebRTC.Android.Resource.Style.Theme_AppCompat_CompactMenu = global::WebRTC.DemoApp.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::WebRTC.Android.Resource.Style.Theme_AppCompat_DayNight = global::WebRTC.DemoApp.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::WebRTC.Android.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::WebRTC.DemoApp.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::WebRTC.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::WebRTC.DemoApp.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::WebRTC.Android.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::WebRTC.DemoApp.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::WebRTC.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::WebRTC.DemoApp.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::WebRTC.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::WebRTC.DemoApp.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::WebRTC.Android.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::WebRTC.DemoApp.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::WebRTC.Android.Resource.Style.Theme_AppCompat_Dialog = global::WebRTC.DemoApp.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::WebRTC.Android.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::WebRTC.DemoApp.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::WebRTC.Android.Resource.Style.Theme_AppCompat_Dialog_Alert = global::WebRTC.DemoApp.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::WebRTC.Android.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::WebRTC.DemoApp.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::WebRTC.Android.Resource.Style.Theme_AppCompat_Light = global::WebRTC.DemoApp.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::WebRTC.Android.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::WebRTC.DemoApp.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::WebRTC.Android.Resource.Style.Theme_AppCompat_Light_Dialog = global::WebRTC.DemoApp.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::WebRTC.Android.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::WebRTC.DemoApp.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::WebRTC.Android.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::WebRTC.DemoApp.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::WebRTC.Android.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::WebRTC.DemoApp.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::WebRTC.Android.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::WebRTC.DemoApp.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::WebRTC.Android.Resource.Style.Theme_AppCompat_NoActionBar = global::WebRTC.DemoApp.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_ActionBar = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_ActionButton = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_ActionMode = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_ActivityChooserView = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Button = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_ButtonBar = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Button_Borderless = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Button_Colored = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Button_Small = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_EditText = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_EditText;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_ImageButton = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Light_ActionBar = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Light_ActionButton = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Light_SearchView = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_ListMenuView = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_ListMenuView;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_ListPopupWindow = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_ListView = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_ListView;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_ListView_DropDown = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_ListView_Menu = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_PopupMenu = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_PopupWindow = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_ProgressBar = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_RatingBar = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_RatingBar_Small = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_SearchView = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_SearchView;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_SeekBar = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Spinner = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Spinner;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Toolbar = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::WebRTC.Android.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::WebRTC.Android.Resource.Style.Widget_Compat_NotificationActionContainer = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::WebRTC.Android.Resource.Style.Widget_Compat_NotificationActionText = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_Compat_NotificationActionText;
+			global::WebRTC.Android.Resource.Style.Widget_Support_CoordinatorLayout = global::WebRTC.DemoApp.Droid.Resource.Style.Widget_Support_CoordinatorLayout;
+			global::WebRTC.Android.Resource.Styleable.ActionBar = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionBar;
+			global::WebRTC.Android.Resource.Styleable.ActionBarLayout = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionBarLayout;
+			global::WebRTC.Android.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::WebRTC.Android.Resource.Styleable.ActionBar_background = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionBar_background;
+			global::WebRTC.Android.Resource.Styleable.ActionBar_backgroundSplit = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::WebRTC.Android.Resource.Styleable.ActionBar_backgroundStacked = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::WebRTC.Android.Resource.Styleable.ActionBar_contentInsetEnd = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::WebRTC.Android.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions;
+			global::WebRTC.Android.Resource.Styleable.ActionBar_contentInsetLeft = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::WebRTC.Android.Resource.Styleable.ActionBar_contentInsetRight = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::WebRTC.Android.Resource.Styleable.ActionBar_contentInsetStart = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::WebRTC.Android.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
+			global::WebRTC.Android.Resource.Styleable.ActionBar_customNavigationLayout = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::WebRTC.Android.Resource.Styleable.ActionBar_displayOptions = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionBar_displayOptions;
+			global::WebRTC.Android.Resource.Styleable.ActionBar_divider = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionBar_divider;
+			global::WebRTC.Android.Resource.Styleable.ActionBar_elevation = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionBar_elevation;
+			global::WebRTC.Android.Resource.Styleable.ActionBar_height = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionBar_height;
+			global::WebRTC.Android.Resource.Styleable.ActionBar_hideOnContentScroll = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::WebRTC.Android.Resource.Styleable.ActionBar_homeAsUpIndicator = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::WebRTC.Android.Resource.Styleable.ActionBar_homeLayout = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionBar_homeLayout;
+			global::WebRTC.Android.Resource.Styleable.ActionBar_icon = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionBar_icon;
+			global::WebRTC.Android.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::WebRTC.Android.Resource.Styleable.ActionBar_itemPadding = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionBar_itemPadding;
+			global::WebRTC.Android.Resource.Styleable.ActionBar_logo = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionBar_logo;
+			global::WebRTC.Android.Resource.Styleable.ActionBar_navigationMode = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionBar_navigationMode;
+			global::WebRTC.Android.Resource.Styleable.ActionBar_popupTheme = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionBar_popupTheme;
+			global::WebRTC.Android.Resource.Styleable.ActionBar_progressBarPadding = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::WebRTC.Android.Resource.Styleable.ActionBar_progressBarStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::WebRTC.Android.Resource.Styleable.ActionBar_subtitle = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionBar_subtitle;
+			global::WebRTC.Android.Resource.Styleable.ActionBar_subtitleTextStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::WebRTC.Android.Resource.Styleable.ActionBar_title = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionBar_title;
+			global::WebRTC.Android.Resource.Styleable.ActionBar_titleTextStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::WebRTC.Android.Resource.Styleable.ActionMenuItemView = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionMenuItemView;
+			global::WebRTC.Android.Resource.Styleable.ActionMenuItemView_android_minWidth = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::WebRTC.Android.Resource.Styleable.ActionMenuView = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionMenuView;
+			global::WebRTC.Android.Resource.Styleable.ActionMode = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionMode;
+			global::WebRTC.Android.Resource.Styleable.ActionMode_background = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionMode_background;
+			global::WebRTC.Android.Resource.Styleable.ActionMode_backgroundSplit = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::WebRTC.Android.Resource.Styleable.ActionMode_closeItemLayout = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::WebRTC.Android.Resource.Styleable.ActionMode_height = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionMode_height;
+			global::WebRTC.Android.Resource.Styleable.ActionMode_subtitleTextStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::WebRTC.Android.Resource.Styleable.ActionMode_titleTextStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::WebRTC.Android.Resource.Styleable.ActivityChooserView = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActivityChooserView;
+			global::WebRTC.Android.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::WebRTC.Android.Resource.Styleable.ActivityChooserView_initialActivityCount = global::WebRTC.DemoApp.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::WebRTC.Android.Resource.Styleable.AlertDialog = global::WebRTC.DemoApp.Droid.Resource.Styleable.AlertDialog;
+			global::WebRTC.Android.Resource.Styleable.AlertDialog_android_layout = global::WebRTC.DemoApp.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::WebRTC.Android.Resource.Styleable.AlertDialog_buttonIconDimen = global::WebRTC.DemoApp.Droid.Resource.Styleable.AlertDialog_buttonIconDimen;
+			global::WebRTC.Android.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::WebRTC.DemoApp.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::WebRTC.Android.Resource.Styleable.AlertDialog_listItemLayout = global::WebRTC.DemoApp.Droid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::WebRTC.Android.Resource.Styleable.AlertDialog_listLayout = global::WebRTC.DemoApp.Droid.Resource.Styleable.AlertDialog_listLayout;
+			global::WebRTC.Android.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::WebRTC.DemoApp.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::WebRTC.Android.Resource.Styleable.AlertDialog_showTitle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AlertDialog_showTitle;
+			global::WebRTC.Android.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::WebRTC.DemoApp.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::WebRTC.Android.Resource.Styleable.AnimatedStateListDrawableCompat = global::WebRTC.DemoApp.Droid.Resource.Styleable.AnimatedStateListDrawableCompat;
+			global::WebRTC.Android.Resource.Styleable.AnimatedStateListDrawableCompat_android_constantSize = global::WebRTC.DemoApp.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_constantSize;
+			global::WebRTC.Android.Resource.Styleable.AnimatedStateListDrawableCompat_android_dither = global::WebRTC.DemoApp.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_dither;
+			global::WebRTC.Android.Resource.Styleable.AnimatedStateListDrawableCompat_android_enterFadeDuration = global::WebRTC.DemoApp.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_enterFadeDuration;
+			global::WebRTC.Android.Resource.Styleable.AnimatedStateListDrawableCompat_android_exitFadeDuration = global::WebRTC.DemoApp.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_exitFadeDuration;
+			global::WebRTC.Android.Resource.Styleable.AnimatedStateListDrawableCompat_android_variablePadding = global::WebRTC.DemoApp.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_variablePadding;
+			global::WebRTC.Android.Resource.Styleable.AnimatedStateListDrawableCompat_android_visible = global::WebRTC.DemoApp.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_visible;
+			global::WebRTC.Android.Resource.Styleable.AnimatedStateListDrawableItem = global::WebRTC.DemoApp.Droid.Resource.Styleable.AnimatedStateListDrawableItem;
+			global::WebRTC.Android.Resource.Styleable.AnimatedStateListDrawableItem_android_drawable = global::WebRTC.DemoApp.Droid.Resource.Styleable.AnimatedStateListDrawableItem_android_drawable;
+			global::WebRTC.Android.Resource.Styleable.AnimatedStateListDrawableItem_android_id = global::WebRTC.DemoApp.Droid.Resource.Styleable.AnimatedStateListDrawableItem_android_id;
+			global::WebRTC.Android.Resource.Styleable.AnimatedStateListDrawableTransition = global::WebRTC.DemoApp.Droid.Resource.Styleable.AnimatedStateListDrawableTransition;
+			global::WebRTC.Android.Resource.Styleable.AnimatedStateListDrawableTransition_android_drawable = global::WebRTC.DemoApp.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_drawable;
+			global::WebRTC.Android.Resource.Styleable.AnimatedStateListDrawableTransition_android_fromId = global::WebRTC.DemoApp.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_fromId;
+			global::WebRTC.Android.Resource.Styleable.AnimatedStateListDrawableTransition_android_reversible = global::WebRTC.DemoApp.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_reversible;
+			global::WebRTC.Android.Resource.Styleable.AnimatedStateListDrawableTransition_android_toId = global::WebRTC.DemoApp.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_toId;
+			global::WebRTC.Android.Resource.Styleable.AppCompatImageView = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatImageView;
+			global::WebRTC.Android.Resource.Styleable.AppCompatImageView_android_src = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatImageView_android_src;
+			global::WebRTC.Android.Resource.Styleable.AppCompatImageView_srcCompat = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::WebRTC.Android.Resource.Styleable.AppCompatImageView_tint = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatImageView_tint;
+			global::WebRTC.Android.Resource.Styleable.AppCompatImageView_tintMode = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatImageView_tintMode;
+			global::WebRTC.Android.Resource.Styleable.AppCompatSeekBar = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatSeekBar;
+			global::WebRTC.Android.Resource.Styleable.AppCompatSeekBar_android_thumb = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb;
+			global::WebRTC.Android.Resource.Styleable.AppCompatSeekBar_tickMark = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatSeekBar_tickMark;
+			global::WebRTC.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
+			global::WebRTC.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTextHelper = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTextHelper;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTextView = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTextView;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTextView_android_textAppearance = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTextView_fontFamily = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTextView_fontFamily;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTextView_lineHeight = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTextView_lineHeight;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTextView_textAllCaps = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_actionBarDivider = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_actionBarSize = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_actionBarStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_actionBarTheme = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_actionModeBackground = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_actionModeStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_buttonStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_checkboxStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_colorAccent = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_colorControlActivated = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_colorControlNormal = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_colorError = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_colorError;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_colorPrimary = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_controlBackground = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_dialogCornerRadius = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_dialogCornerRadius;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_dialogTheme = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_dividerVertical = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_editTextBackground = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_editTextColor = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_editTextStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_panelBackground = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_searchViewStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_seekBarStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_spinnerStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_switchStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_toolbarStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_tooltipForegroundColor = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_tooltipForegroundColor;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_tooltipFrameBackground = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_tooltipFrameBackground;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_viewInflaterClass = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_viewInflaterClass;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_windowActionBar = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::WebRTC.Android.Resource.Styleable.AppCompatTheme_windowNoTitle = global::WebRTC.DemoApp.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::WebRTC.Android.Resource.Styleable.ButtonBarLayout = global::WebRTC.DemoApp.Droid.Resource.Styleable.ButtonBarLayout;
+			global::WebRTC.Android.Resource.Styleable.ButtonBarLayout_allowStacking = global::WebRTC.DemoApp.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::WebRTC.Android.Resource.Styleable.ColorStateListItem = global::WebRTC.DemoApp.Droid.Resource.Styleable.ColorStateListItem;
+			global::WebRTC.Android.Resource.Styleable.ColorStateListItem_alpha = global::WebRTC.DemoApp.Droid.Resource.Styleable.ColorStateListItem_alpha;
+			global::WebRTC.Android.Resource.Styleable.ColorStateListItem_android_alpha = global::WebRTC.DemoApp.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::WebRTC.Android.Resource.Styleable.ColorStateListItem_android_color = global::WebRTC.DemoApp.Droid.Resource.Styleable.ColorStateListItem_android_color;
+			global::WebRTC.Android.Resource.Styleable.CompoundButton = global::WebRTC.DemoApp.Droid.Resource.Styleable.CompoundButton;
+			global::WebRTC.Android.Resource.Styleable.CompoundButton_android_button = global::WebRTC.DemoApp.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::WebRTC.Android.Resource.Styleable.CompoundButton_buttonTint = global::WebRTC.DemoApp.Droid.Resource.Styleable.CompoundButton_buttonTint;
+			global::WebRTC.Android.Resource.Styleable.CompoundButton_buttonTintMode = global::WebRTC.DemoApp.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::WebRTC.Android.Resource.Styleable.CoordinatorLayout = global::WebRTC.DemoApp.Droid.Resource.Styleable.CoordinatorLayout;
+			global::WebRTC.Android.Resource.Styleable.CoordinatorLayout_keylines = global::WebRTC.DemoApp.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::WebRTC.Android.Resource.Styleable.CoordinatorLayout_Layout = global::WebRTC.DemoApp.Droid.Resource.Styleable.CoordinatorLayout_Layout;
+			global::WebRTC.Android.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::WebRTC.DemoApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::WebRTC.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::WebRTC.DemoApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::WebRTC.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::WebRTC.DemoApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::WebRTC.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::WebRTC.DemoApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::WebRTC.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::WebRTC.DemoApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::WebRTC.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::WebRTC.DemoApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::WebRTC.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::WebRTC.DemoApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::WebRTC.Android.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::WebRTC.DemoApp.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::WebRTC.Android.Resource.Styleable.DrawerArrowToggle = global::WebRTC.DemoApp.Droid.Resource.Styleable.DrawerArrowToggle;
+			global::WebRTC.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::WebRTC.DemoApp.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::WebRTC.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::WebRTC.DemoApp.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::WebRTC.Android.Resource.Styleable.DrawerArrowToggle_barLength = global::WebRTC.DemoApp.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::WebRTC.Android.Resource.Styleable.DrawerArrowToggle_color = global::WebRTC.DemoApp.Droid.Resource.Styleable.DrawerArrowToggle_color;
+			global::WebRTC.Android.Resource.Styleable.DrawerArrowToggle_drawableSize = global::WebRTC.DemoApp.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::WebRTC.Android.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::WebRTC.DemoApp.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::WebRTC.Android.Resource.Styleable.DrawerArrowToggle_spinBars = global::WebRTC.DemoApp.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::WebRTC.Android.Resource.Styleable.DrawerArrowToggle_thickness = global::WebRTC.DemoApp.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::WebRTC.Android.Resource.Styleable.FontFamily = global::WebRTC.DemoApp.Droid.Resource.Styleable.FontFamily;
+			global::WebRTC.Android.Resource.Styleable.FontFamilyFont = global::WebRTC.DemoApp.Droid.Resource.Styleable.FontFamilyFont;
+			global::WebRTC.Android.Resource.Styleable.FontFamilyFont_android_font = global::WebRTC.DemoApp.Droid.Resource.Styleable.FontFamilyFont_android_font;
+			global::WebRTC.Android.Resource.Styleable.FontFamilyFont_android_fontStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::WebRTC.Android.Resource.Styleable.FontFamilyFont_android_fontVariationSettings = global::WebRTC.DemoApp.Droid.Resource.Styleable.FontFamilyFont_android_fontVariationSettings;
+			global::WebRTC.Android.Resource.Styleable.FontFamilyFont_android_fontWeight = global::WebRTC.DemoApp.Droid.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::WebRTC.Android.Resource.Styleable.FontFamilyFont_android_ttcIndex = global::WebRTC.DemoApp.Droid.Resource.Styleable.FontFamilyFont_android_ttcIndex;
+			global::WebRTC.Android.Resource.Styleable.FontFamilyFont_font = global::WebRTC.DemoApp.Droid.Resource.Styleable.FontFamilyFont_font;
+			global::WebRTC.Android.Resource.Styleable.FontFamilyFont_fontStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::WebRTC.Android.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::WebRTC.DemoApp.Droid.Resource.Styleable.FontFamilyFont_fontVariationSettings;
+			global::WebRTC.Android.Resource.Styleable.FontFamilyFont_fontWeight = global::WebRTC.DemoApp.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::WebRTC.Android.Resource.Styleable.FontFamilyFont_ttcIndex = global::WebRTC.DemoApp.Droid.Resource.Styleable.FontFamilyFont_ttcIndex;
+			global::WebRTC.Android.Resource.Styleable.FontFamily_fontProviderAuthority = global::WebRTC.DemoApp.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::WebRTC.Android.Resource.Styleable.FontFamily_fontProviderCerts = global::WebRTC.DemoApp.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::WebRTC.Android.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::WebRTC.DemoApp.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::WebRTC.Android.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::WebRTC.DemoApp.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::WebRTC.Android.Resource.Styleable.FontFamily_fontProviderPackage = global::WebRTC.DemoApp.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::WebRTC.Android.Resource.Styleable.FontFamily_fontProviderQuery = global::WebRTC.DemoApp.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::WebRTC.Android.Resource.Styleable.GradientColor = global::WebRTC.DemoApp.Droid.Resource.Styleable.GradientColor;
+			global::WebRTC.Android.Resource.Styleable.GradientColorItem = global::WebRTC.DemoApp.Droid.Resource.Styleable.GradientColorItem;
+			global::WebRTC.Android.Resource.Styleable.GradientColorItem_android_color = global::WebRTC.DemoApp.Droid.Resource.Styleable.GradientColorItem_android_color;
+			global::WebRTC.Android.Resource.Styleable.GradientColorItem_android_offset = global::WebRTC.DemoApp.Droid.Resource.Styleable.GradientColorItem_android_offset;
+			global::WebRTC.Android.Resource.Styleable.GradientColor_android_centerColor = global::WebRTC.DemoApp.Droid.Resource.Styleable.GradientColor_android_centerColor;
+			global::WebRTC.Android.Resource.Styleable.GradientColor_android_centerX = global::WebRTC.DemoApp.Droid.Resource.Styleable.GradientColor_android_centerX;
+			global::WebRTC.Android.Resource.Styleable.GradientColor_android_centerY = global::WebRTC.DemoApp.Droid.Resource.Styleable.GradientColor_android_centerY;
+			global::WebRTC.Android.Resource.Styleable.GradientColor_android_endColor = global::WebRTC.DemoApp.Droid.Resource.Styleable.GradientColor_android_endColor;
+			global::WebRTC.Android.Resource.Styleable.GradientColor_android_endX = global::WebRTC.DemoApp.Droid.Resource.Styleable.GradientColor_android_endX;
+			global::WebRTC.Android.Resource.Styleable.GradientColor_android_endY = global::WebRTC.DemoApp.Droid.Resource.Styleable.GradientColor_android_endY;
+			global::WebRTC.Android.Resource.Styleable.GradientColor_android_gradientRadius = global::WebRTC.DemoApp.Droid.Resource.Styleable.GradientColor_android_gradientRadius;
+			global::WebRTC.Android.Resource.Styleable.GradientColor_android_startColor = global::WebRTC.DemoApp.Droid.Resource.Styleable.GradientColor_android_startColor;
+			global::WebRTC.Android.Resource.Styleable.GradientColor_android_startX = global::WebRTC.DemoApp.Droid.Resource.Styleable.GradientColor_android_startX;
+			global::WebRTC.Android.Resource.Styleable.GradientColor_android_startY = global::WebRTC.DemoApp.Droid.Resource.Styleable.GradientColor_android_startY;
+			global::WebRTC.Android.Resource.Styleable.GradientColor_android_tileMode = global::WebRTC.DemoApp.Droid.Resource.Styleable.GradientColor_android_tileMode;
+			global::WebRTC.Android.Resource.Styleable.GradientColor_android_type = global::WebRTC.DemoApp.Droid.Resource.Styleable.GradientColor_android_type;
+			global::WebRTC.Android.Resource.Styleable.LinearLayoutCompat = global::WebRTC.DemoApp.Droid.Resource.Styleable.LinearLayoutCompat;
+			global::WebRTC.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::WebRTC.DemoApp.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::WebRTC.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::WebRTC.DemoApp.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::WebRTC.Android.Resource.Styleable.LinearLayoutCompat_android_gravity = global::WebRTC.DemoApp.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::WebRTC.Android.Resource.Styleable.LinearLayoutCompat_android_orientation = global::WebRTC.DemoApp.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::WebRTC.Android.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::WebRTC.DemoApp.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::WebRTC.Android.Resource.Styleable.LinearLayoutCompat_divider = global::WebRTC.DemoApp.Droid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::WebRTC.Android.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::WebRTC.DemoApp.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::WebRTC.Android.Resource.Styleable.LinearLayoutCompat_Layout = global::WebRTC.DemoApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::WebRTC.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::WebRTC.DemoApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::WebRTC.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::WebRTC.DemoApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::WebRTC.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::WebRTC.DemoApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::WebRTC.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::WebRTC.DemoApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::WebRTC.Android.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::WebRTC.DemoApp.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::WebRTC.Android.Resource.Styleable.LinearLayoutCompat_showDividers = global::WebRTC.DemoApp.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::WebRTC.Android.Resource.Styleable.ListPopupWindow = global::WebRTC.DemoApp.Droid.Resource.Styleable.ListPopupWindow;
+			global::WebRTC.Android.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::WebRTC.DemoApp.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::WebRTC.Android.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::WebRTC.DemoApp.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::WebRTC.Android.Resource.Styleable.MenuGroup = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuGroup;
+			global::WebRTC.Android.Resource.Styleable.MenuGroup_android_checkableBehavior = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::WebRTC.Android.Resource.Styleable.MenuGroup_android_enabled = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuGroup_android_enabled;
+			global::WebRTC.Android.Resource.Styleable.MenuGroup_android_id = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuGroup_android_id;
+			global::WebRTC.Android.Resource.Styleable.MenuGroup_android_menuCategory = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::WebRTC.Android.Resource.Styleable.MenuGroup_android_orderInCategory = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::WebRTC.Android.Resource.Styleable.MenuGroup_android_visible = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuGroup_android_visible;
+			global::WebRTC.Android.Resource.Styleable.MenuItem = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuItem;
+			global::WebRTC.Android.Resource.Styleable.MenuItem_actionLayout = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuItem_actionLayout;
+			global::WebRTC.Android.Resource.Styleable.MenuItem_actionProviderClass = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::WebRTC.Android.Resource.Styleable.MenuItem_actionViewClass = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::WebRTC.Android.Resource.Styleable.MenuItem_alphabeticModifiers = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuItem_alphabeticModifiers;
+			global::WebRTC.Android.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::WebRTC.Android.Resource.Styleable.MenuItem_android_checkable = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuItem_android_checkable;
+			global::WebRTC.Android.Resource.Styleable.MenuItem_android_checked = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuItem_android_checked;
+			global::WebRTC.Android.Resource.Styleable.MenuItem_android_enabled = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuItem_android_enabled;
+			global::WebRTC.Android.Resource.Styleable.MenuItem_android_icon = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuItem_android_icon;
+			global::WebRTC.Android.Resource.Styleable.MenuItem_android_id = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuItem_android_id;
+			global::WebRTC.Android.Resource.Styleable.MenuItem_android_menuCategory = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::WebRTC.Android.Resource.Styleable.MenuItem_android_numericShortcut = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::WebRTC.Android.Resource.Styleable.MenuItem_android_onClick = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuItem_android_onClick;
+			global::WebRTC.Android.Resource.Styleable.MenuItem_android_orderInCategory = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::WebRTC.Android.Resource.Styleable.MenuItem_android_title = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuItem_android_title;
+			global::WebRTC.Android.Resource.Styleable.MenuItem_android_titleCondensed = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::WebRTC.Android.Resource.Styleable.MenuItem_android_visible = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::WebRTC.Android.Resource.Styleable.MenuItem_contentDescription = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuItem_contentDescription;
+			global::WebRTC.Android.Resource.Styleable.MenuItem_iconTint = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuItem_iconTint;
+			global::WebRTC.Android.Resource.Styleable.MenuItem_iconTintMode = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuItem_iconTintMode;
+			global::WebRTC.Android.Resource.Styleable.MenuItem_numericModifiers = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuItem_numericModifiers;
+			global::WebRTC.Android.Resource.Styleable.MenuItem_showAsAction = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::WebRTC.Android.Resource.Styleable.MenuItem_tooltipText = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuItem_tooltipText;
+			global::WebRTC.Android.Resource.Styleable.MenuView = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuView;
+			global::WebRTC.Android.Resource.Styleable.MenuView_android_headerBackground = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuView_android_headerBackground;
+			global::WebRTC.Android.Resource.Styleable.MenuView_android_horizontalDivider = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::WebRTC.Android.Resource.Styleable.MenuView_android_itemBackground = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuView_android_itemBackground;
+			global::WebRTC.Android.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::WebRTC.Android.Resource.Styleable.MenuView_android_itemTextAppearance = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::WebRTC.Android.Resource.Styleable.MenuView_android_verticalDivider = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::WebRTC.Android.Resource.Styleable.MenuView_android_windowAnimationStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::WebRTC.Android.Resource.Styleable.MenuView_preserveIconSpacing = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::WebRTC.Android.Resource.Styleable.MenuView_subMenuArrow = global::WebRTC.DemoApp.Droid.Resource.Styleable.MenuView_subMenuArrow;
+			global::WebRTC.Android.Resource.Styleable.PopupWindow = global::WebRTC.DemoApp.Droid.Resource.Styleable.PopupWindow;
+			global::WebRTC.Android.Resource.Styleable.PopupWindowBackgroundState = global::WebRTC.DemoApp.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::WebRTC.Android.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::WebRTC.DemoApp.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::WebRTC.Android.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
+			global::WebRTC.Android.Resource.Styleable.PopupWindow_android_popupBackground = global::WebRTC.DemoApp.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::WebRTC.Android.Resource.Styleable.PopupWindow_overlapAnchor = global::WebRTC.DemoApp.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::WebRTC.Android.Resource.Styleable.RecycleListView = global::WebRTC.DemoApp.Droid.Resource.Styleable.RecycleListView;
+			global::WebRTC.Android.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::WebRTC.DemoApp.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
+			global::WebRTC.Android.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::WebRTC.DemoApp.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
+			global::WebRTC.Android.Resource.Styleable.SearchView = global::WebRTC.DemoApp.Droid.Resource.Styleable.SearchView;
+			global::WebRTC.Android.Resource.Styleable.SearchView_android_focusable = global::WebRTC.DemoApp.Droid.Resource.Styleable.SearchView_android_focusable;
+			global::WebRTC.Android.Resource.Styleable.SearchView_android_imeOptions = global::WebRTC.DemoApp.Droid.Resource.Styleable.SearchView_android_imeOptions;
+			global::WebRTC.Android.Resource.Styleable.SearchView_android_inputType = global::WebRTC.DemoApp.Droid.Resource.Styleable.SearchView_android_inputType;
+			global::WebRTC.Android.Resource.Styleable.SearchView_android_maxWidth = global::WebRTC.DemoApp.Droid.Resource.Styleable.SearchView_android_maxWidth;
+			global::WebRTC.Android.Resource.Styleable.SearchView_closeIcon = global::WebRTC.DemoApp.Droid.Resource.Styleable.SearchView_closeIcon;
+			global::WebRTC.Android.Resource.Styleable.SearchView_commitIcon = global::WebRTC.DemoApp.Droid.Resource.Styleable.SearchView_commitIcon;
+			global::WebRTC.Android.Resource.Styleable.SearchView_defaultQueryHint = global::WebRTC.DemoApp.Droid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::WebRTC.Android.Resource.Styleable.SearchView_goIcon = global::WebRTC.DemoApp.Droid.Resource.Styleable.SearchView_goIcon;
+			global::WebRTC.Android.Resource.Styleable.SearchView_iconifiedByDefault = global::WebRTC.DemoApp.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::WebRTC.Android.Resource.Styleable.SearchView_layout = global::WebRTC.DemoApp.Droid.Resource.Styleable.SearchView_layout;
+			global::WebRTC.Android.Resource.Styleable.SearchView_queryBackground = global::WebRTC.DemoApp.Droid.Resource.Styleable.SearchView_queryBackground;
+			global::WebRTC.Android.Resource.Styleable.SearchView_queryHint = global::WebRTC.DemoApp.Droid.Resource.Styleable.SearchView_queryHint;
+			global::WebRTC.Android.Resource.Styleable.SearchView_searchHintIcon = global::WebRTC.DemoApp.Droid.Resource.Styleable.SearchView_searchHintIcon;
+			global::WebRTC.Android.Resource.Styleable.SearchView_searchIcon = global::WebRTC.DemoApp.Droid.Resource.Styleable.SearchView_searchIcon;
+			global::WebRTC.Android.Resource.Styleable.SearchView_submitBackground = global::WebRTC.DemoApp.Droid.Resource.Styleable.SearchView_submitBackground;
+			global::WebRTC.Android.Resource.Styleable.SearchView_suggestionRowLayout = global::WebRTC.DemoApp.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::WebRTC.Android.Resource.Styleable.SearchView_voiceIcon = global::WebRTC.DemoApp.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::WebRTC.Android.Resource.Styleable.Spinner = global::WebRTC.DemoApp.Droid.Resource.Styleable.Spinner;
+			global::WebRTC.Android.Resource.Styleable.Spinner_android_dropDownWidth = global::WebRTC.DemoApp.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::WebRTC.Android.Resource.Styleable.Spinner_android_entries = global::WebRTC.DemoApp.Droid.Resource.Styleable.Spinner_android_entries;
+			global::WebRTC.Android.Resource.Styleable.Spinner_android_popupBackground = global::WebRTC.DemoApp.Droid.Resource.Styleable.Spinner_android_popupBackground;
+			global::WebRTC.Android.Resource.Styleable.Spinner_android_prompt = global::WebRTC.DemoApp.Droid.Resource.Styleable.Spinner_android_prompt;
+			global::WebRTC.Android.Resource.Styleable.Spinner_popupTheme = global::WebRTC.DemoApp.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::WebRTC.Android.Resource.Styleable.StateListDrawable = global::WebRTC.DemoApp.Droid.Resource.Styleable.StateListDrawable;
+			global::WebRTC.Android.Resource.Styleable.StateListDrawableItem = global::WebRTC.DemoApp.Droid.Resource.Styleable.StateListDrawableItem;
+			global::WebRTC.Android.Resource.Styleable.StateListDrawableItem_android_drawable = global::WebRTC.DemoApp.Droid.Resource.Styleable.StateListDrawableItem_android_drawable;
+			global::WebRTC.Android.Resource.Styleable.StateListDrawable_android_constantSize = global::WebRTC.DemoApp.Droid.Resource.Styleable.StateListDrawable_android_constantSize;
+			global::WebRTC.Android.Resource.Styleable.StateListDrawable_android_dither = global::WebRTC.DemoApp.Droid.Resource.Styleable.StateListDrawable_android_dither;
+			global::WebRTC.Android.Resource.Styleable.StateListDrawable_android_enterFadeDuration = global::WebRTC.DemoApp.Droid.Resource.Styleable.StateListDrawable_android_enterFadeDuration;
+			global::WebRTC.Android.Resource.Styleable.StateListDrawable_android_exitFadeDuration = global::WebRTC.DemoApp.Droid.Resource.Styleable.StateListDrawable_android_exitFadeDuration;
+			global::WebRTC.Android.Resource.Styleable.StateListDrawable_android_variablePadding = global::WebRTC.DemoApp.Droid.Resource.Styleable.StateListDrawable_android_variablePadding;
+			global::WebRTC.Android.Resource.Styleable.StateListDrawable_android_visible = global::WebRTC.DemoApp.Droid.Resource.Styleable.StateListDrawable_android_visible;
+			global::WebRTC.Android.Resource.Styleable.SwitchCompat = global::WebRTC.DemoApp.Droid.Resource.Styleable.SwitchCompat;
+			global::WebRTC.Android.Resource.Styleable.SwitchCompat_android_textOff = global::WebRTC.DemoApp.Droid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::WebRTC.Android.Resource.Styleable.SwitchCompat_android_textOn = global::WebRTC.DemoApp.Droid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::WebRTC.Android.Resource.Styleable.SwitchCompat_android_thumb = global::WebRTC.DemoApp.Droid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::WebRTC.Android.Resource.Styleable.SwitchCompat_showText = global::WebRTC.DemoApp.Droid.Resource.Styleable.SwitchCompat_showText;
+			global::WebRTC.Android.Resource.Styleable.SwitchCompat_splitTrack = global::WebRTC.DemoApp.Droid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::WebRTC.Android.Resource.Styleable.SwitchCompat_switchMinWidth = global::WebRTC.DemoApp.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::WebRTC.Android.Resource.Styleable.SwitchCompat_switchPadding = global::WebRTC.DemoApp.Droid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::WebRTC.Android.Resource.Styleable.SwitchCompat_switchTextAppearance = global::WebRTC.DemoApp.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::WebRTC.Android.Resource.Styleable.SwitchCompat_thumbTextPadding = global::WebRTC.DemoApp.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::WebRTC.Android.Resource.Styleable.SwitchCompat_thumbTint = global::WebRTC.DemoApp.Droid.Resource.Styleable.SwitchCompat_thumbTint;
+			global::WebRTC.Android.Resource.Styleable.SwitchCompat_thumbTintMode = global::WebRTC.DemoApp.Droid.Resource.Styleable.SwitchCompat_thumbTintMode;
+			global::WebRTC.Android.Resource.Styleable.SwitchCompat_track = global::WebRTC.DemoApp.Droid.Resource.Styleable.SwitchCompat_track;
+			global::WebRTC.Android.Resource.Styleable.SwitchCompat_trackTint = global::WebRTC.DemoApp.Droid.Resource.Styleable.SwitchCompat_trackTint;
+			global::WebRTC.Android.Resource.Styleable.SwitchCompat_trackTintMode = global::WebRTC.DemoApp.Droid.Resource.Styleable.SwitchCompat_trackTintMode;
+			global::WebRTC.Android.Resource.Styleable.TextAppearance = global::WebRTC.DemoApp.Droid.Resource.Styleable.TextAppearance;
+			global::WebRTC.Android.Resource.Styleable.TextAppearance_android_fontFamily = global::WebRTC.DemoApp.Droid.Resource.Styleable.TextAppearance_android_fontFamily;
+			global::WebRTC.Android.Resource.Styleable.TextAppearance_android_shadowColor = global::WebRTC.DemoApp.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::WebRTC.Android.Resource.Styleable.TextAppearance_android_shadowDx = global::WebRTC.DemoApp.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::WebRTC.Android.Resource.Styleable.TextAppearance_android_shadowDy = global::WebRTC.DemoApp.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::WebRTC.Android.Resource.Styleable.TextAppearance_android_shadowRadius = global::WebRTC.DemoApp.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::WebRTC.Android.Resource.Styleable.TextAppearance_android_textColor = global::WebRTC.DemoApp.Droid.Resource.Styleable.TextAppearance_android_textColor;
+			global::WebRTC.Android.Resource.Styleable.TextAppearance_android_textColorHint = global::WebRTC.DemoApp.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
+			global::WebRTC.Android.Resource.Styleable.TextAppearance_android_textColorLink = global::WebRTC.DemoApp.Droid.Resource.Styleable.TextAppearance_android_textColorLink;
+			global::WebRTC.Android.Resource.Styleable.TextAppearance_android_textSize = global::WebRTC.DemoApp.Droid.Resource.Styleable.TextAppearance_android_textSize;
+			global::WebRTC.Android.Resource.Styleable.TextAppearance_android_textStyle = global::WebRTC.DemoApp.Droid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::WebRTC.Android.Resource.Styleable.TextAppearance_android_typeface = global::WebRTC.DemoApp.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::WebRTC.Android.Resource.Styleable.TextAppearance_fontFamily = global::WebRTC.DemoApp.Droid.Resource.Styleable.TextAppearance_fontFamily;
+			global::WebRTC.Android.Resource.Styleable.TextAppearance_textAllCaps = global::WebRTC.DemoApp.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::WebRTC.Android.Resource.Styleable.Toolbar = global::WebRTC.DemoApp.Droid.Resource.Styleable.Toolbar;
+			global::WebRTC.Android.Resource.Styleable.Toolbar_android_gravity = global::WebRTC.DemoApp.Droid.Resource.Styleable.Toolbar_android_gravity;
+			global::WebRTC.Android.Resource.Styleable.Toolbar_android_minHeight = global::WebRTC.DemoApp.Droid.Resource.Styleable.Toolbar_android_minHeight;
+			global::WebRTC.Android.Resource.Styleable.Toolbar_buttonGravity = global::WebRTC.DemoApp.Droid.Resource.Styleable.Toolbar_buttonGravity;
+			global::WebRTC.Android.Resource.Styleable.Toolbar_collapseContentDescription = global::WebRTC.DemoApp.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::WebRTC.Android.Resource.Styleable.Toolbar_collapseIcon = global::WebRTC.DemoApp.Droid.Resource.Styleable.Toolbar_collapseIcon;
+			global::WebRTC.Android.Resource.Styleable.Toolbar_contentInsetEnd = global::WebRTC.DemoApp.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::WebRTC.Android.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::WebRTC.DemoApp.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions;
+			global::WebRTC.Android.Resource.Styleable.Toolbar_contentInsetLeft = global::WebRTC.DemoApp.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::WebRTC.Android.Resource.Styleable.Toolbar_contentInsetRight = global::WebRTC.DemoApp.Droid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::WebRTC.Android.Resource.Styleable.Toolbar_contentInsetStart = global::WebRTC.DemoApp.Droid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::WebRTC.Android.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::WebRTC.DemoApp.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
+			global::WebRTC.Android.Resource.Styleable.Toolbar_logo = global::WebRTC.DemoApp.Droid.Resource.Styleable.Toolbar_logo;
+			global::WebRTC.Android.Resource.Styleable.Toolbar_logoDescription = global::WebRTC.DemoApp.Droid.Resource.Styleable.Toolbar_logoDescription;
+			global::WebRTC.Android.Resource.Styleable.Toolbar_maxButtonHeight = global::WebRTC.DemoApp.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::WebRTC.Android.Resource.Styleable.Toolbar_navigationContentDescription = global::WebRTC.DemoApp.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::WebRTC.Android.Resource.Styleable.Toolbar_navigationIcon = global::WebRTC.DemoApp.Droid.Resource.Styleable.Toolbar_navigationIcon;
+			global::WebRTC.Android.Resource.Styleable.Toolbar_popupTheme = global::WebRTC.DemoApp.Droid.Resource.Styleable.Toolbar_popupTheme;
+			global::WebRTC.Android.Resource.Styleable.Toolbar_subtitle = global::WebRTC.DemoApp.Droid.Resource.Styleable.Toolbar_subtitle;
+			global::WebRTC.Android.Resource.Styleable.Toolbar_subtitleTextAppearance = global::WebRTC.DemoApp.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::WebRTC.Android.Resource.Styleable.Toolbar_subtitleTextColor = global::WebRTC.DemoApp.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::WebRTC.Android.Resource.Styleable.Toolbar_title = global::WebRTC.DemoApp.Droid.Resource.Styleable.Toolbar_title;
+			global::WebRTC.Android.Resource.Styleable.Toolbar_titleMargin = global::WebRTC.DemoApp.Droid.Resource.Styleable.Toolbar_titleMargin;
+			global::WebRTC.Android.Resource.Styleable.Toolbar_titleMarginBottom = global::WebRTC.DemoApp.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::WebRTC.Android.Resource.Styleable.Toolbar_titleMarginEnd = global::WebRTC.DemoApp.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::WebRTC.Android.Resource.Styleable.Toolbar_titleMargins = global::WebRTC.DemoApp.Droid.Resource.Styleable.Toolbar_titleMargins;
+			global::WebRTC.Android.Resource.Styleable.Toolbar_titleMarginStart = global::WebRTC.DemoApp.Droid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::WebRTC.Android.Resource.Styleable.Toolbar_titleMarginTop = global::WebRTC.DemoApp.Droid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::WebRTC.Android.Resource.Styleable.Toolbar_titleTextAppearance = global::WebRTC.DemoApp.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::WebRTC.Android.Resource.Styleable.Toolbar_titleTextColor = global::WebRTC.DemoApp.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::WebRTC.Android.Resource.Styleable.View = global::WebRTC.DemoApp.Droid.Resource.Styleable.View;
+			global::WebRTC.Android.Resource.Styleable.ViewBackgroundHelper = global::WebRTC.DemoApp.Droid.Resource.Styleable.ViewBackgroundHelper;
+			global::WebRTC.Android.Resource.Styleable.ViewBackgroundHelper_android_background = global::WebRTC.DemoApp.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::WebRTC.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::WebRTC.DemoApp.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::WebRTC.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::WebRTC.DemoApp.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::WebRTC.Android.Resource.Styleable.ViewStubCompat = global::WebRTC.DemoApp.Droid.Resource.Styleable.ViewStubCompat;
+			global::WebRTC.Android.Resource.Styleable.ViewStubCompat_android_id = global::WebRTC.DemoApp.Droid.Resource.Styleable.ViewStubCompat_android_id;
+			global::WebRTC.Android.Resource.Styleable.ViewStubCompat_android_inflatedId = global::WebRTC.DemoApp.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::WebRTC.Android.Resource.Styleable.ViewStubCompat_android_layout = global::WebRTC.DemoApp.Droid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::WebRTC.Android.Resource.Styleable.View_android_focusable = global::WebRTC.DemoApp.Droid.Resource.Styleable.View_android_focusable;
+			global::WebRTC.Android.Resource.Styleable.View_android_theme = global::WebRTC.DemoApp.Droid.Resource.Styleable.View_android_theme;
+			global::WebRTC.Android.Resource.Styleable.View_paddingEnd = global::WebRTC.DemoApp.Droid.Resource.Styleable.View_paddingEnd;
+			global::WebRTC.Android.Resource.Styleable.View_paddingStart = global::WebRTC.DemoApp.Droid.Resource.Styleable.View_paddingStart;
+			global::WebRTC.Android.Resource.Styleable.View_theme = global::WebRTC.DemoApp.Droid.Resource.Styleable.View_theme;
 			global::Xamarin.Essentials.Resource.Attribute.alpha = global::WebRTC.DemoApp.Droid.Resource.Attribute.alpha;
 			global::Xamarin.Essentials.Resource.Attribute.coordinatorLayoutStyle = global::WebRTC.DemoApp.Droid.Resource.Attribute.coordinatorLayoutStyle;
 			global::Xamarin.Essentials.Resource.Attribute.font = global::WebRTC.DemoApp.Droid.Resource.Attribute.font;
@@ -8312,64 +9919,79 @@ namespace WebRTC.DemoApp.Droid
 			public const int design_snackbar_background = 2131165281;
 			
 			// aapt resource value: 0x7F070062
-			public const int ic_mtrl_chip_checked_black = 2131165282;
+			public const int disconnect = 2131165282;
 			
 			// aapt resource value: 0x7F070063
-			public const int ic_mtrl_chip_checked_circle = 2131165283;
+			public const int ic_action_full_screen = 2131165283;
 			
 			// aapt resource value: 0x7F070064
-			public const int ic_mtrl_chip_close_circle = 2131165284;
+			public const int ic_action_return_from_full_screen = 2131165284;
 			
 			// aapt resource value: 0x7F070065
-			public const int mtrl_snackbar_background = 2131165285;
+			public const int ic_launcher = 2131165285;
 			
 			// aapt resource value: 0x7F070066
-			public const int mtrl_tabs_default_indicator = 2131165286;
+			public const int ic_loopback_call = 2131165286;
 			
 			// aapt resource value: 0x7F070067
-			public const int navigation_empty_icon = 2131165287;
+			public const int ic_mtrl_chip_checked_black = 2131165287;
 			
 			// aapt resource value: 0x7F070068
-			public const int notification_action_background = 2131165288;
+			public const int ic_mtrl_chip_checked_circle = 2131165288;
 			
 			// aapt resource value: 0x7F070069
-			public const int notification_bg = 2131165289;
+			public const int ic_mtrl_chip_close_circle = 2131165289;
 			
 			// aapt resource value: 0x7F07006A
-			public const int notification_bg_low = 2131165290;
+			public const int mtrl_snackbar_background = 2131165290;
 			
 			// aapt resource value: 0x7F07006B
-			public const int notification_bg_low_normal = 2131165291;
+			public const int mtrl_tabs_default_indicator = 2131165291;
 			
 			// aapt resource value: 0x7F07006C
-			public const int notification_bg_low_pressed = 2131165292;
+			public const int navigation_empty_icon = 2131165292;
 			
 			// aapt resource value: 0x7F07006D
-			public const int notification_bg_normal = 2131165293;
+			public const int notification_action_background = 2131165293;
 			
 			// aapt resource value: 0x7F07006E
-			public const int notification_bg_normal_pressed = 2131165294;
+			public const int notification_bg = 2131165294;
 			
 			// aapt resource value: 0x7F07006F
-			public const int notification_icon_background = 2131165295;
+			public const int notification_bg_low = 2131165295;
 			
 			// aapt resource value: 0x7F070070
-			public const int notification_template_icon_bg = 2131165296;
+			public const int notification_bg_low_normal = 2131165296;
 			
 			// aapt resource value: 0x7F070071
-			public const int notification_template_icon_low_bg = 2131165297;
+			public const int notification_bg_low_pressed = 2131165297;
 			
 			// aapt resource value: 0x7F070072
-			public const int notification_tile_bg = 2131165298;
+			public const int notification_bg_normal = 2131165298;
 			
 			// aapt resource value: 0x7F070073
-			public const int notify_panel_notification_icon_bg = 2131165299;
+			public const int notification_bg_normal_pressed = 2131165299;
 			
 			// aapt resource value: 0x7F070074
-			public const int tooltip_frame_dark = 2131165300;
+			public const int notification_icon_background = 2131165300;
 			
 			// aapt resource value: 0x7F070075
-			public const int tooltip_frame_light = 2131165301;
+			public const int notification_template_icon_bg = 2131165301;
+			
+			// aapt resource value: 0x7F070076
+			public const int notification_template_icon_low_bg = 2131165302;
+			
+			// aapt resource value: 0x7F070077
+			public const int notification_tile_bg = 2131165303;
+			
+			// aapt resource value: 0x7F070078
+			public const int notify_panel_notification_icon_bg = 2131165304;
+			
+			// aapt resource value: 0x7F070079
+			public const int tooltip_frame_dark = 2131165305;
+			
+			// aapt resource value: 0x7F07007A
+			public const int tooltip_frame_light = 2131165306;
 			
 			static Drawable()
 			{
@@ -8498,512 +10120,569 @@ namespace WebRTC.DemoApp.Droid
 			// aapt resource value: 0x7F08002A
 			public const int buttonPanel = 2131230762;
 			
+			// aapt resource value: 0x7F080030
+			public const int buttons_call_container = 2131230768;
+			
 			// aapt resource value: 0x7F08002B
-			public const int cancel_action = 2131230763;
+			public const int button_call_disconnect = 2131230763;
 			
 			// aapt resource value: 0x7F08002C
-			public const int center = 2131230764;
+			public const int button_call_scaling_mode = 2131230764;
 			
 			// aapt resource value: 0x7F08002D
-			public const int center_horizontal = 2131230765;
+			public const int button_call_switch_camera = 2131230765;
 			
 			// aapt resource value: 0x7F08002E
-			public const int center_vertical = 2131230766;
+			public const int button_call_toggle_mic = 2131230766;
 			
 			// aapt resource value: 0x7F08002F
-			public const int checkbox = 2131230767;
-			
-			// aapt resource value: 0x7F080030
-			public const int chronometer = 2131230768;
+			public const int button_toggle_debug = 2131230767;
 			
 			// aapt resource value: 0x7F080031
-			public const int clip_horizontal = 2131230769;
+			public const int call_fragment_container = 2131230769;
 			
 			// aapt resource value: 0x7F080032
-			public const int clip_vertical = 2131230770;
+			public const int cancel_action = 2131230770;
 			
 			// aapt resource value: 0x7F080033
-			public const int collapseActionView = 2131230771;
+			public const int capture_format_slider_call = 2131230771;
 			
 			// aapt resource value: 0x7F080034
-			public const int container = 2131230772;
+			public const int capture_format_text_call = 2131230772;
 			
 			// aapt resource value: 0x7F080035
-			public const int content = 2131230773;
+			public const int center = 2131230773;
 			
 			// aapt resource value: 0x7F080036
-			public const int contentPanel = 2131230774;
+			public const int center_horizontal = 2131230774;
 			
 			// aapt resource value: 0x7F080037
-			public const int coordinator = 2131230775;
+			public const int center_vertical = 2131230775;
+			
+			// aapt resource value: 0x7F080038
+			public const int checkbox = 2131230776;
+			
+			// aapt resource value: 0x7F080039
+			public const int chronometer = 2131230777;
+			
+			// aapt resource value: 0x7F08003A
+			public const int clip_horizontal = 2131230778;
+			
+			// aapt resource value: 0x7F08003B
+			public const int clip_vertical = 2131230779;
+			
+			// aapt resource value: 0x7F08003C
+			public const int collapseActionView = 2131230780;
+			
+			// aapt resource value: 0x7F08003D
+			public const int contact_name_call = 2131230781;
+			
+			// aapt resource value: 0x7F08003E
+			public const int container = 2131230782;
+			
+			// aapt resource value: 0x7F08003F
+			public const int content = 2131230783;
+			
+			// aapt resource value: 0x7F080040
+			public const int contentPanel = 2131230784;
+			
+			// aapt resource value: 0x7F080041
+			public const int coordinator = 2131230785;
 			
 			// aapt resource value: 0x7F080001
 			public const int CTRL = 2131230721;
 			
-			// aapt resource value: 0x7F080038
-			public const int custom = 2131230776;
-			
-			// aapt resource value: 0x7F080039
-			public const int customPanel = 2131230777;
-			
-			// aapt resource value: 0x7F08003A
-			public const int decor_content_parent = 2131230778;
-			
-			// aapt resource value: 0x7F08003B
-			public const int default_activity_button = 2131230779;
-			
-			// aapt resource value: 0x7F08003C
-			public const int design_bottom_sheet = 2131230780;
-			
-			// aapt resource value: 0x7F08003D
-			public const int design_menu_item_action_area = 2131230781;
-			
-			// aapt resource value: 0x7F08003E
-			public const int design_menu_item_action_area_stub = 2131230782;
-			
-			// aapt resource value: 0x7F08003F
-			public const int design_menu_item_text = 2131230783;
-			
-			// aapt resource value: 0x7F080040
-			public const int design_navigation_view = 2131230784;
-			
-			// aapt resource value: 0x7F080041
-			public const int disableHome = 2131230785;
-			
 			// aapt resource value: 0x7F080042
-			public const int edit_query = 2131230786;
+			public const int custom = 2131230786;
 			
 			// aapt resource value: 0x7F080043
-			public const int end = 2131230787;
+			public const int customPanel = 2131230787;
 			
 			// aapt resource value: 0x7F080044
-			public const int end_padder = 2131230788;
+			public const int decor_content_parent = 2131230788;
 			
 			// aapt resource value: 0x7F080045
-			public const int enterAlways = 2131230789;
+			public const int default_activity_button = 2131230789;
 			
 			// aapt resource value: 0x7F080046
-			public const int enterAlwaysCollapsed = 2131230790;
+			public const int design_bottom_sheet = 2131230790;
 			
 			// aapt resource value: 0x7F080047
-			public const int exitUntilCollapsed = 2131230791;
-			
-			// aapt resource value: 0x7F080049
-			public const int expanded_menu = 2131230793;
+			public const int design_menu_item_action_area = 2131230791;
 			
 			// aapt resource value: 0x7F080048
-			public const int expand_activities_button = 2131230792;
+			public const int design_menu_item_action_area_stub = 2131230792;
+			
+			// aapt resource value: 0x7F080049
+			public const int design_menu_item_text = 2131230793;
 			
 			// aapt resource value: 0x7F08004A
-			public const int fill = 2131230794;
-			
-			// aapt resource value: 0x7F08004D
-			public const int filled = 2131230797;
+			public const int design_navigation_view = 2131230794;
 			
 			// aapt resource value: 0x7F08004B
-			public const int fill_horizontal = 2131230795;
+			public const int disableHome = 2131230795;
 			
 			// aapt resource value: 0x7F08004C
-			public const int fill_vertical = 2131230796;
+			public const int edit_query = 2131230796;
+			
+			// aapt resource value: 0x7F08004D
+			public const int encoder_stat_call = 2131230797;
 			
 			// aapt resource value: 0x7F08004E
-			public const int @fixed = 2131230798;
+			public const int end = 2131230798;
 			
 			// aapt resource value: 0x7F08004F
-			public const int flyoutcontent_appbar = 2131230799;
+			public const int end_padder = 2131230799;
 			
 			// aapt resource value: 0x7F080050
-			public const int flyoutcontent_recycler = 2131230800;
+			public const int enterAlways = 2131230800;
 			
 			// aapt resource value: 0x7F080051
-			public const int forever = 2131230801;
+			public const int enterAlwaysCollapsed = 2131230801;
+			
+			// aapt resource value: 0x7F080052
+			public const int exitUntilCollapsed = 2131230802;
+			
+			// aapt resource value: 0x7F080054
+			public const int expanded_menu = 2131230804;
+			
+			// aapt resource value: 0x7F080053
+			public const int expand_activities_button = 2131230803;
+			
+			// aapt resource value: 0x7F080055
+			public const int fill = 2131230805;
+			
+			// aapt resource value: 0x7F080058
+			public const int filled = 2131230808;
+			
+			// aapt resource value: 0x7F080056
+			public const int fill_horizontal = 2131230806;
+			
+			// aapt resource value: 0x7F080057
+			public const int fill_vertical = 2131230807;
+			
+			// aapt resource value: 0x7F080059
+			public const int @fixed = 2131230809;
+			
+			// aapt resource value: 0x7F08005A
+			public const int flyoutcontent_appbar = 2131230810;
+			
+			// aapt resource value: 0x7F08005B
+			public const int flyoutcontent_recycler = 2131230811;
+			
+			// aapt resource value: 0x7F08005C
+			public const int forever = 2131230812;
+			
+			// aapt resource value: 0x7F08005D
+			public const int fullscreen_video_view = 2131230813;
 			
 			// aapt resource value: 0x7F080002
 			public const int FUNCTION = 2131230722;
 			
-			// aapt resource value: 0x7F080052
-			public const int ghost_view = 2131230802;
-			
-			// aapt resource value: 0x7F080053
-			public const int group_divider = 2131230803;
-			
-			// aapt resource value: 0x7F080054
-			public const int home = 2131230804;
-			
-			// aapt resource value: 0x7F080055
-			public const int homeAsUp = 2131230805;
-			
-			// aapt resource value: 0x7F080056
-			public const int icon = 2131230806;
-			
-			// aapt resource value: 0x7F080057
-			public const int icon_group = 2131230807;
-			
-			// aapt resource value: 0x7F080058
-			public const int ifRoom = 2131230808;
-			
-			// aapt resource value: 0x7F080059
-			public const int image = 2131230809;
-			
-			// aapt resource value: 0x7F08005A
-			public const int info = 2131230810;
-			
-			// aapt resource value: 0x7F08005B
-			public const int italic = 2131230811;
-			
-			// aapt resource value: 0x7F08005C
-			public const int item_touch_helper_previous_elevation = 2131230812;
-			
-			// aapt resource value: 0x7F08005D
-			public const int labeled = 2131230813;
-			
 			// aapt resource value: 0x7F08005E
-			public const int largeLabel = 2131230814;
+			public const int ghost_view = 2131230814;
 			
 			// aapt resource value: 0x7F08005F
-			public const int left = 2131230815;
+			public const int group_divider = 2131230815;
 			
 			// aapt resource value: 0x7F080060
-			public const int line1 = 2131230816;
+			public const int home = 2131230816;
 			
 			// aapt resource value: 0x7F080061
-			public const int line3 = 2131230817;
-			
-			// aapt resource value: 0x7F080062
-			public const int listMode = 2131230818;
-			
-			// aapt resource value: 0x7F080063
-			public const int list_item = 2131230819;
-			
-			// aapt resource value: 0x7F080064
-			public const int main_appbar = 2131230820;
-			
-			// aapt resource value: 0x7F080065
-			public const int main_tablayout = 2131230821;
-			
-			// aapt resource value: 0x7F080066
-			public const int main_toolbar = 2131230822;
+			public const int homeAsUp = 2131230817;
 			
 			// aapt resource value: 0x7F080067
-			public const int main_viewpager = 2131230823;
+			public const int hudview_container = 2131230823;
+			
+			// aapt resource value: 0x7F080062
+			public const int hud_fragment_container = 2131230818;
+			
+			// aapt resource value: 0x7F080063
+			public const int hud_stat_bwe = 2131230819;
+			
+			// aapt resource value: 0x7F080064
+			public const int hud_stat_connection = 2131230820;
+			
+			// aapt resource value: 0x7F080065
+			public const int hud_stat_video_recv = 2131230821;
+			
+			// aapt resource value: 0x7F080066
+			public const int hud_stat_video_send = 2131230822;
 			
 			// aapt resource value: 0x7F080068
-			public const int masked = 2131230824;
+			public const int icon = 2131230824;
 			
 			// aapt resource value: 0x7F080069
-			public const int media_actions = 2131230825;
+			public const int icon_group = 2131230825;
 			
 			// aapt resource value: 0x7F08006A
-			public const int message = 2131230826;
+			public const int ifRoom = 2131230826;
+			
+			// aapt resource value: 0x7F08006B
+			public const int image = 2131230827;
+			
+			// aapt resource value: 0x7F08006C
+			public const int info = 2131230828;
+			
+			// aapt resource value: 0x7F08006D
+			public const int italic = 2131230829;
+			
+			// aapt resource value: 0x7F08006E
+			public const int item_touch_helper_previous_elevation = 2131230830;
+			
+			// aapt resource value: 0x7F08006F
+			public const int labeled = 2131230831;
+			
+			// aapt resource value: 0x7F080070
+			public const int largeLabel = 2131230832;
+			
+			// aapt resource value: 0x7F080071
+			public const int left = 2131230833;
+			
+			// aapt resource value: 0x7F080072
+			public const int line1 = 2131230834;
+			
+			// aapt resource value: 0x7F080073
+			public const int line3 = 2131230835;
+			
+			// aapt resource value: 0x7F080074
+			public const int listMode = 2131230836;
+			
+			// aapt resource value: 0x7F080075
+			public const int list_item = 2131230837;
+			
+			// aapt resource value: 0x7F080076
+			public const int main_appbar = 2131230838;
+			
+			// aapt resource value: 0x7F080077
+			public const int main_tablayout = 2131230839;
+			
+			// aapt resource value: 0x7F080078
+			public const int main_toolbar = 2131230840;
+			
+			// aapt resource value: 0x7F080079
+			public const int main_viewpager = 2131230841;
+			
+			// aapt resource value: 0x7F08007A
+			public const int masked = 2131230842;
+			
+			// aapt resource value: 0x7F08007B
+			public const int media_actions = 2131230843;
+			
+			// aapt resource value: 0x7F08007C
+			public const int message = 2131230844;
 			
 			// aapt resource value: 0x7F080003
 			public const int META = 2131230723;
 			
-			// aapt resource value: 0x7F08006B
-			public const int middle = 2131230827;
-			
-			// aapt resource value: 0x7F08006C
-			public const int mini = 2131230828;
-			
-			// aapt resource value: 0x7F08006D
-			public const int mtrl_child_content_container = 2131230829;
-			
-			// aapt resource value: 0x7F08006E
-			public const int mtrl_internal_children_alpha_tag = 2131230830;
-			
-			// aapt resource value: 0x7F08006F
-			public const int multiply = 2131230831;
-			
-			// aapt resource value: 0x7F080070
-			public const int navigation_header_container = 2131230832;
-			
-			// aapt resource value: 0x7F080071
-			public const int never = 2131230833;
-			
-			// aapt resource value: 0x7F080072
-			public const int none = 2131230834;
-			
-			// aapt resource value: 0x7F080073
-			public const int normal = 2131230835;
-			
-			// aapt resource value: 0x7F080074
-			public const int notification_background = 2131230836;
-			
-			// aapt resource value: 0x7F080075
-			public const int notification_main_column = 2131230837;
-			
-			// aapt resource value: 0x7F080076
-			public const int notification_main_column_container = 2131230838;
-			
-			// aapt resource value: 0x7F080077
-			public const int outline = 2131230839;
-			
-			// aapt resource value: 0x7F080078
-			public const int parallax = 2131230840;
-			
-			// aapt resource value: 0x7F080079
-			public const int parentPanel = 2131230841;
-			
-			// aapt resource value: 0x7F08007A
-			public const int parent_matrix = 2131230842;
-			
-			// aapt resource value: 0x7F08007B
-			public const int pin = 2131230843;
-			
-			// aapt resource value: 0x7F08007C
-			public const int progress_circular = 2131230844;
-			
 			// aapt resource value: 0x7F08007D
-			public const int progress_horizontal = 2131230845;
+			public const int middle = 2131230845;
 			
 			// aapt resource value: 0x7F08007E
-			public const int radio = 2131230846;
+			public const int mini = 2131230846;
 			
 			// aapt resource value: 0x7F08007F
-			public const int right = 2131230847;
+			public const int mtrl_child_content_container = 2131230847;
 			
 			// aapt resource value: 0x7F080080
-			public const int right_icon = 2131230848;
+			public const int mtrl_internal_children_alpha_tag = 2131230848;
 			
 			// aapt resource value: 0x7F080081
-			public const int right_side = 2131230849;
+			public const int multiply = 2131230849;
 			
 			// aapt resource value: 0x7F080082
-			public const int save_image_matrix = 2131230850;
+			public const int navigation_header_container = 2131230850;
 			
 			// aapt resource value: 0x7F080083
-			public const int save_non_transition_alpha = 2131230851;
+			public const int never = 2131230851;
 			
 			// aapt resource value: 0x7F080084
-			public const int save_scale_type = 2131230852;
+			public const int none = 2131230852;
 			
 			// aapt resource value: 0x7F080085
-			public const int screen = 2131230853;
+			public const int normal = 2131230853;
 			
 			// aapt resource value: 0x7F080086
-			public const int scroll = 2131230854;
-			
-			// aapt resource value: 0x7F08008A
-			public const int scrollable = 2131230858;
+			public const int notification_background = 2131230854;
 			
 			// aapt resource value: 0x7F080087
-			public const int scrollIndicatorDown = 2131230855;
+			public const int notification_main_column = 2131230855;
 			
 			// aapt resource value: 0x7F080088
-			public const int scrollIndicatorUp = 2131230856;
+			public const int notification_main_column_container = 2131230856;
 			
 			// aapt resource value: 0x7F080089
-			public const int scrollView = 2131230857;
+			public const int outline = 2131230857;
+			
+			// aapt resource value: 0x7F08008A
+			public const int parallax = 2131230858;
 			
 			// aapt resource value: 0x7F08008B
-			public const int search_badge = 2131230859;
+			public const int parentPanel = 2131230859;
 			
 			// aapt resource value: 0x7F08008C
-			public const int search_bar = 2131230860;
+			public const int parent_matrix = 2131230860;
 			
 			// aapt resource value: 0x7F08008D
-			public const int search_button = 2131230861;
+			public const int pin = 2131230861;
 			
 			// aapt resource value: 0x7F08008E
-			public const int search_close_btn = 2131230862;
+			public const int pip_video_view = 2131230862;
 			
 			// aapt resource value: 0x7F08008F
-			public const int search_edit_frame = 2131230863;
+			public const int progress_circular = 2131230863;
 			
 			// aapt resource value: 0x7F080090
-			public const int search_go_btn = 2131230864;
+			public const int progress_horizontal = 2131230864;
 			
 			// aapt resource value: 0x7F080091
-			public const int search_mag_icon = 2131230865;
+			public const int radio = 2131230865;
 			
 			// aapt resource value: 0x7F080092
-			public const int search_plate = 2131230866;
+			public const int right = 2131230866;
 			
 			// aapt resource value: 0x7F080093
-			public const int search_src_text = 2131230867;
+			public const int right_icon = 2131230867;
 			
 			// aapt resource value: 0x7F080094
-			public const int search_voice_btn = 2131230868;
-			
-			// aapt resource value: 0x7F080096
-			public const int selected = 2131230870;
+			public const int right_side = 2131230868;
 			
 			// aapt resource value: 0x7F080095
-			public const int select_dialog_listview = 2131230869;
+			public const int save_image_matrix = 2131230869;
+			
+			// aapt resource value: 0x7F080096
+			public const int save_non_transition_alpha = 2131230870;
 			
 			// aapt resource value: 0x7F080097
-			public const int shellcontent_appbar = 2131230871;
+			public const int save_scale_type = 2131230871;
 			
 			// aapt resource value: 0x7F080098
-			public const int shellcontent_toolbar = 2131230872;
+			public const int screen = 2131230872;
+			
+			// aapt resource value: 0x7F080099
+			public const int scroll = 2131230873;
+			
+			// aapt resource value: 0x7F08009D
+			public const int scrollable = 2131230877;
+			
+			// aapt resource value: 0x7F08009A
+			public const int scrollIndicatorDown = 2131230874;
+			
+			// aapt resource value: 0x7F08009B
+			public const int scrollIndicatorUp = 2131230875;
+			
+			// aapt resource value: 0x7F08009C
+			public const int scrollView = 2131230876;
+			
+			// aapt resource value: 0x7F08009E
+			public const int search_badge = 2131230878;
+			
+			// aapt resource value: 0x7F08009F
+			public const int search_bar = 2131230879;
+			
+			// aapt resource value: 0x7F0800A0
+			public const int search_button = 2131230880;
+			
+			// aapt resource value: 0x7F0800A1
+			public const int search_close_btn = 2131230881;
+			
+			// aapt resource value: 0x7F0800A2
+			public const int search_edit_frame = 2131230882;
+			
+			// aapt resource value: 0x7F0800A3
+			public const int search_go_btn = 2131230883;
+			
+			// aapt resource value: 0x7F0800A4
+			public const int search_mag_icon = 2131230884;
+			
+			// aapt resource value: 0x7F0800A5
+			public const int search_plate = 2131230885;
+			
+			// aapt resource value: 0x7F0800A6
+			public const int search_src_text = 2131230886;
+			
+			// aapt resource value: 0x7F0800A7
+			public const int search_voice_btn = 2131230887;
+			
+			// aapt resource value: 0x7F0800A9
+			public const int selected = 2131230889;
+			
+			// aapt resource value: 0x7F0800A8
+			public const int select_dialog_listview = 2131230888;
+			
+			// aapt resource value: 0x7F0800AA
+			public const int shellcontent_appbar = 2131230890;
+			
+			// aapt resource value: 0x7F0800AB
+			public const int shellcontent_toolbar = 2131230891;
 			
 			// aapt resource value: 0x7F080004
 			public const int SHIFT = 2131230724;
 			
-			// aapt resource value: 0x7F080099
-			public const int shortcut = 2131230873;
-			
-			// aapt resource value: 0x7F08009A
-			public const int showCustom = 2131230874;
-			
-			// aapt resource value: 0x7F08009B
-			public const int showHome = 2131230875;
-			
-			// aapt resource value: 0x7F08009C
-			public const int showTitle = 2131230876;
-			
-			// aapt resource value: 0x7F08009D
-			public const int sliding_tabs = 2131230877;
-			
-			// aapt resource value: 0x7F08009E
-			public const int smallLabel = 2131230878;
-			
-			// aapt resource value: 0x7F08009F
-			public const int snackbar_action = 2131230879;
-			
-			// aapt resource value: 0x7F0800A0
-			public const int snackbar_text = 2131230880;
-			
-			// aapt resource value: 0x7F0800A1
-			public const int snap = 2131230881;
-			
-			// aapt resource value: 0x7F0800A2
-			public const int snapMargins = 2131230882;
-			
-			// aapt resource value: 0x7F0800A3
-			public const int spacer = 2131230883;
-			
-			// aapt resource value: 0x7F0800A4
-			public const int split_action_bar = 2131230884;
-			
-			// aapt resource value: 0x7F0800A5
-			public const int src_atop = 2131230885;
-			
-			// aapt resource value: 0x7F0800A6
-			public const int src_in = 2131230886;
-			
-			// aapt resource value: 0x7F0800A7
-			public const int src_over = 2131230887;
-			
-			// aapt resource value: 0x7F0800A8
-			public const int start = 2131230888;
-			
-			// aapt resource value: 0x7F0800A9
-			public const int status_bar_latest_event_content = 2131230889;
-			
-			// aapt resource value: 0x7F0800AA
-			public const int stretch = 2131230890;
-			
-			// aapt resource value: 0x7F0800AB
-			public const int submenuarrow = 2131230891;
-			
 			// aapt resource value: 0x7F0800AC
-			public const int submit_area = 2131230892;
+			public const int shortcut = 2131230892;
+			
+			// aapt resource value: 0x7F0800AD
+			public const int showCustom = 2131230893;
+			
+			// aapt resource value: 0x7F0800AE
+			public const int showHome = 2131230894;
+			
+			// aapt resource value: 0x7F0800AF
+			public const int showTitle = 2131230895;
+			
+			// aapt resource value: 0x7F0800B0
+			public const int sliding_tabs = 2131230896;
+			
+			// aapt resource value: 0x7F0800B1
+			public const int smallLabel = 2131230897;
+			
+			// aapt resource value: 0x7F0800B2
+			public const int snackbar_action = 2131230898;
+			
+			// aapt resource value: 0x7F0800B3
+			public const int snackbar_text = 2131230899;
+			
+			// aapt resource value: 0x7F0800B4
+			public const int snap = 2131230900;
+			
+			// aapt resource value: 0x7F0800B5
+			public const int snapMargins = 2131230901;
+			
+			// aapt resource value: 0x7F0800B6
+			public const int spacer = 2131230902;
+			
+			// aapt resource value: 0x7F0800B7
+			public const int split_action_bar = 2131230903;
+			
+			// aapt resource value: 0x7F0800B8
+			public const int src_atop = 2131230904;
+			
+			// aapt resource value: 0x7F0800B9
+			public const int src_in = 2131230905;
+			
+			// aapt resource value: 0x7F0800BA
+			public const int src_over = 2131230906;
+			
+			// aapt resource value: 0x7F0800BB
+			public const int start = 2131230907;
+			
+			// aapt resource value: 0x7F0800BC
+			public const int status_bar_latest_event_content = 2131230908;
+			
+			// aapt resource value: 0x7F0800BD
+			public const int stretch = 2131230909;
+			
+			// aapt resource value: 0x7F0800BE
+			public const int submenuarrow = 2131230910;
+			
+			// aapt resource value: 0x7F0800BF
+			public const int submit_area = 2131230911;
 			
 			// aapt resource value: 0x7F080005
 			public const int SYM = 2131230725;
 			
-			// aapt resource value: 0x7F0800AD
-			public const int tabMode = 2131230893;
-			
-			// aapt resource value: 0x7F0800AE
-			public const int tag_transition_group = 2131230894;
-			
-			// aapt resource value: 0x7F0800AF
-			public const int tag_unhandled_key_event_manager = 2131230895;
-			
-			// aapt resource value: 0x7F0800B0
-			public const int tag_unhandled_key_listeners = 2131230896;
-			
-			// aapt resource value: 0x7F0800B1
-			public const int text = 2131230897;
-			
-			// aapt resource value: 0x7F0800B2
-			public const int text2 = 2131230898;
-			
-			// aapt resource value: 0x7F0800B7
-			public const int textinput_counter = 2131230903;
-			
-			// aapt resource value: 0x7F0800B8
-			public const int textinput_error = 2131230904;
-			
-			// aapt resource value: 0x7F0800B9
-			public const int textinput_helper_text = 2131230905;
-			
-			// aapt resource value: 0x7F0800B3
-			public const int textSpacerNoButtons = 2131230899;
-			
-			// aapt resource value: 0x7F0800B4
-			public const int textSpacerNoTitle = 2131230900;
-			
-			// aapt resource value: 0x7F0800B5
-			public const int textStart = 2131230901;
-			
-			// aapt resource value: 0x7F0800B6
-			public const int text_input_password_toggle = 2131230902;
-			
-			// aapt resource value: 0x7F0800BA
-			public const int time = 2131230906;
-			
-			// aapt resource value: 0x7F0800BB
-			public const int title = 2131230907;
-			
-			// aapt resource value: 0x7F0800BC
-			public const int titleDividerNoCustom = 2131230908;
-			
-			// aapt resource value: 0x7F0800BD
-			public const int title_template = 2131230909;
-			
-			// aapt resource value: 0x7F0800BE
-			public const int toolbar = 2131230910;
-			
-			// aapt resource value: 0x7F0800BF
-			public const int top = 2131230911;
-			
 			// aapt resource value: 0x7F0800C0
-			public const int topPanel = 2131230912;
+			public const int tabMode = 2131230912;
 			
 			// aapt resource value: 0x7F0800C1
-			public const int touch_outside = 2131230913;
+			public const int tag_transition_group = 2131230913;
 			
 			// aapt resource value: 0x7F0800C2
-			public const int transition_current_scene = 2131230914;
+			public const int tag_unhandled_key_event_manager = 2131230914;
 			
 			// aapt resource value: 0x7F0800C3
-			public const int transition_layout_save = 2131230915;
+			public const int tag_unhandled_key_listeners = 2131230915;
 			
 			// aapt resource value: 0x7F0800C4
-			public const int transition_position = 2131230916;
+			public const int text = 2131230916;
 			
 			// aapt resource value: 0x7F0800C5
-			public const int transition_scene_layoutid_cache = 2131230917;
-			
-			// aapt resource value: 0x7F0800C6
-			public const int transition_transform = 2131230918;
-			
-			// aapt resource value: 0x7F0800C7
-			public const int uniform = 2131230919;
-			
-			// aapt resource value: 0x7F0800C8
-			public const int unlabeled = 2131230920;
-			
-			// aapt resource value: 0x7F0800C9
-			public const int up = 2131230921;
+			public const int text2 = 2131230917;
 			
 			// aapt resource value: 0x7F0800CA
-			public const int useLogo = 2131230922;
+			public const int textinput_counter = 2131230922;
 			
 			// aapt resource value: 0x7F0800CB
-			public const int view_offset_helper = 2131230923;
+			public const int textinput_error = 2131230923;
 			
 			// aapt resource value: 0x7F0800CC
-			public const int visible = 2131230924;
+			public const int textinput_helper_text = 2131230924;
+			
+			// aapt resource value: 0x7F0800C6
+			public const int textSpacerNoButtons = 2131230918;
+			
+			// aapt resource value: 0x7F0800C7
+			public const int textSpacerNoTitle = 2131230919;
+			
+			// aapt resource value: 0x7F0800C8
+			public const int textStart = 2131230920;
+			
+			// aapt resource value: 0x7F0800C9
+			public const int text_input_password_toggle = 2131230921;
 			
 			// aapt resource value: 0x7F0800CD
-			public const int withText = 2131230925;
+			public const int time = 2131230925;
 			
 			// aapt resource value: 0x7F0800CE
-			public const int wrap_content = 2131230926;
+			public const int title = 2131230926;
+			
+			// aapt resource value: 0x7F0800CF
+			public const int titleDividerNoCustom = 2131230927;
+			
+			// aapt resource value: 0x7F0800D0
+			public const int title_template = 2131230928;
+			
+			// aapt resource value: 0x7F0800D1
+			public const int toolbar = 2131230929;
+			
+			// aapt resource value: 0x7F0800D2
+			public const int top = 2131230930;
+			
+			// aapt resource value: 0x7F0800D3
+			public const int topPanel = 2131230931;
+			
+			// aapt resource value: 0x7F0800D4
+			public const int touch_outside = 2131230932;
+			
+			// aapt resource value: 0x7F0800D5
+			public const int transition_current_scene = 2131230933;
+			
+			// aapt resource value: 0x7F0800D6
+			public const int transition_layout_save = 2131230934;
+			
+			// aapt resource value: 0x7F0800D7
+			public const int transition_position = 2131230935;
+			
+			// aapt resource value: 0x7F0800D8
+			public const int transition_scene_layoutid_cache = 2131230936;
+			
+			// aapt resource value: 0x7F0800D9
+			public const int transition_transform = 2131230937;
+			
+			// aapt resource value: 0x7F0800DA
+			public const int uniform = 2131230938;
+			
+			// aapt resource value: 0x7F0800DB
+			public const int unlabeled = 2131230939;
+			
+			// aapt resource value: 0x7F0800DC
+			public const int up = 2131230940;
+			
+			// aapt resource value: 0x7F0800DD
+			public const int useLogo = 2131230941;
+			
+			// aapt resource value: 0x7F0800DE
+			public const int view_offset_helper = 2131230942;
+			
+			// aapt resource value: 0x7F0800DF
+			public const int visible = 2131230943;
+			
+			// aapt resource value: 0x7F0800E0
+			public const int withText = 2131230944;
+			
+			// aapt resource value: 0x7F0800E1
+			public const int wrap_content = 2131230945;
 			
 			static Id()
 			{
@@ -9186,133 +10865,142 @@ namespace WebRTC.DemoApp.Droid
 			public const int abc_tooltip = 2131427355;
 			
 			// aapt resource value: 0x7F0B001C
-			public const int BottomTabLayout = 2131427356;
+			public const int activity_call = 2131427356;
 			
 			// aapt resource value: 0x7F0B001D
-			public const int browser_actions_context_menu_page = 2131427357;
+			public const int BottomTabLayout = 2131427357;
 			
 			// aapt resource value: 0x7F0B001E
-			public const int browser_actions_context_menu_row = 2131427358;
+			public const int browser_actions_context_menu_page = 2131427358;
 			
 			// aapt resource value: 0x7F0B001F
-			public const int design_bottom_navigation_item = 2131427359;
+			public const int browser_actions_context_menu_row = 2131427359;
 			
 			// aapt resource value: 0x7F0B0020
-			public const int design_bottom_sheet_dialog = 2131427360;
+			public const int design_bottom_navigation_item = 2131427360;
 			
 			// aapt resource value: 0x7F0B0021
-			public const int design_layout_snackbar = 2131427361;
+			public const int design_bottom_sheet_dialog = 2131427361;
 			
 			// aapt resource value: 0x7F0B0022
-			public const int design_layout_snackbar_include = 2131427362;
+			public const int design_layout_snackbar = 2131427362;
 			
 			// aapt resource value: 0x7F0B0023
-			public const int design_layout_tab_icon = 2131427363;
+			public const int design_layout_snackbar_include = 2131427363;
 			
 			// aapt resource value: 0x7F0B0024
-			public const int design_layout_tab_text = 2131427364;
+			public const int design_layout_tab_icon = 2131427364;
 			
 			// aapt resource value: 0x7F0B0025
-			public const int design_menu_item_action_area = 2131427365;
+			public const int design_layout_tab_text = 2131427365;
 			
 			// aapt resource value: 0x7F0B0026
-			public const int design_navigation_item = 2131427366;
+			public const int design_menu_item_action_area = 2131427366;
 			
 			// aapt resource value: 0x7F0B0027
-			public const int design_navigation_item_header = 2131427367;
+			public const int design_navigation_item = 2131427367;
 			
 			// aapt resource value: 0x7F0B0028
-			public const int design_navigation_item_separator = 2131427368;
+			public const int design_navigation_item_header = 2131427368;
 			
 			// aapt resource value: 0x7F0B0029
-			public const int design_navigation_item_subheader = 2131427369;
+			public const int design_navigation_item_separator = 2131427369;
 			
 			// aapt resource value: 0x7F0B002A
-			public const int design_navigation_menu = 2131427370;
+			public const int design_navigation_item_subheader = 2131427370;
 			
 			// aapt resource value: 0x7F0B002B
-			public const int design_navigation_menu_item = 2131427371;
+			public const int design_navigation_menu = 2131427371;
 			
 			// aapt resource value: 0x7F0B002C
-			public const int design_text_input_password_icon = 2131427372;
+			public const int design_navigation_menu_item = 2131427372;
 			
 			// aapt resource value: 0x7F0B002D
-			public const int FlyoutContent = 2131427373;
+			public const int design_text_input_password_icon = 2131427373;
 			
 			// aapt resource value: 0x7F0B002E
-			public const int mtrl_layout_snackbar = 2131427374;
+			public const int FlyoutContent = 2131427374;
 			
 			// aapt resource value: 0x7F0B002F
-			public const int mtrl_layout_snackbar_include = 2131427375;
+			public const int fragment_call = 2131427375;
 			
 			// aapt resource value: 0x7F0B0030
-			public const int notification_action = 2131427376;
+			public const int fragment_hud = 2131427376;
 			
 			// aapt resource value: 0x7F0B0031
-			public const int notification_action_tombstone = 2131427377;
+			public const int mtrl_layout_snackbar = 2131427377;
 			
 			// aapt resource value: 0x7F0B0032
-			public const int notification_media_action = 2131427378;
+			public const int mtrl_layout_snackbar_include = 2131427378;
 			
 			// aapt resource value: 0x7F0B0033
-			public const int notification_media_cancel_action = 2131427379;
+			public const int notification_action = 2131427379;
 			
 			// aapt resource value: 0x7F0B0034
-			public const int notification_template_big_media = 2131427380;
+			public const int notification_action_tombstone = 2131427380;
 			
 			// aapt resource value: 0x7F0B0035
-			public const int notification_template_big_media_custom = 2131427381;
+			public const int notification_media_action = 2131427381;
 			
 			// aapt resource value: 0x7F0B0036
-			public const int notification_template_big_media_narrow = 2131427382;
+			public const int notification_media_cancel_action = 2131427382;
 			
 			// aapt resource value: 0x7F0B0037
-			public const int notification_template_big_media_narrow_custom = 2131427383;
+			public const int notification_template_big_media = 2131427383;
 			
 			// aapt resource value: 0x7F0B0038
-			public const int notification_template_custom_big = 2131427384;
+			public const int notification_template_big_media_custom = 2131427384;
 			
 			// aapt resource value: 0x7F0B0039
-			public const int notification_template_icon_group = 2131427385;
+			public const int notification_template_big_media_narrow = 2131427385;
 			
 			// aapt resource value: 0x7F0B003A
-			public const int notification_template_lines_media = 2131427386;
+			public const int notification_template_big_media_narrow_custom = 2131427386;
 			
 			// aapt resource value: 0x7F0B003B
-			public const int notification_template_media = 2131427387;
+			public const int notification_template_custom_big = 2131427387;
 			
 			// aapt resource value: 0x7F0B003C
-			public const int notification_template_media_custom = 2131427388;
+			public const int notification_template_icon_group = 2131427388;
 			
 			// aapt resource value: 0x7F0B003D
-			public const int notification_template_part_chronometer = 2131427389;
+			public const int notification_template_lines_media = 2131427389;
 			
 			// aapt resource value: 0x7F0B003E
-			public const int notification_template_part_time = 2131427390;
+			public const int notification_template_media = 2131427390;
 			
 			// aapt resource value: 0x7F0B003F
-			public const int RootLayout = 2131427391;
+			public const int notification_template_media_custom = 2131427391;
 			
 			// aapt resource value: 0x7F0B0040
-			public const int select_dialog_item_material = 2131427392;
+			public const int notification_template_part_chronometer = 2131427392;
 			
 			// aapt resource value: 0x7F0B0041
-			public const int select_dialog_multichoice_material = 2131427393;
+			public const int notification_template_part_time = 2131427393;
 			
 			// aapt resource value: 0x7F0B0042
-			public const int select_dialog_singlechoice_material = 2131427394;
+			public const int RootLayout = 2131427394;
 			
 			// aapt resource value: 0x7F0B0043
-			public const int ShellContent = 2131427395;
+			public const int select_dialog_item_material = 2131427395;
 			
 			// aapt resource value: 0x7F0B0044
-			public const int support_simple_spinner_dropdown_item = 2131427396;
+			public const int select_dialog_multichoice_material = 2131427396;
 			
 			// aapt resource value: 0x7F0B0045
-			public const int Tabbar = 2131427397;
+			public const int select_dialog_singlechoice_material = 2131427397;
 			
 			// aapt resource value: 0x7F0B0046
-			public const int Toolbar = 2131427398;
+			public const int ShellContent = 2131427398;
+			
+			// aapt resource value: 0x7F0B0047
+			public const int support_simple_spinner_dropdown_item = 2131427399;
+			
+			// aapt resource value: 0x7F0B0048
+			public const int Tabbar = 2131427400;
+			
+			// aapt resource value: 0x7F0B0049
+			public const int Toolbar = 2131427401;
 			
 			static Layout()
 			{
@@ -9467,49 +11155,577 @@ namespace WebRTC.DemoApp.Droid
 			public const int abc_toolbar_collapse_description = 2131558438;
 			
 			// aapt resource value: 0x7F0D0027
-			public const int appbar_scrolling_view_behavior = 2131558439;
+			public const int action_loopback = 2131558439;
 			
 			// aapt resource value: 0x7F0D0028
-			public const int bottom_sheet_behavior = 2131558440;
+			public const int action_settings = 2131558440;
 			
 			// aapt resource value: 0x7F0D0029
-			public const int character_counter_content_description = 2131558441;
-			
-			// aapt resource value: 0x7F0D002A
-			public const int character_counter_pattern = 2131558442;
+			public const int add_favorite_description = 2131558441;
 			
 			// aapt resource value: 0x7F0D002B
-			public const int fab_transformation_scrim_behavior = 2131558443;
+			public const int appbar_scrolling_view_behavior = 2131558443;
+			
+			// aapt resource value: 0x7F0D002A
+			public const int app_name = 2131558442;
 			
 			// aapt resource value: 0x7F0D002C
-			public const int fab_transformation_sheet_behavior = 2131558444;
+			public const int bottom_sheet_behavior = 2131558444;
 			
 			// aapt resource value: 0x7F0D002D
-			public const int hide_bottom_view_on_scroll_behavior = 2131558445;
+			public const int camera2_texture_only_error = 2131558445;
 			
 			// aapt resource value: 0x7F0D002E
-			public const int mtrl_chip_close_icon_content_description = 2131558446;
+			public const int capture_format_change_text = 2131558446;
 			
 			// aapt resource value: 0x7F0D002F
-			public const int password_toggle_content_description = 2131558447;
+			public const int channel_error_title = 2131558447;
 			
 			// aapt resource value: 0x7F0D0030
-			public const int path_password_eye = 2131558448;
+			public const int character_counter_content_description = 2131558448;
 			
 			// aapt resource value: 0x7F0D0031
-			public const int path_password_eye_mask_strike_through = 2131558449;
-			
-			// aapt resource value: 0x7F0D0032
-			public const int path_password_eye_mask_visible = 2131558450;
+			public const int character_counter_pattern = 2131558449;
 			
 			// aapt resource value: 0x7F0D0033
-			public const int path_password_strike_through = 2131558451;
+			public const int connecting_to = 2131558451;
+			
+			// aapt resource value: 0x7F0D0032
+			public const int connect_description = 2131558450;
 			
 			// aapt resource value: 0x7F0D0034
-			public const int search_menu_title = 2131558452;
+			public const int disconnect_call = 2131558452;
 			
 			// aapt resource value: 0x7F0D0035
-			public const int status_bar_notification_info_overflow = 2131558453;
+			public const int fab_transformation_scrim_behavior = 2131558453;
+			
+			// aapt resource value: 0x7F0D0036
+			public const int fab_transformation_sheet_behavior = 2131558454;
+			
+			// aapt resource value: 0x7F0D0037
+			public const int favorites = 2131558455;
+			
+			// aapt resource value: 0x7F0D0038
+			public const int format_description = 2131558456;
+			
+			// aapt resource value: 0x7F0D0039
+			public const int hello = 2131558457;
+			
+			// aapt resource value: 0x7F0D003A
+			public const int hide_bottom_view_on_scroll_behavior = 2131558458;
+			
+			// aapt resource value: 0x7F0D003B
+			public const int invalid_url_text = 2131558459;
+			
+			// aapt resource value: 0x7F0D003C
+			public const int invalid_url_title = 2131558460;
+			
+			// aapt resource value: 0x7F0D003D
+			public const int missing_permissions_try_again = 2131558461;
+			
+			// aapt resource value: 0x7F0D003E
+			public const int missing_url = 2131558462;
+			
+			// aapt resource value: 0x7F0D003F
+			public const int mtrl_chip_close_icon_content_description = 2131558463;
+			
+			// aapt resource value: 0x7F0D0040
+			public const int muted = 2131558464;
+			
+			// aapt resource value: 0x7F0D0041
+			public const int no = 2131558465;
+			
+			// aapt resource value: 0x7F0D0042
+			public const int no_favorites = 2131558466;
+			
+			// aapt resource value: 0x7F0D0043
+			public const int ok = 2131558467;
+			
+			// aapt resource value: 0x7F0D0044
+			public const int password_toggle_content_description = 2131558468;
+			
+			// aapt resource value: 0x7F0D0045
+			public const int path_password_eye = 2131558469;
+			
+			// aapt resource value: 0x7F0D0046
+			public const int path_password_eye_mask_strike_through = 2131558470;
+			
+			// aapt resource value: 0x7F0D0047
+			public const int path_password_eye_mask_visible = 2131558471;
+			
+			// aapt resource value: 0x7F0D0048
+			public const int path_password_strike_through = 2131558472;
+			
+			// aapt resource value: 0x7F0D0049
+			public const int pref_aecdump_default = 2131558473;
+			
+			// aapt resource value: 0x7F0D004A
+			public const int pref_aecdump_dlg = 2131558474;
+			
+			// aapt resource value: 0x7F0D004B
+			public const int pref_aecdump_key = 2131558475;
+			
+			// aapt resource value: 0x7F0D004C
+			public const int pref_aecdump_title = 2131558476;
+			
+			// aapt resource value: 0x7F0D004D
+			public const int pref_audiocodec_default = 2131558477;
+			
+			// aapt resource value: 0x7F0D004E
+			public const int pref_audiocodec_dlg = 2131558478;
+			
+			// aapt resource value: 0x7F0D004F
+			public const int pref_audiocodec_key = 2131558479;
+			
+			// aapt resource value: 0x7F0D0050
+			public const int pref_audiocodec_title = 2131558480;
+			
+			// aapt resource value: 0x7F0D0051
+			public const int pref_audiosettings_key = 2131558481;
+			
+			// aapt resource value: 0x7F0D0052
+			public const int pref_audiosettings_title = 2131558482;
+			
+			// aapt resource value: 0x7F0D0053
+			public const int pref_built_in_aec_not_available = 2131558483;
+			
+			// aapt resource value: 0x7F0D0054
+			public const int pref_built_in_agc_not_available = 2131558484;
+			
+			// aapt resource value: 0x7F0D0055
+			public const int pref_built_in_ns_not_available = 2131558485;
+			
+			// aapt resource value: 0x7F0D0056
+			public const int pref_camera2_default = 2131558486;
+			
+			// aapt resource value: 0x7F0D0057
+			public const int pref_camera2_key = 2131558487;
+			
+			// aapt resource value: 0x7F0D0058
+			public const int pref_camera2_not_supported = 2131558488;
+			
+			// aapt resource value: 0x7F0D0059
+			public const int pref_camera2_title = 2131558489;
+			
+			// aapt resource value: 0x7F0D005A
+			public const int pref_capturequalityslider_default = 2131558490;
+			
+			// aapt resource value: 0x7F0D005B
+			public const int pref_capturequalityslider_dlg = 2131558491;
+			
+			// aapt resource value: 0x7F0D005C
+			public const int pref_capturequalityslider_key = 2131558492;
+			
+			// aapt resource value: 0x7F0D005D
+			public const int pref_capturequalityslider_title = 2131558493;
+			
+			// aapt resource value: 0x7F0D005E
+			public const int pref_capturetotexture_default = 2131558494;
+			
+			// aapt resource value: 0x7F0D005F
+			public const int pref_capturetotexture_dlg = 2131558495;
+			
+			// aapt resource value: 0x7F0D0060
+			public const int pref_capturetotexture_key = 2131558496;
+			
+			// aapt resource value: 0x7F0D0061
+			public const int pref_capturetotexture_title = 2131558497;
+			
+			// aapt resource value: 0x7F0D006A
+			public const int pref_datasettings_key = 2131558506;
+			
+			// aapt resource value: 0x7F0D006B
+			public const int pref_datasettings_title = 2131558507;
+			
+			// aapt resource value: 0x7F0D0062
+			public const int pref_data_id_default = 2131558498;
+			
+			// aapt resource value: 0x7F0D0063
+			public const int pref_data_id_dlg = 2131558499;
+			
+			// aapt resource value: 0x7F0D0064
+			public const int pref_data_id_key = 2131558500;
+			
+			// aapt resource value: 0x7F0D0065
+			public const int pref_data_id_title = 2131558501;
+			
+			// aapt resource value: 0x7F0D0066
+			public const int pref_data_protocol_default = 2131558502;
+			
+			// aapt resource value: 0x7F0D0067
+			public const int pref_data_protocol_dlg = 2131558503;
+			
+			// aapt resource value: 0x7F0D0068
+			public const int pref_data_protocol_key = 2131558504;
+			
+			// aapt resource value: 0x7F0D0069
+			public const int pref_data_protocol_title = 2131558505;
+			
+			// aapt resource value: 0x7F0D006C
+			public const int pref_disable_built_in_aec_default = 2131558508;
+			
+			// aapt resource value: 0x7F0D006D
+			public const int pref_disable_built_in_aec_dlg = 2131558509;
+			
+			// aapt resource value: 0x7F0D006E
+			public const int pref_disable_built_in_aec_key = 2131558510;
+			
+			// aapt resource value: 0x7F0D006F
+			public const int pref_disable_built_in_aec_title = 2131558511;
+			
+			// aapt resource value: 0x7F0D0070
+			public const int pref_disable_built_in_agc_default = 2131558512;
+			
+			// aapt resource value: 0x7F0D0071
+			public const int pref_disable_built_in_agc_dlg = 2131558513;
+			
+			// aapt resource value: 0x7F0D0072
+			public const int pref_disable_built_in_agc_key = 2131558514;
+			
+			// aapt resource value: 0x7F0D0073
+			public const int pref_disable_built_in_agc_title = 2131558515;
+			
+			// aapt resource value: 0x7F0D0074
+			public const int pref_disable_built_in_ns_default = 2131558516;
+			
+			// aapt resource value: 0x7F0D0075
+			public const int pref_disable_built_in_ns_dlg = 2131558517;
+			
+			// aapt resource value: 0x7F0D0076
+			public const int pref_disable_built_in_ns_key = 2131558518;
+			
+			// aapt resource value: 0x7F0D0077
+			public const int pref_disable_built_in_ns_title = 2131558519;
+			
+			// aapt resource value: 0x7F0D0078
+			public const int pref_disable_webrtc_agc_and_hpf_key = 2131558520;
+			
+			// aapt resource value: 0x7F0D0079
+			public const int pref_disable_webrtc_agc_and_hpf_title = 2131558521;
+			
+			// aapt resource value: 0x7F0D007A
+			public const int pref_disable_webrtc_agc_default = 2131558522;
+			
+			// aapt resource value: 0x7F0D007B
+			public const int pref_displayhud_default = 2131558523;
+			
+			// aapt resource value: 0x7F0D007C
+			public const int pref_displayhud_dlg = 2131558524;
+			
+			// aapt resource value: 0x7F0D007D
+			public const int pref_displayhud_key = 2131558525;
+			
+			// aapt resource value: 0x7F0D007E
+			public const int pref_displayhud_title = 2131558526;
+			
+			// aapt resource value: 0x7F0D007F
+			public const int pref_enable_datachannel_default = 2131558527;
+			
+			// aapt resource value: 0x7F0D0080
+			public const int pref_enable_datachannel_key = 2131558528;
+			
+			// aapt resource value: 0x7F0D0081
+			public const int pref_enable_datachannel_title = 2131558529;
+			
+			// aapt resource value: 0x7F0D0082
+			public const int pref_enable_rtceventlog_default = 2131558530;
+			
+			// aapt resource value: 0x7F0D0083
+			public const int pref_enable_rtceventlog_key = 2131558531;
+			
+			// aapt resource value: 0x7F0D0084
+			public const int pref_enable_rtceventlog_title = 2131558532;
+			
+			// aapt resource value: 0x7F0D0085
+			public const int pref_enable_save_input_audio_to_file_default = 2131558533;
+			
+			// aapt resource value: 0x7F0D0086
+			public const int pref_enable_save_input_audio_to_file_dlg = 2131558534;
+			
+			// aapt resource value: 0x7F0D0087
+			public const int pref_enable_save_input_audio_to_file_key = 2131558535;
+			
+			// aapt resource value: 0x7F0D0088
+			public const int pref_enable_save_input_audio_to_file_title = 2131558536;
+			
+			// aapt resource value: 0x7F0D0089
+			public const int pref_flexfec_default = 2131558537;
+			
+			// aapt resource value: 0x7F0D008A
+			public const int pref_flexfec_dlg = 2131558538;
+			
+			// aapt resource value: 0x7F0D008B
+			public const int pref_flexfec_key = 2131558539;
+			
+			// aapt resource value: 0x7F0D008C
+			public const int pref_flexfec_title = 2131558540;
+			
+			// aapt resource value: 0x7F0D008D
+			public const int pref_fps_default = 2131558541;
+			
+			// aapt resource value: 0x7F0D008E
+			public const int pref_fps_dlg = 2131558542;
+			
+			// aapt resource value: 0x7F0D008F
+			public const int pref_fps_key = 2131558543;
+			
+			// aapt resource value: 0x7F0D0090
+			public const int pref_fps_title = 2131558544;
+			
+			// aapt resource value: 0x7F0D0091
+			public const int pref_hwcodec_default = 2131558545;
+			
+			// aapt resource value: 0x7F0D0092
+			public const int pref_hwcodec_dlg = 2131558546;
+			
+			// aapt resource value: 0x7F0D0093
+			public const int pref_hwcodec_key = 2131558547;
+			
+			// aapt resource value: 0x7F0D0094
+			public const int pref_hwcodec_title = 2131558548;
+			
+			// aapt resource value: 0x7F0D00A1
+			public const int pref_maxvideobitratevalue_default = 2131558561;
+			
+			// aapt resource value: 0x7F0D00A2
+			public const int pref_maxvideobitratevalue_dlg = 2131558562;
+			
+			// aapt resource value: 0x7F0D00A3
+			public const int pref_maxvideobitratevalue_key = 2131558563;
+			
+			// aapt resource value: 0x7F0D00A4
+			public const int pref_maxvideobitratevalue_title = 2131558564;
+			
+			// aapt resource value: 0x7F0D009D
+			public const int pref_maxvideobitrate_default = 2131558557;
+			
+			// aapt resource value: 0x7F0D009E
+			public const int pref_maxvideobitrate_dlg = 2131558558;
+			
+			// aapt resource value: 0x7F0D009F
+			public const int pref_maxvideobitrate_key = 2131558559;
+			
+			// aapt resource value: 0x7F0D00A0
+			public const int pref_maxvideobitrate_title = 2131558560;
+			
+			// aapt resource value: 0x7F0D0099
+			public const int pref_max_retransmits_default = 2131558553;
+			
+			// aapt resource value: 0x7F0D009A
+			public const int pref_max_retransmits_dlg = 2131558554;
+			
+			// aapt resource value: 0x7F0D009B
+			public const int pref_max_retransmits_key = 2131558555;
+			
+			// aapt resource value: 0x7F0D009C
+			public const int pref_max_retransmits_title = 2131558556;
+			
+			// aapt resource value: 0x7F0D0095
+			public const int pref_max_retransmit_time_ms_default = 2131558549;
+			
+			// aapt resource value: 0x7F0D0096
+			public const int pref_max_retransmit_time_ms_dlg = 2131558550;
+			
+			// aapt resource value: 0x7F0D0097
+			public const int pref_max_retransmit_time_ms_key = 2131558551;
+			
+			// aapt resource value: 0x7F0D0098
+			public const int pref_max_retransmit_time_ms_title = 2131558552;
+			
+			// aapt resource value: 0x7F0D00A5
+			public const int pref_miscsettings_key = 2131558565;
+			
+			// aapt resource value: 0x7F0D00A6
+			public const int pref_miscsettings_title = 2131558566;
+			
+			// aapt resource value: 0x7F0D00A7
+			public const int pref_negotiated_default = 2131558567;
+			
+			// aapt resource value: 0x7F0D00A8
+			public const int pref_negotiated_key = 2131558568;
+			
+			// aapt resource value: 0x7F0D00A9
+			public const int pref_negotiated_title = 2131558569;
+			
+			// aapt resource value: 0x7F0D00AA
+			public const int pref_noaudioprocessing_default = 2131558570;
+			
+			// aapt resource value: 0x7F0D00AB
+			public const int pref_noaudioprocessing_dlg = 2131558571;
+			
+			// aapt resource value: 0x7F0D00AC
+			public const int pref_noaudioprocessing_key = 2131558572;
+			
+			// aapt resource value: 0x7F0D00AD
+			public const int pref_noaudioprocessing_title = 2131558573;
+			
+			// aapt resource value: 0x7F0D00AE
+			public const int pref_opensles_default = 2131558574;
+			
+			// aapt resource value: 0x7F0D00AF
+			public const int pref_opensles_dlg = 2131558575;
+			
+			// aapt resource value: 0x7F0D00B0
+			public const int pref_opensles_key = 2131558576;
+			
+			// aapt resource value: 0x7F0D00B1
+			public const int pref_opensles_title = 2131558577;
+			
+			// aapt resource value: 0x7F0D00B2
+			public const int pref_ordered_default = 2131558578;
+			
+			// aapt resource value: 0x7F0D00B3
+			public const int pref_ordered_key = 2131558579;
+			
+			// aapt resource value: 0x7F0D00B4
+			public const int pref_ordered_title = 2131558580;
+			
+			// aapt resource value: 0x7F0D00B5
+			public const int pref_resolution_default = 2131558581;
+			
+			// aapt resource value: 0x7F0D00B6
+			public const int pref_resolution_dlg = 2131558582;
+			
+			// aapt resource value: 0x7F0D00B7
+			public const int pref_resolution_key = 2131558583;
+			
+			// aapt resource value: 0x7F0D00B8
+			public const int pref_resolution_title = 2131558584;
+			
+			// aapt resource value: 0x7F0D00B9
+			public const int pref_room_key = 2131558585;
+			
+			// aapt resource value: 0x7F0D00BA
+			public const int pref_room_list_key = 2131558586;
+			
+			// aapt resource value: 0x7F0D00BB
+			public const int pref_room_server_url_default = 2131558587;
+			
+			// aapt resource value: 0x7F0D00BC
+			public const int pref_room_server_url_dlg = 2131558588;
+			
+			// aapt resource value: 0x7F0D00BD
+			public const int pref_room_server_url_key = 2131558589;
+			
+			// aapt resource value: 0x7F0D00BE
+			public const int pref_room_server_url_title = 2131558590;
+			
+			// aapt resource value: 0x7F0D00BF
+			public const int pref_screencapture_default = 2131558591;
+			
+			// aapt resource value: 0x7F0D00C0
+			public const int pref_screencapture_key = 2131558592;
+			
+			// aapt resource value: 0x7F0D00C1
+			public const int pref_screencapture_title = 2131558593;
+			
+			// aapt resource value: 0x7F0D00C2
+			public const int pref_speakerphone_default = 2131558594;
+			
+			// aapt resource value: 0x7F0D00C3
+			public const int pref_speakerphone_dlg = 2131558595;
+			
+			// aapt resource value: 0x7F0D00C4
+			public const int pref_speakerphone_key = 2131558596;
+			
+			// aapt resource value: 0x7F0D00C5
+			public const int pref_speakerphone_title = 2131558597;
+			
+			// aapt resource value: 0x7F0D00CA
+			public const int pref_startaudiobitratevalue_default = 2131558602;
+			
+			// aapt resource value: 0x7F0D00CB
+			public const int pref_startaudiobitratevalue_dlg = 2131558603;
+			
+			// aapt resource value: 0x7F0D00CC
+			public const int pref_startaudiobitratevalue_key = 2131558604;
+			
+			// aapt resource value: 0x7F0D00CD
+			public const int pref_startaudiobitratevalue_title = 2131558605;
+			
+			// aapt resource value: 0x7F0D00C6
+			public const int pref_startaudiobitrate_default = 2131558598;
+			
+			// aapt resource value: 0x7F0D00C7
+			public const int pref_startaudiobitrate_dlg = 2131558599;
+			
+			// aapt resource value: 0x7F0D00C8
+			public const int pref_startaudiobitrate_key = 2131558600;
+			
+			// aapt resource value: 0x7F0D00C9
+			public const int pref_startaudiobitrate_title = 2131558601;
+			
+			// aapt resource value: 0x7F0D00CE
+			public const int pref_tracing_default = 2131558606;
+			
+			// aapt resource value: 0x7F0D00CF
+			public const int pref_tracing_dlg = 2131558607;
+			
+			// aapt resource value: 0x7F0D00D0
+			public const int pref_tracing_key = 2131558608;
+			
+			// aapt resource value: 0x7F0D00D1
+			public const int pref_tracing_title = 2131558609;
+			
+			// aapt resource value: 0x7F0D00D2
+			public const int pref_value_disabled = 2131558610;
+			
+			// aapt resource value: 0x7F0D00D3
+			public const int pref_value_enabled = 2131558611;
+			
+			// aapt resource value: 0x7F0D00D4
+			public const int pref_videocall_default = 2131558612;
+			
+			// aapt resource value: 0x7F0D00D5
+			public const int pref_videocall_dlg = 2131558613;
+			
+			// aapt resource value: 0x7F0D00D6
+			public const int pref_videocall_key = 2131558614;
+			
+			// aapt resource value: 0x7F0D00D7
+			public const int pref_videocall_title = 2131558615;
+			
+			// aapt resource value: 0x7F0D00D8
+			public const int pref_videocodec_default = 2131558616;
+			
+			// aapt resource value: 0x7F0D00D9
+			public const int pref_videocodec_dlg = 2131558617;
+			
+			// aapt resource value: 0x7F0D00DA
+			public const int pref_videocodec_key = 2131558618;
+			
+			// aapt resource value: 0x7F0D00DB
+			public const int pref_videocodec_title = 2131558619;
+			
+			// aapt resource value: 0x7F0D00DC
+			public const int pref_videosettings_key = 2131558620;
+			
+			// aapt resource value: 0x7F0D00DD
+			public const int pref_videosettings_title = 2131558621;
+			
+			// aapt resource value: 0x7F0D00DE
+			public const int room_description = 2131558622;
+			
+			// aapt resource value: 0x7F0D00DF
+			public const int search_menu_title = 2131558623;
+			
+			// aapt resource value: 0x7F0D00E0
+			public const int settings_name = 2131558624;
+			
+			// aapt resource value: 0x7F0D00E1
+			public const int status_bar_notification_info_overflow = 2131558625;
+			
+			// aapt resource value: 0x7F0D00E2
+			public const int switch_camera = 2131558626;
+			
+			// aapt resource value: 0x7F0D00E3
+			public const int toggle_debug = 2131558627;
+			
+			// aapt resource value: 0x7F0D00E4
+			public const int toggle_mic = 2131558628;
+			
+			// aapt resource value: 0x7F0D00E5
+			public const int yes = 2131558629;
 			
 			static String()
 			{
