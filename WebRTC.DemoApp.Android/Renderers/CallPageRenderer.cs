@@ -1,10 +1,8 @@
 ﻿// onotseike@hotmail.comPaula Aliu
 using System;
-using System.Security.Cryptography;
 
 using Android.App;
 using Android.Content;
-using Android.Support.V4.App;
 using Android.Views;
 using Android.Widget;
 
@@ -13,7 +11,6 @@ using Org.Webrtc;
 using WebRTC.Android;
 using WebRTC.Android.Extensions;
 using WebRTC.DemoApp;
-using WebRTC.DemoApp.Droid.Activities;
 using WebRTC.DemoApp.Droid.Fragments;
 using WebRTC.DemoApp.Droid.Renderers;
 using WebRTC.Enums;
@@ -75,7 +72,7 @@ namespace WebRTC.DemoApp.Droid.Renderers
             RoomUrl = "https://appr.tc/"
         });
 
-        public CallFragment CreateCallFragment(Intent _intent) => CallFragment.Create(RoomId, true, true);
+        public CallFragment CreateCallFragment(Intent _intent) => CallFragment.Create(RoomId, true, true, this);
 
 
 

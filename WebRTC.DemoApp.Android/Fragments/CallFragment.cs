@@ -44,7 +44,7 @@ namespace WebRTC.DemoApp.Droid.Fragments
         private ImageButton _toggleMuteButton;
         private TextView _captureFormatText;
         private SeekBar _captureFormatSlider;
-        private IOnCallEvents _callEvents;
+        public IOnCallEvents _callEvents { get; set; }
         private ScalingType _scalingType;
 
         #endregion
@@ -60,14 +60,14 @@ namespace WebRTC.DemoApp.Droid.Fragments
 
         #region Helper Method(s)
 
-        public static CallFragment Create(string name, bool videoCallEnabled, bool captureSliderEnabled)
+        public static CallFragment Create(string name, bool videoCallEnabled, bool captureSliderEnabled, IOnCallEvents onCallEvents)
         {
             var args = new Bundle();
             args.PutString(ExtraName, name);
             args.PutBoolean(ExtraVideoCallEnabled, videoCallEnabled);
             args.PutBoolean(ExtraCaptureSliderEnabled, captureSliderEnabled);
 
-            return new CallFragment { Arguments = args };
+            return new CallFragment { Arguments = args, _callEvents = onCallEvents };
         }
 
         #endregion
@@ -157,8 +157,7 @@ namespace WebRTC.DemoApp.Droid.Fragments
         public override void OnAttach(Context context)
         {
             base.OnAttach(context);
-            var act = context as FragmentActivity;
-            var e = act.BaseContext;
+
             // _callEvents = (IOnCallEvents)context;
         }
 
