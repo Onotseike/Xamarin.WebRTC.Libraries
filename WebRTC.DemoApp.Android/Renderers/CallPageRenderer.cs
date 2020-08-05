@@ -37,7 +37,7 @@ namespace WebRTC.DemoApp.Droid.Renderers
 
         private string RoomId { get; set; }
         private CallFragment CallFragment { get; set; }
-        private BaseActivity CallPageActivity { get; set; }
+        private Activity CallPageActivity { get; set; }
         private View CallView { get; set; }
 
         private RTCController CallController { get; set; }
@@ -163,17 +163,28 @@ namespace WebRTC.DemoApp.Droid.Renderers
             }
         }
 
+
+        protected override void OnLayout(bool changed, int left, int top, int right, int bottom)
+        {
+            base.OnLayout(changed, left, top, right, bottom);
+
+            var msw = MeasureSpec.MakeMeasureSpec(right - left, MeasureSpecMode.Exactly);
+            var msh = MeasureSpec.MakeMeasureSpec(bottom - top, MeasureSpecMode.Exactly);
+
+            CallView.Measure(msw, msh);
+            CallView.Layout(0, 0, right - left, bottom - top);
+        }
         #endregion
 
         #region Helper Function(s)
 
         void SetActivity()
         {
-            CallPageActivity = this.Context as BaseActivity;
+            CallPageActivity = this.Context as Activity;
             CallView = CallPageActivity.LayoutInflater.Inflate(Resource.Layout.activity_call, this, false);
 
-            FullScreenRenderer = FindViewById<SurfaceViewRenderer>(Resource.Id.fullscreen_video_view);
-            PipScreenRenderer = FindViewById<SurfaceViewRenderer>(Resource.Id.pip_video_view);
+            FullScreenRenderer = CallView.FindViewById<SurfaceViewRenderer>(Resource.Id.fullscreen_video_view);
+            PipScreenRenderer = CallView.FindViewById<SurfaceViewRenderer>(Resource.Id.pip_video_view);
 
             CallFragment = CreateCallFragment(CallPageActivity.Intent);
 
@@ -193,7 +204,7 @@ namespace WebRTC.DemoApp.Droid.Renderers
 
             SetSwappedFeeds(true);
 
-            var fragmentTransaction = CallPageActivity.SupportFragmentManager.BeginTransaction();
+            var fragmentTransaction = MainActivity.Instance.SupportFragmentManager.BeginTransaction();
             fragmentTransaction.Add(Resource.Id.call_fragment_container, CallFragment);
             fragmentTransaction.Commit();
 
@@ -221,7 +232,7 @@ namespace WebRTC.DemoApp.Droid.Renderers
 
             CallControlFragmentVisible = !CallControlFragmentVisible;
 
-            var ft = CallPageActivity.SupportFragmentManager.BeginTransaction();
+            var ft = MainActivity.Instance.SupportFragmentManager.BeginTransaction();
             if (CallControlFragmentVisible)
             {
                 ft.Show(CallFragment);

@@ -2,6 +2,7 @@
 
 
 
+
 using Android.Content;
 using Android.OS;
 using Android.Support.V4.App;
@@ -156,7 +157,9 @@ namespace WebRTC.DemoApp.Droid.Fragments
         public override void OnAttach(Context context)
         {
             base.OnAttach(context);
-            _callEvents = (IOnCallEvents)context;
+            var act = context as FragmentActivity;
+            var e = act.BaseContext;
+            // _callEvents = (IOnCallEvents)context;
         }
 
         #endregion

@@ -26,6 +26,11 @@ namespace WebRTC.DemoApp.Droid.Helpers.WebRTC.DemoApp.iOS.Helpers
         public event EventHandler<Exception> OnError;
         public event EventHandler<string> OnMessage;
 
+        public OkHttpWebSocket()
+        {
+            listener = new WebSocketListenerEx(this);
+        }
+
         public void Dispose()
         {
             webSocket.Dispose();
