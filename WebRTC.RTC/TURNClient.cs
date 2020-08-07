@@ -15,7 +15,7 @@ namespace WebRTC.RTC
 {
     public class TURNClient
     {
-        private const string TURNRefererURLString = @"https://apppr.tc";
+        private const string TURNRefererURLString = @"https://appr.tc";
 
         private readonly HttpClient _httpClient = new HttpClient();
 
@@ -41,7 +41,6 @@ namespace WebRTC.RTC
 
             return array;
         }
-
 
         public async Task<IceServer[]> GetXirSysIceServersAsync(string urlPath, string authorization)
         {
@@ -81,6 +80,7 @@ namespace WebRTC.RTC
             }
 
         }
+
         public string EncodingAuthString(string toEncode)
         {
             byte[] bytes = Encoding.GetEncoding(28591).GetBytes(toEncode);

@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRTC.DemoApp", "WebRTC.De
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRTC.RTC", "WebRTC.RTC\WebRTC.RTC.csproj", "{2DADD006-767A-482E-83B3-21F1D0C045F9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRTC.Signal.Server", "WebRTC.Signal.Server\WebRTC.Signal.Server.csproj", "{883B35D3-BE0B-46E0-9A05-1EDF4CDDC935}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -109,5 +111,17 @@ Global
 		{2DADD006-767A-482E-83B3-21F1D0C045F9}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{2DADD006-767A-482E-83B3-21F1D0C045F9}.Release|iPhone.ActiveCfg = Release|Any CPU
 		{2DADD006-767A-482E-83B3-21F1D0C045F9}.Release|iPhone.Build.0 = Release|Any CPU
+		{883B35D3-BE0B-46E0-9A05-1EDF4CDDC935}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{883B35D3-BE0B-46E0-9A05-1EDF4CDDC935}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{883B35D3-BE0B-46E0-9A05-1EDF4CDDC935}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{883B35D3-BE0B-46E0-9A05-1EDF4CDDC935}.Release|Any CPU.Build.0 = Release|Any CPU
+		{883B35D3-BE0B-46E0-9A05-1EDF4CDDC935}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{883B35D3-BE0B-46E0-9A05-1EDF4CDDC935}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{883B35D3-BE0B-46E0-9A05-1EDF4CDDC935}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{883B35D3-BE0B-46E0-9A05-1EDF4CDDC935}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{883B35D3-BE0B-46E0-9A05-1EDF4CDDC935}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{883B35D3-BE0B-46E0-9A05-1EDF4CDDC935}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{883B35D3-BE0B-46E0-9A05-1EDF4CDDC935}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{883B35D3-BE0B-46E0-9A05-1EDF4CDDC935}.Release|iPhone.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
