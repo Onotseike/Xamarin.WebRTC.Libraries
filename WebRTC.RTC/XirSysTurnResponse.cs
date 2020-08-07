@@ -3,7 +3,7 @@ using System;
 
 using Newtonsoft.Json;
 
-namespace WebRTC.Servers.ServerFxns.Core.JsonObjects
+namespace WebRTC.RTC
 {
     public class XirSysTurnResponse
     {
