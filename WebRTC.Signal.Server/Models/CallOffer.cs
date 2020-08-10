@@ -9,7 +9,7 @@ namespace WebRTC.Signal.Server.Models
         #region Properties
 
         public Client Initiator { get; set; }
-        public List<Client> Participants { get; set; }
+        public List<Client> Participants { get; set; } = new List<Client>();
 
         #endregion
     }

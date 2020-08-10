@@ -11,13 +11,15 @@ namespace WebRTC.Signal.Server.Models
         public Guid ClientId { get; set; }
         public bool InRoom { get; set; }
         public bool IsInitiator { get; set; }
+        public string Username { get; set; }
         public List<SignalMessage> Messages { get; set; }
 
         #endregion
 
-        public Client(string _clientId)
+        public Client(string _clientId, string _username = "New Client")
         {
             ClientId = new Guid(_clientId);
+            Username = _username;
             Messages = new List<SignalMessage>();
         }
 
