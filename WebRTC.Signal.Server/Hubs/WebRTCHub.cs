@@ -45,11 +45,11 @@ namespace WebRTC.Signal.Server.Hubs
 
         public void JoinHub(string _username)
         {
-            if (HubClients)
+            if (!HubClients.Exists(client => client.ClientId.ToString() == Context.ConnectionId))
             {
-
+                HubClients.Add(new Client(Context.ConnectionId, _username));
             }
-            HubClients.Add(new Client(Context.ConnectionId, _username));
+            
 
             BroadcastHubClients();
         }

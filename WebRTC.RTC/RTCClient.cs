@@ -58,9 +58,13 @@ namespace WebRTC.RTC
         public ConnectionState State { get; private set; }
 
 
-        public void Connect(RoomConnectionParameters connectionParameters)
+        public async void Connect(RoomConnectionParameters connectionParameters)
         {
             _connectionParameters = connectionParameters;
+            // SignalR Join Room
+            await SignalRHub.InvokeAsync("JoinHub", $"CLIENT_{new Random().Next(1, 20)}");
+
+
             _executor.Execute(ConnectToRoomInternal);
         }
 
@@ -367,7 +371,10 @@ namespace WebRTC.RTC
 
         #region SignalR Hub Connection Methods
 
+        private void SignalRConnectToRoomInternal()
+        {
 
+        }
 
         #endregion
     }
