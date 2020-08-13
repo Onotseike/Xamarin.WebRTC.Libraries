@@ -1,5 +1,9 @@
 ﻿// onotseike@hotmail.comPaula Aliu
 using System;
+using System.Threading.Tasks;
+
+using Microsoft.AspNetCore.Http.Connections;
+using Microsoft.AspNetCore.SignalR.Client;
 
 using Newtonsoft.Json;
 
@@ -35,12 +39,20 @@ namespace WebRTC.RTC
         private string _leaveUrl;
 
 
+        private HubConnection SignalRHub { get; set; }
+
         public RTCClient(ISignalingEvents<SignalingParameters> signalingEvents, ILogger logger = null)
         {
             _signalingEvents = signalingEvents;
             _executor = ExecutorServiceFactory.CreateExecutorService(nameof(RTCClient));
             _logger = logger ?? new ConsoleLogger();
             State = ConnectionState.New;
+
+            SignalRHub = new HubConnectionBuilder().WithUrl("http://localhost:28022/WebRTCHub", HttpTransportType.WebSockets).Build();
+            SignalRHub.Closed += async (error) =>
+            {
+                await SignalRHub.StartAsync();
+            };
         }
 
         public ConnectionState State { get; private set; }
@@ -351,5 +363,12 @@ namespace WebRTC.RTC
         {
             return roomConnectionParameters.UrlParameters != null ? $"?{roomConnectionParameters.UrlParameters}" : "";
         }
+
+
+        #region SignalR Hub Connection Methods
+
+
+
+        #endregion
     }
 }

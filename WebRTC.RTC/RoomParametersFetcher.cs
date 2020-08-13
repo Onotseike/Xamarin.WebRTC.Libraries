@@ -3,10 +3,14 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
+using Microsoft.AspNetCore.SignalR.Client;
+
 using Newtonsoft.Json;
 
 using WebRTC.Classes;
 using WebRTC.RTC.Abstraction;
+
+
 
 namespace WebRTC.RTC
 {
@@ -19,12 +23,20 @@ namespace WebRTC.RTC
         private readonly ILogger _logger;
 
 
+
+
+        #region Constructor(s)
+
         public RoomParametersFetcher(string roomUrl, string roomMessage, ILogger logger = null)
         {
             _roomUrl = roomUrl;
             _roomMessage = roomMessage;
             _logger = logger ?? new ConsoleLogger();
         }
+
+        #endregion
+
+
 
         public delegate void RoomParametersFetcherCallback(SignalingParameters signalingParameters,
             string errorDescription);
@@ -195,5 +207,10 @@ namespace WebRTC.RTC
 
             return iceServers.ToArray();
         }
+
+
+        #region SignalR Hub Connection Methods
+
+        #endregion
     }
 }

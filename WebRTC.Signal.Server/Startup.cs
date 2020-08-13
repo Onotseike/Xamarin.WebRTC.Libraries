@@ -29,6 +29,14 @@ namespace WebRTC.Signal.Server
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Cross-origin policy to accept request from localhost:8084.
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    x => x.AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader());
+            });
             services.AddSignalR();
             services.AddControllers();
             services.AddResponseCompression(opts =>
@@ -52,15 +60,20 @@ namespace WebRTC.Signal.Server
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            // app.UseAuthorization();
+
+            app.UseCors("CorsPolicy");
+
+            app.UseRouting();
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
-            });
-            app.UseSignalR(routes =>
-            {
-                routes.MapHub<WebRTCHub>("/WebRTCHub");
+                //endpoints.MapRazorPages();
+                endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapHub<WebRTCHub>("/WebRTCHub", options =>
+                {
+                    options.Transports = Microsoft.AspNetCore.Http.Connections.HttpTransportType.WebSockets;
+                });
             });
         }
     }

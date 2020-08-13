@@ -3118,6 +3118,7 @@ namespace WebRTC.DemoApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.String.fab_transformation_sheet_behavior = global::WebRTC.DemoApp.Droid.Resource.String.fab_transformation_sheet_behavior;
 			global::Xamarin.Forms.Platform.Android.Resource.String.hide_bottom_view_on_scroll_behavior = global::WebRTC.DemoApp.Droid.Resource.String.hide_bottom_view_on_scroll_behavior;
 			global::Xamarin.Forms.Platform.Android.Resource.String.mtrl_chip_close_icon_content_description = global::WebRTC.DemoApp.Droid.Resource.String.mtrl_chip_close_icon_content_description;
+			global::Xamarin.Forms.Platform.Android.Resource.String.overflow_tab_title = global::WebRTC.DemoApp.Droid.Resource.String.overflow_tab_title;
 			global::Xamarin.Forms.Platform.Android.Resource.String.password_toggle_content_description = global::WebRTC.DemoApp.Droid.Resource.String.password_toggle_content_description;
 			global::Xamarin.Forms.Platform.Android.Resource.String.path_password_eye = global::WebRTC.DemoApp.Droid.Resource.String.path_password_eye;
 			global::Xamarin.Forms.Platform.Android.Resource.String.path_password_eye_mask_strike_through = global::WebRTC.DemoApp.Droid.Resource.String.path_password_eye_mask_strike_through;
@@ -5687,6 +5688,7 @@ namespace WebRTC.DemoApp.Droid
 			global::Xamarin.Forms.Platform.Resource.String.fab_transformation_sheet_behavior = global::WebRTC.DemoApp.Droid.Resource.String.fab_transformation_sheet_behavior;
 			global::Xamarin.Forms.Platform.Resource.String.hide_bottom_view_on_scroll_behavior = global::WebRTC.DemoApp.Droid.Resource.String.hide_bottom_view_on_scroll_behavior;
 			global::Xamarin.Forms.Platform.Resource.String.mtrl_chip_close_icon_content_description = global::WebRTC.DemoApp.Droid.Resource.String.mtrl_chip_close_icon_content_description;
+			global::Xamarin.Forms.Platform.Resource.String.overflow_tab_title = global::WebRTC.DemoApp.Droid.Resource.String.overflow_tab_title;
 			global::Xamarin.Forms.Platform.Resource.String.password_toggle_content_description = global::WebRTC.DemoApp.Droid.Resource.String.password_toggle_content_description;
 			global::Xamarin.Forms.Platform.Resource.String.path_password_eye = global::WebRTC.DemoApp.Droid.Resource.String.path_password_eye;
 			global::Xamarin.Forms.Platform.Resource.String.path_password_eye_mask_strike_through = global::WebRTC.DemoApp.Droid.Resource.String.path_password_eye_mask_strike_through;
@@ -11242,490 +11244,493 @@ namespace WebRTC.DemoApp.Droid
 			public const int ok = 2131558467;
 			
 			// aapt resource value: 0x7F0D0044
-			public const int password_toggle_content_description = 2131558468;
+			public const int overflow_tab_title = 2131558468;
 			
 			// aapt resource value: 0x7F0D0045
-			public const int path_password_eye = 2131558469;
+			public const int password_toggle_content_description = 2131558469;
 			
 			// aapt resource value: 0x7F0D0046
-			public const int path_password_eye_mask_strike_through = 2131558470;
+			public const int path_password_eye = 2131558470;
 			
 			// aapt resource value: 0x7F0D0047
-			public const int path_password_eye_mask_visible = 2131558471;
+			public const int path_password_eye_mask_strike_through = 2131558471;
 			
 			// aapt resource value: 0x7F0D0048
-			public const int path_password_strike_through = 2131558472;
+			public const int path_password_eye_mask_visible = 2131558472;
 			
 			// aapt resource value: 0x7F0D0049
-			public const int pref_aecdump_default = 2131558473;
+			public const int path_password_strike_through = 2131558473;
 			
 			// aapt resource value: 0x7F0D004A
-			public const int pref_aecdump_dlg = 2131558474;
+			public const int pref_aecdump_default = 2131558474;
 			
 			// aapt resource value: 0x7F0D004B
-			public const int pref_aecdump_key = 2131558475;
+			public const int pref_aecdump_dlg = 2131558475;
 			
 			// aapt resource value: 0x7F0D004C
-			public const int pref_aecdump_title = 2131558476;
+			public const int pref_aecdump_key = 2131558476;
 			
 			// aapt resource value: 0x7F0D004D
-			public const int pref_audiocodec_default = 2131558477;
+			public const int pref_aecdump_title = 2131558477;
 			
 			// aapt resource value: 0x7F0D004E
-			public const int pref_audiocodec_dlg = 2131558478;
+			public const int pref_audiocodec_default = 2131558478;
 			
 			// aapt resource value: 0x7F0D004F
-			public const int pref_audiocodec_key = 2131558479;
+			public const int pref_audiocodec_dlg = 2131558479;
 			
 			// aapt resource value: 0x7F0D0050
-			public const int pref_audiocodec_title = 2131558480;
+			public const int pref_audiocodec_key = 2131558480;
 			
 			// aapt resource value: 0x7F0D0051
-			public const int pref_audiosettings_key = 2131558481;
+			public const int pref_audiocodec_title = 2131558481;
 			
 			// aapt resource value: 0x7F0D0052
-			public const int pref_audiosettings_title = 2131558482;
+			public const int pref_audiosettings_key = 2131558482;
 			
 			// aapt resource value: 0x7F0D0053
-			public const int pref_built_in_aec_not_available = 2131558483;
+			public const int pref_audiosettings_title = 2131558483;
 			
 			// aapt resource value: 0x7F0D0054
-			public const int pref_built_in_agc_not_available = 2131558484;
+			public const int pref_built_in_aec_not_available = 2131558484;
 			
 			// aapt resource value: 0x7F0D0055
-			public const int pref_built_in_ns_not_available = 2131558485;
+			public const int pref_built_in_agc_not_available = 2131558485;
 			
 			// aapt resource value: 0x7F0D0056
-			public const int pref_camera2_default = 2131558486;
+			public const int pref_built_in_ns_not_available = 2131558486;
 			
 			// aapt resource value: 0x7F0D0057
-			public const int pref_camera2_key = 2131558487;
+			public const int pref_camera2_default = 2131558487;
 			
 			// aapt resource value: 0x7F0D0058
-			public const int pref_camera2_not_supported = 2131558488;
+			public const int pref_camera2_key = 2131558488;
 			
 			// aapt resource value: 0x7F0D0059
-			public const int pref_camera2_title = 2131558489;
+			public const int pref_camera2_not_supported = 2131558489;
 			
 			// aapt resource value: 0x7F0D005A
-			public const int pref_capturequalityslider_default = 2131558490;
+			public const int pref_camera2_title = 2131558490;
 			
 			// aapt resource value: 0x7F0D005B
-			public const int pref_capturequalityslider_dlg = 2131558491;
+			public const int pref_capturequalityslider_default = 2131558491;
 			
 			// aapt resource value: 0x7F0D005C
-			public const int pref_capturequalityslider_key = 2131558492;
+			public const int pref_capturequalityslider_dlg = 2131558492;
 			
 			// aapt resource value: 0x7F0D005D
-			public const int pref_capturequalityslider_title = 2131558493;
+			public const int pref_capturequalityslider_key = 2131558493;
 			
 			// aapt resource value: 0x7F0D005E
-			public const int pref_capturetotexture_default = 2131558494;
+			public const int pref_capturequalityslider_title = 2131558494;
 			
 			// aapt resource value: 0x7F0D005F
-			public const int pref_capturetotexture_dlg = 2131558495;
+			public const int pref_capturetotexture_default = 2131558495;
 			
 			// aapt resource value: 0x7F0D0060
-			public const int pref_capturetotexture_key = 2131558496;
+			public const int pref_capturetotexture_dlg = 2131558496;
 			
 			// aapt resource value: 0x7F0D0061
-			public const int pref_capturetotexture_title = 2131558497;
-			
-			// aapt resource value: 0x7F0D006A
-			public const int pref_datasettings_key = 2131558506;
-			
-			// aapt resource value: 0x7F0D006B
-			public const int pref_datasettings_title = 2131558507;
+			public const int pref_capturetotexture_key = 2131558497;
 			
 			// aapt resource value: 0x7F0D0062
-			public const int pref_data_id_default = 2131558498;
+			public const int pref_capturetotexture_title = 2131558498;
 			
-			// aapt resource value: 0x7F0D0063
-			public const int pref_data_id_dlg = 2131558499;
-			
-			// aapt resource value: 0x7F0D0064
-			public const int pref_data_id_key = 2131558500;
-			
-			// aapt resource value: 0x7F0D0065
-			public const int pref_data_id_title = 2131558501;
-			
-			// aapt resource value: 0x7F0D0066
-			public const int pref_data_protocol_default = 2131558502;
-			
-			// aapt resource value: 0x7F0D0067
-			public const int pref_data_protocol_dlg = 2131558503;
-			
-			// aapt resource value: 0x7F0D0068
-			public const int pref_data_protocol_key = 2131558504;
-			
-			// aapt resource value: 0x7F0D0069
-			public const int pref_data_protocol_title = 2131558505;
+			// aapt resource value: 0x7F0D006B
+			public const int pref_datasettings_key = 2131558507;
 			
 			// aapt resource value: 0x7F0D006C
-			public const int pref_disable_built_in_aec_default = 2131558508;
+			public const int pref_datasettings_title = 2131558508;
+			
+			// aapt resource value: 0x7F0D0063
+			public const int pref_data_id_default = 2131558499;
+			
+			// aapt resource value: 0x7F0D0064
+			public const int pref_data_id_dlg = 2131558500;
+			
+			// aapt resource value: 0x7F0D0065
+			public const int pref_data_id_key = 2131558501;
+			
+			// aapt resource value: 0x7F0D0066
+			public const int pref_data_id_title = 2131558502;
+			
+			// aapt resource value: 0x7F0D0067
+			public const int pref_data_protocol_default = 2131558503;
+			
+			// aapt resource value: 0x7F0D0068
+			public const int pref_data_protocol_dlg = 2131558504;
+			
+			// aapt resource value: 0x7F0D0069
+			public const int pref_data_protocol_key = 2131558505;
+			
+			// aapt resource value: 0x7F0D006A
+			public const int pref_data_protocol_title = 2131558506;
 			
 			// aapt resource value: 0x7F0D006D
-			public const int pref_disable_built_in_aec_dlg = 2131558509;
+			public const int pref_disable_built_in_aec_default = 2131558509;
 			
 			// aapt resource value: 0x7F0D006E
-			public const int pref_disable_built_in_aec_key = 2131558510;
+			public const int pref_disable_built_in_aec_dlg = 2131558510;
 			
 			// aapt resource value: 0x7F0D006F
-			public const int pref_disable_built_in_aec_title = 2131558511;
+			public const int pref_disable_built_in_aec_key = 2131558511;
 			
 			// aapt resource value: 0x7F0D0070
-			public const int pref_disable_built_in_agc_default = 2131558512;
+			public const int pref_disable_built_in_aec_title = 2131558512;
 			
 			// aapt resource value: 0x7F0D0071
-			public const int pref_disable_built_in_agc_dlg = 2131558513;
+			public const int pref_disable_built_in_agc_default = 2131558513;
 			
 			// aapt resource value: 0x7F0D0072
-			public const int pref_disable_built_in_agc_key = 2131558514;
+			public const int pref_disable_built_in_agc_dlg = 2131558514;
 			
 			// aapt resource value: 0x7F0D0073
-			public const int pref_disable_built_in_agc_title = 2131558515;
+			public const int pref_disable_built_in_agc_key = 2131558515;
 			
 			// aapt resource value: 0x7F0D0074
-			public const int pref_disable_built_in_ns_default = 2131558516;
+			public const int pref_disable_built_in_agc_title = 2131558516;
 			
 			// aapt resource value: 0x7F0D0075
-			public const int pref_disable_built_in_ns_dlg = 2131558517;
+			public const int pref_disable_built_in_ns_default = 2131558517;
 			
 			// aapt resource value: 0x7F0D0076
-			public const int pref_disable_built_in_ns_key = 2131558518;
+			public const int pref_disable_built_in_ns_dlg = 2131558518;
 			
 			// aapt resource value: 0x7F0D0077
-			public const int pref_disable_built_in_ns_title = 2131558519;
+			public const int pref_disable_built_in_ns_key = 2131558519;
 			
 			// aapt resource value: 0x7F0D0078
-			public const int pref_disable_webrtc_agc_and_hpf_key = 2131558520;
+			public const int pref_disable_built_in_ns_title = 2131558520;
 			
 			// aapt resource value: 0x7F0D0079
-			public const int pref_disable_webrtc_agc_and_hpf_title = 2131558521;
+			public const int pref_disable_webrtc_agc_and_hpf_key = 2131558521;
 			
 			// aapt resource value: 0x7F0D007A
-			public const int pref_disable_webrtc_agc_default = 2131558522;
+			public const int pref_disable_webrtc_agc_and_hpf_title = 2131558522;
 			
 			// aapt resource value: 0x7F0D007B
-			public const int pref_displayhud_default = 2131558523;
+			public const int pref_disable_webrtc_agc_default = 2131558523;
 			
 			// aapt resource value: 0x7F0D007C
-			public const int pref_displayhud_dlg = 2131558524;
+			public const int pref_displayhud_default = 2131558524;
 			
 			// aapt resource value: 0x7F0D007D
-			public const int pref_displayhud_key = 2131558525;
+			public const int pref_displayhud_dlg = 2131558525;
 			
 			// aapt resource value: 0x7F0D007E
-			public const int pref_displayhud_title = 2131558526;
+			public const int pref_displayhud_key = 2131558526;
 			
 			// aapt resource value: 0x7F0D007F
-			public const int pref_enable_datachannel_default = 2131558527;
+			public const int pref_displayhud_title = 2131558527;
 			
 			// aapt resource value: 0x7F0D0080
-			public const int pref_enable_datachannel_key = 2131558528;
+			public const int pref_enable_datachannel_default = 2131558528;
 			
 			// aapt resource value: 0x7F0D0081
-			public const int pref_enable_datachannel_title = 2131558529;
+			public const int pref_enable_datachannel_key = 2131558529;
 			
 			// aapt resource value: 0x7F0D0082
-			public const int pref_enable_rtceventlog_default = 2131558530;
+			public const int pref_enable_datachannel_title = 2131558530;
 			
 			// aapt resource value: 0x7F0D0083
-			public const int pref_enable_rtceventlog_key = 2131558531;
+			public const int pref_enable_rtceventlog_default = 2131558531;
 			
 			// aapt resource value: 0x7F0D0084
-			public const int pref_enable_rtceventlog_title = 2131558532;
+			public const int pref_enable_rtceventlog_key = 2131558532;
 			
 			// aapt resource value: 0x7F0D0085
-			public const int pref_enable_save_input_audio_to_file_default = 2131558533;
+			public const int pref_enable_rtceventlog_title = 2131558533;
 			
 			// aapt resource value: 0x7F0D0086
-			public const int pref_enable_save_input_audio_to_file_dlg = 2131558534;
+			public const int pref_enable_save_input_audio_to_file_default = 2131558534;
 			
 			// aapt resource value: 0x7F0D0087
-			public const int pref_enable_save_input_audio_to_file_key = 2131558535;
+			public const int pref_enable_save_input_audio_to_file_dlg = 2131558535;
 			
 			// aapt resource value: 0x7F0D0088
-			public const int pref_enable_save_input_audio_to_file_title = 2131558536;
+			public const int pref_enable_save_input_audio_to_file_key = 2131558536;
 			
 			// aapt resource value: 0x7F0D0089
-			public const int pref_flexfec_default = 2131558537;
+			public const int pref_enable_save_input_audio_to_file_title = 2131558537;
 			
 			// aapt resource value: 0x7F0D008A
-			public const int pref_flexfec_dlg = 2131558538;
+			public const int pref_flexfec_default = 2131558538;
 			
 			// aapt resource value: 0x7F0D008B
-			public const int pref_flexfec_key = 2131558539;
+			public const int pref_flexfec_dlg = 2131558539;
 			
 			// aapt resource value: 0x7F0D008C
-			public const int pref_flexfec_title = 2131558540;
+			public const int pref_flexfec_key = 2131558540;
 			
 			// aapt resource value: 0x7F0D008D
-			public const int pref_fps_default = 2131558541;
+			public const int pref_flexfec_title = 2131558541;
 			
 			// aapt resource value: 0x7F0D008E
-			public const int pref_fps_dlg = 2131558542;
+			public const int pref_fps_default = 2131558542;
 			
 			// aapt resource value: 0x7F0D008F
-			public const int pref_fps_key = 2131558543;
+			public const int pref_fps_dlg = 2131558543;
 			
 			// aapt resource value: 0x7F0D0090
-			public const int pref_fps_title = 2131558544;
+			public const int pref_fps_key = 2131558544;
 			
 			// aapt resource value: 0x7F0D0091
-			public const int pref_hwcodec_default = 2131558545;
+			public const int pref_fps_title = 2131558545;
 			
 			// aapt resource value: 0x7F0D0092
-			public const int pref_hwcodec_dlg = 2131558546;
+			public const int pref_hwcodec_default = 2131558546;
 			
 			// aapt resource value: 0x7F0D0093
-			public const int pref_hwcodec_key = 2131558547;
+			public const int pref_hwcodec_dlg = 2131558547;
 			
 			// aapt resource value: 0x7F0D0094
-			public const int pref_hwcodec_title = 2131558548;
-			
-			// aapt resource value: 0x7F0D00A1
-			public const int pref_maxvideobitratevalue_default = 2131558561;
-			
-			// aapt resource value: 0x7F0D00A2
-			public const int pref_maxvideobitratevalue_dlg = 2131558562;
-			
-			// aapt resource value: 0x7F0D00A3
-			public const int pref_maxvideobitratevalue_key = 2131558563;
-			
-			// aapt resource value: 0x7F0D00A4
-			public const int pref_maxvideobitratevalue_title = 2131558564;
-			
-			// aapt resource value: 0x7F0D009D
-			public const int pref_maxvideobitrate_default = 2131558557;
-			
-			// aapt resource value: 0x7F0D009E
-			public const int pref_maxvideobitrate_dlg = 2131558558;
-			
-			// aapt resource value: 0x7F0D009F
-			public const int pref_maxvideobitrate_key = 2131558559;
-			
-			// aapt resource value: 0x7F0D00A0
-			public const int pref_maxvideobitrate_title = 2131558560;
-			
-			// aapt resource value: 0x7F0D0099
-			public const int pref_max_retransmits_default = 2131558553;
-			
-			// aapt resource value: 0x7F0D009A
-			public const int pref_max_retransmits_dlg = 2131558554;
-			
-			// aapt resource value: 0x7F0D009B
-			public const int pref_max_retransmits_key = 2131558555;
-			
-			// aapt resource value: 0x7F0D009C
-			public const int pref_max_retransmits_title = 2131558556;
+			public const int pref_hwcodec_key = 2131558548;
 			
 			// aapt resource value: 0x7F0D0095
-			public const int pref_max_retransmit_time_ms_default = 2131558549;
+			public const int pref_hwcodec_title = 2131558549;
 			
-			// aapt resource value: 0x7F0D0096
-			public const int pref_max_retransmit_time_ms_dlg = 2131558550;
+			// aapt resource value: 0x7F0D00A2
+			public const int pref_maxvideobitratevalue_default = 2131558562;
 			
-			// aapt resource value: 0x7F0D0097
-			public const int pref_max_retransmit_time_ms_key = 2131558551;
+			// aapt resource value: 0x7F0D00A3
+			public const int pref_maxvideobitratevalue_dlg = 2131558563;
 			
-			// aapt resource value: 0x7F0D0098
-			public const int pref_max_retransmit_time_ms_title = 2131558552;
+			// aapt resource value: 0x7F0D00A4
+			public const int pref_maxvideobitratevalue_key = 2131558564;
 			
 			// aapt resource value: 0x7F0D00A5
-			public const int pref_miscsettings_key = 2131558565;
+			public const int pref_maxvideobitratevalue_title = 2131558565;
+			
+			// aapt resource value: 0x7F0D009E
+			public const int pref_maxvideobitrate_default = 2131558558;
+			
+			// aapt resource value: 0x7F0D009F
+			public const int pref_maxvideobitrate_dlg = 2131558559;
+			
+			// aapt resource value: 0x7F0D00A0
+			public const int pref_maxvideobitrate_key = 2131558560;
+			
+			// aapt resource value: 0x7F0D00A1
+			public const int pref_maxvideobitrate_title = 2131558561;
+			
+			// aapt resource value: 0x7F0D009A
+			public const int pref_max_retransmits_default = 2131558554;
+			
+			// aapt resource value: 0x7F0D009B
+			public const int pref_max_retransmits_dlg = 2131558555;
+			
+			// aapt resource value: 0x7F0D009C
+			public const int pref_max_retransmits_key = 2131558556;
+			
+			// aapt resource value: 0x7F0D009D
+			public const int pref_max_retransmits_title = 2131558557;
+			
+			// aapt resource value: 0x7F0D0096
+			public const int pref_max_retransmit_time_ms_default = 2131558550;
+			
+			// aapt resource value: 0x7F0D0097
+			public const int pref_max_retransmit_time_ms_dlg = 2131558551;
+			
+			// aapt resource value: 0x7F0D0098
+			public const int pref_max_retransmit_time_ms_key = 2131558552;
+			
+			// aapt resource value: 0x7F0D0099
+			public const int pref_max_retransmit_time_ms_title = 2131558553;
 			
 			// aapt resource value: 0x7F0D00A6
-			public const int pref_miscsettings_title = 2131558566;
+			public const int pref_miscsettings_key = 2131558566;
 			
 			// aapt resource value: 0x7F0D00A7
-			public const int pref_negotiated_default = 2131558567;
+			public const int pref_miscsettings_title = 2131558567;
 			
 			// aapt resource value: 0x7F0D00A8
-			public const int pref_negotiated_key = 2131558568;
+			public const int pref_negotiated_default = 2131558568;
 			
 			// aapt resource value: 0x7F0D00A9
-			public const int pref_negotiated_title = 2131558569;
+			public const int pref_negotiated_key = 2131558569;
 			
 			// aapt resource value: 0x7F0D00AA
-			public const int pref_noaudioprocessing_default = 2131558570;
+			public const int pref_negotiated_title = 2131558570;
 			
 			// aapt resource value: 0x7F0D00AB
-			public const int pref_noaudioprocessing_dlg = 2131558571;
+			public const int pref_noaudioprocessing_default = 2131558571;
 			
 			// aapt resource value: 0x7F0D00AC
-			public const int pref_noaudioprocessing_key = 2131558572;
+			public const int pref_noaudioprocessing_dlg = 2131558572;
 			
 			// aapt resource value: 0x7F0D00AD
-			public const int pref_noaudioprocessing_title = 2131558573;
+			public const int pref_noaudioprocessing_key = 2131558573;
 			
 			// aapt resource value: 0x7F0D00AE
-			public const int pref_opensles_default = 2131558574;
+			public const int pref_noaudioprocessing_title = 2131558574;
 			
 			// aapt resource value: 0x7F0D00AF
-			public const int pref_opensles_dlg = 2131558575;
+			public const int pref_opensles_default = 2131558575;
 			
 			// aapt resource value: 0x7F0D00B0
-			public const int pref_opensles_key = 2131558576;
+			public const int pref_opensles_dlg = 2131558576;
 			
 			// aapt resource value: 0x7F0D00B1
-			public const int pref_opensles_title = 2131558577;
+			public const int pref_opensles_key = 2131558577;
 			
 			// aapt resource value: 0x7F0D00B2
-			public const int pref_ordered_default = 2131558578;
+			public const int pref_opensles_title = 2131558578;
 			
 			// aapt resource value: 0x7F0D00B3
-			public const int pref_ordered_key = 2131558579;
+			public const int pref_ordered_default = 2131558579;
 			
 			// aapt resource value: 0x7F0D00B4
-			public const int pref_ordered_title = 2131558580;
+			public const int pref_ordered_key = 2131558580;
 			
 			// aapt resource value: 0x7F0D00B5
-			public const int pref_resolution_default = 2131558581;
+			public const int pref_ordered_title = 2131558581;
 			
 			// aapt resource value: 0x7F0D00B6
-			public const int pref_resolution_dlg = 2131558582;
+			public const int pref_resolution_default = 2131558582;
 			
 			// aapt resource value: 0x7F0D00B7
-			public const int pref_resolution_key = 2131558583;
+			public const int pref_resolution_dlg = 2131558583;
 			
 			// aapt resource value: 0x7F0D00B8
-			public const int pref_resolution_title = 2131558584;
+			public const int pref_resolution_key = 2131558584;
 			
 			// aapt resource value: 0x7F0D00B9
-			public const int pref_room_key = 2131558585;
+			public const int pref_resolution_title = 2131558585;
 			
 			// aapt resource value: 0x7F0D00BA
-			public const int pref_room_list_key = 2131558586;
+			public const int pref_room_key = 2131558586;
 			
 			// aapt resource value: 0x7F0D00BB
-			public const int pref_room_server_url_default = 2131558587;
+			public const int pref_room_list_key = 2131558587;
 			
 			// aapt resource value: 0x7F0D00BC
-			public const int pref_room_server_url_dlg = 2131558588;
+			public const int pref_room_server_url_default = 2131558588;
 			
 			// aapt resource value: 0x7F0D00BD
-			public const int pref_room_server_url_key = 2131558589;
+			public const int pref_room_server_url_dlg = 2131558589;
 			
 			// aapt resource value: 0x7F0D00BE
-			public const int pref_room_server_url_title = 2131558590;
+			public const int pref_room_server_url_key = 2131558590;
 			
 			// aapt resource value: 0x7F0D00BF
-			public const int pref_screencapture_default = 2131558591;
+			public const int pref_room_server_url_title = 2131558591;
 			
 			// aapt resource value: 0x7F0D00C0
-			public const int pref_screencapture_key = 2131558592;
+			public const int pref_screencapture_default = 2131558592;
 			
 			// aapt resource value: 0x7F0D00C1
-			public const int pref_screencapture_title = 2131558593;
+			public const int pref_screencapture_key = 2131558593;
 			
 			// aapt resource value: 0x7F0D00C2
-			public const int pref_speakerphone_default = 2131558594;
+			public const int pref_screencapture_title = 2131558594;
 			
 			// aapt resource value: 0x7F0D00C3
-			public const int pref_speakerphone_dlg = 2131558595;
+			public const int pref_speakerphone_default = 2131558595;
 			
 			// aapt resource value: 0x7F0D00C4
-			public const int pref_speakerphone_key = 2131558596;
+			public const int pref_speakerphone_dlg = 2131558596;
 			
 			// aapt resource value: 0x7F0D00C5
-			public const int pref_speakerphone_title = 2131558597;
-			
-			// aapt resource value: 0x7F0D00CA
-			public const int pref_startaudiobitratevalue_default = 2131558602;
-			
-			// aapt resource value: 0x7F0D00CB
-			public const int pref_startaudiobitratevalue_dlg = 2131558603;
-			
-			// aapt resource value: 0x7F0D00CC
-			public const int pref_startaudiobitratevalue_key = 2131558604;
-			
-			// aapt resource value: 0x7F0D00CD
-			public const int pref_startaudiobitratevalue_title = 2131558605;
+			public const int pref_speakerphone_key = 2131558597;
 			
 			// aapt resource value: 0x7F0D00C6
-			public const int pref_startaudiobitrate_default = 2131558598;
+			public const int pref_speakerphone_title = 2131558598;
 			
-			// aapt resource value: 0x7F0D00C7
-			public const int pref_startaudiobitrate_dlg = 2131558599;
+			// aapt resource value: 0x7F0D00CB
+			public const int pref_startaudiobitratevalue_default = 2131558603;
 			
-			// aapt resource value: 0x7F0D00C8
-			public const int pref_startaudiobitrate_key = 2131558600;
+			// aapt resource value: 0x7F0D00CC
+			public const int pref_startaudiobitratevalue_dlg = 2131558604;
 			
-			// aapt resource value: 0x7F0D00C9
-			public const int pref_startaudiobitrate_title = 2131558601;
+			// aapt resource value: 0x7F0D00CD
+			public const int pref_startaudiobitratevalue_key = 2131558605;
 			
 			// aapt resource value: 0x7F0D00CE
-			public const int pref_tracing_default = 2131558606;
+			public const int pref_startaudiobitratevalue_title = 2131558606;
+			
+			// aapt resource value: 0x7F0D00C7
+			public const int pref_startaudiobitrate_default = 2131558599;
+			
+			// aapt resource value: 0x7F0D00C8
+			public const int pref_startaudiobitrate_dlg = 2131558600;
+			
+			// aapt resource value: 0x7F0D00C9
+			public const int pref_startaudiobitrate_key = 2131558601;
+			
+			// aapt resource value: 0x7F0D00CA
+			public const int pref_startaudiobitrate_title = 2131558602;
 			
 			// aapt resource value: 0x7F0D00CF
-			public const int pref_tracing_dlg = 2131558607;
+			public const int pref_tracing_default = 2131558607;
 			
 			// aapt resource value: 0x7F0D00D0
-			public const int pref_tracing_key = 2131558608;
+			public const int pref_tracing_dlg = 2131558608;
 			
 			// aapt resource value: 0x7F0D00D1
-			public const int pref_tracing_title = 2131558609;
+			public const int pref_tracing_key = 2131558609;
 			
 			// aapt resource value: 0x7F0D00D2
-			public const int pref_value_disabled = 2131558610;
+			public const int pref_tracing_title = 2131558610;
 			
 			// aapt resource value: 0x7F0D00D3
-			public const int pref_value_enabled = 2131558611;
+			public const int pref_value_disabled = 2131558611;
 			
 			// aapt resource value: 0x7F0D00D4
-			public const int pref_videocall_default = 2131558612;
+			public const int pref_value_enabled = 2131558612;
 			
 			// aapt resource value: 0x7F0D00D5
-			public const int pref_videocall_dlg = 2131558613;
+			public const int pref_videocall_default = 2131558613;
 			
 			// aapt resource value: 0x7F0D00D6
-			public const int pref_videocall_key = 2131558614;
+			public const int pref_videocall_dlg = 2131558614;
 			
 			// aapt resource value: 0x7F0D00D7
-			public const int pref_videocall_title = 2131558615;
+			public const int pref_videocall_key = 2131558615;
 			
 			// aapt resource value: 0x7F0D00D8
-			public const int pref_videocodec_default = 2131558616;
+			public const int pref_videocall_title = 2131558616;
 			
 			// aapt resource value: 0x7F0D00D9
-			public const int pref_videocodec_dlg = 2131558617;
+			public const int pref_videocodec_default = 2131558617;
 			
 			// aapt resource value: 0x7F0D00DA
-			public const int pref_videocodec_key = 2131558618;
+			public const int pref_videocodec_dlg = 2131558618;
 			
 			// aapt resource value: 0x7F0D00DB
-			public const int pref_videocodec_title = 2131558619;
+			public const int pref_videocodec_key = 2131558619;
 			
 			// aapt resource value: 0x7F0D00DC
-			public const int pref_videosettings_key = 2131558620;
+			public const int pref_videocodec_title = 2131558620;
 			
 			// aapt resource value: 0x7F0D00DD
-			public const int pref_videosettings_title = 2131558621;
+			public const int pref_videosettings_key = 2131558621;
 			
 			// aapt resource value: 0x7F0D00DE
-			public const int room_description = 2131558622;
+			public const int pref_videosettings_title = 2131558622;
 			
 			// aapt resource value: 0x7F0D00DF
-			public const int search_menu_title = 2131558623;
+			public const int room_description = 2131558623;
 			
 			// aapt resource value: 0x7F0D00E0
-			public const int settings_name = 2131558624;
+			public const int search_menu_title = 2131558624;
 			
 			// aapt resource value: 0x7F0D00E1
-			public const int status_bar_notification_info_overflow = 2131558625;
+			public const int settings_name = 2131558625;
 			
 			// aapt resource value: 0x7F0D00E2
-			public const int switch_camera = 2131558626;
+			public const int status_bar_notification_info_overflow = 2131558626;
 			
 			// aapt resource value: 0x7F0D00E3
-			public const int toggle_debug = 2131558627;
+			public const int switch_camera = 2131558627;
 			
 			// aapt resource value: 0x7F0D00E4
-			public const int toggle_mic = 2131558628;
+			public const int toggle_debug = 2131558628;
 			
 			// aapt resource value: 0x7F0D00E5
-			public const int yes = 2131558629;
+			public const int toggle_mic = 2131558629;
+			
+			// aapt resource value: 0x7F0D00E6
+			public const int yes = 2131558630;
 			
 			static String()
 			{
