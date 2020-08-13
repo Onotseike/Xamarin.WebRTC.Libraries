@@ -1,5 +1,6 @@
 ﻿// onotseike@hotmail.comPaula Aliu
 using System;
+using Newtonsoft.Json;
 
 namespace WebRTC.Signal.Server.Models
 {
@@ -7,7 +8,10 @@ namespace WebRTC.Signal.Server.Models
     {
         #region Properties
 
+        [JsonProperty("MessageId")]
         public Guid MesssageId { get; set; }
+        
+        [JsonProperty("Data")]
         public string Data { get; set; }
 
         #endregion

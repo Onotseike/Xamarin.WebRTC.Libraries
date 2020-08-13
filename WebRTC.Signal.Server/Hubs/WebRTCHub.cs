@@ -6,12 +6,12 @@ using System.Linq;
 using System.Threading.Tasks;
 
 using Microsoft.AspNetCore.SignalR;
-
+using Newtonsoft.Json.Linq;
 using WebRTC.Signal.Server.Models;
 
 namespace WebRTC.Signal.Server.Hubs
 {
-    public class WebRTCHub : Hub<IHubClient>
+    public class WebRTCHub : Hub//<IHubClient>
     {
         #region Properties
 
@@ -61,17 +61,20 @@ namespace WebRTC.Signal.Server.Hubs
 
             if (callee == null)
             {
-                Clients.Caller.CallDeclined(_targetClientId, $"The use you called is not available.");
+                Clients.Caller.SendAsync("CallDeclined", _targetClientId, $"The use you called is not available.");
+                //Clients.Caller.CallDeclined(_targetClientId, $"The use you called is not available.");
                 return;
             }
 
             if (IsHubClientInRoom(callee.ClientId.ToString()) != null)
             {
-                Clients.Caller.CallDeclined(_targetClientId, $"The Client with ClientId: {_targetClientId} is already in a call.", callee.Username);
+                Clients.Caller.SendAsync("CallDeclined", _targetClientId,
+                    $"The Client with ClientId: {_targetClientId} is already in a call.", callee.Username);
+                //Clients.Caller.CallDeclined(_targetClientId, $"The Client with ClientId: {_targetClientId} is already in a call.", callee.Username);
                 return;
             }
 
-            Clients.Client(_targetClientId).IncomingCall(caller.ClientId.ToString());
+            //Clients.Client(_targetClientId).IncomingCall(caller.ClientId.ToString());
 
             if (caller.InRoom && caller.IsInitiator)
             {
@@ -100,26 +103,26 @@ namespace WebRTC.Signal.Server.Hubs
 
             if (callee == null)
             {
-                Clients.Caller.CallEnded(_targetClientId, $"The Participant with Caller ClientId : {_targetClientId}, has left the call");
+                Clients.Caller.SendAsync("CallEnded",_targetClientId,$"The Participant with Caller ClientId : {_targetClientId}, has ) left the call");
                 return;
             }
 
             if (!_acceptCall)
             {
-                Clients.Client(_targetClientId).CallDeclined(callee.ClientId.ToString(), $"Participant with ClientId: {_targetClientId} did not  accept your call.", callee.Username);
+                Clients.Client(_targetClientId).SendAsync("CallDeclined", callee.ClientId, $"Participant with ClientId: {_targetClientId} did not  accept your call.", callee.Username);
                 return;
             }
 
             var callOfferCount = CallOffers.RemoveAll(offer => offer.Initiator.ClientId == caller.ClientId && offer.Participants.FirstOrDefault(client => client.ClientId == callee.ClientId) != null);
             if (callOfferCount < 1)
             {
-                Clients.Caller.CallEnded(_targetClientId, $"Participant with Clientid: {_targetClientId} has already hung up.", callee.Username);
+                Clients.Caller.SendAsync("CallEnded",_targetClientId, $"Participant with Clientid: {_targetClientId} has already hung up.)", callee.Username);
                 return;
             }
 
             if (IsHubClientInRoom(callee.ClientId.ToString()) != null)
             {
-                Clients.Caller.CallDeclined(_targetClientId, $"Participant with ClientId: {_targetClientId} is currently engaged in another call.", callee.Username);
+                Clients.Caller.SendAsync("CallDeclined",_targetClientId, $"Participant with ClientId: {_targetClientId} is currently ) engaged in another call.", callee.Username);
                 return;
             }
 
@@ -129,7 +132,7 @@ namespace WebRTC.Signal.Server.Hubs
             newRoom.AddClients(UpdateClientStates(caller, callee));
             Rooms.Add(newRoom);
 
-            Clients.Client(_targetClientId).CallAccepted(caller);
+            Clients.Client(_targetClientId).SendAsync("CallAccepted", caller);
 
             BroadcastHubClients();
 
@@ -145,7 +148,8 @@ namespace WebRTC.Signal.Server.Hubs
             {
                 foreach (var occupant in room.Occupants.Where(_occupant => _occupant.ClientId != caller.ClientId))
                 {
-                    Clients.Client(occupant.ClientId.ToString()).CallEnded(caller.ClientId.ToString(), $"Participant with ClientId: {caller.ClientId} has Hung up.", caller.Username);
+                    Clients.Client(occupant.ClientId).SendAsync("CallEnded", caller.ClientId, $"Participant with ClientId: {caller.ClientId} has Hung up.", caller.Username);
+                    //Clients.Client(occupant.ClientId).CallEnded(caller.ClientId, $"Participant with ClientId: {caller.ClientId} has Hung up.", caller.Username);
                 }
                 room.Occupants.RemoveAll(occupant => occupant.ClientId == caller.ClientId);
                 if (room.Occupants.Count < 2)
@@ -170,7 +174,7 @@ namespace WebRTC.Signal.Server.Hubs
 
             if (room != null && room.Occupants.Exists(_occupant => _occupant.ClientId == callee.ClientId))
             {
-                Clients.Client(_targetClientId).ReceiveSignal(caller, _signal);
+                Clients.Client(_targetClientId).SendAsync("ReceiveSignal",caller, _signal);
             }
 
         }
@@ -183,8 +187,10 @@ namespace WebRTC.Signal.Server.Hubs
 
         private void BroadcastHubClients()
         {
-            HubClients.ForEach(client => client.InRoom = (IsHubClientInRoom(client.ClientId.ToString()) != null));
-            Clients.All.UpdateHubClientsList(HubClients);
+            HubClients.ForEach(client => client.InRoom = (IsHubClientInRoom(client.ClientId) != null));
+            var _hubClients = JArray.FromObject(HubClients);
+            Clients.All.SendAsync("UpdateHubClientsList", _hubClients);
+            //Clients.All.UpdateHubClientsList(_hubClients);
         }
 
         private CallOffer GetCallOffer(string _callerId) => CallOffers.SingleOrDefault(offer => offer.Initiator.ClientId.ToString() == _callerId);

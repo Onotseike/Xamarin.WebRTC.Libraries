@@ -19,4 +19,8 @@
     <ProjectReference Include="..\WebRTC\WebRTC.csproj" />
     <ProjectReference Include="..\WebRTC.RTC\WebRTC.RTC.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SignalRClient\" />
+    <Folder Include="SignalRClient\Abstraction\" />
+  </ItemGroup>
 </Project>

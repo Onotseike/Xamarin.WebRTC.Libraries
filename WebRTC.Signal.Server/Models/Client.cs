@@ -1,6 +1,7 @@
 ﻿// onotseike@hotmail.comPaula Aliu
 using System;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace WebRTC.Signal.Server.Models
 {
@@ -8,17 +9,26 @@ namespace WebRTC.Signal.Server.Models
     {
         #region Properties
 
-        public Guid ClientId { get; set; }
+        [JsonProperty("ClientId")]
+        public string ClientId { get; set; }
+        
+        [JsonProperty("InRoom")]
         public bool InRoom { get; set; }
+        
+        [JsonProperty("IsInitiator")]
         public bool IsInitiator { get; set; }
+        
+        [JsonProperty("Username")]
         public string Username { get; set; }
+        
+        [JsonProperty("Messages")]
         public List<SignalMessage> Messages { get; set; }
 
         #endregion
 
         public Client(string _clientId, string _username = "New Client")
         {
-            ClientId = new Guid(_clientId);
+            ClientId = _clientId;
             Username = _username;
             Messages = new List<SignalMessage>();
         }

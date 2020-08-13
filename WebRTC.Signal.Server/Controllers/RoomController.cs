@@ -1,20 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace WebRTC.Signal.Server.Controllers
 {
-    public class RoomController : Controller
+    public class RoomController : ControllerBase
     {
-        // GET: /<controller>/
-        public IActionResult Index()
+        private static readonly string[] Summaries = new[]
         {
-            return View();
+            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+        };
+
+        private readonly ILogger<RoomController> _logger;
+
+        public RoomController(ILogger<RoomController> logger)
+        {
+            _logger = logger;
+        }
+
+        [HttpGet]
+        public void Get()
+        {
+            
         }
     }
 }

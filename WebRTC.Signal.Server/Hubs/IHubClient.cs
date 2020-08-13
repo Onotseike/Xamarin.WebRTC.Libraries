@@ -1,7 +1,7 @@
 ﻿// onotseike@hotmail.comPaula Aliu
 using System;
 using System.Collections.Generic;
-
+using Newtonsoft.Json.Linq;
 using WebRTC.Signal.Server.Models;
 
 namespace WebRTC.Signal.Server.Hubs
@@ -20,7 +20,7 @@ namespace WebRTC.Signal.Server.Hubs
 
         void ReceiveSignal(Client caller, string signal);
 
-        void UpdateHubClientsList(List<Client> _clients);
+        void UpdateHubClientsList(JArray _clients);
 
     }
 }

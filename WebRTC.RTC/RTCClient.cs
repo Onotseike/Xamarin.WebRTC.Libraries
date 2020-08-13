@@ -1,11 +1,14 @@
 ﻿// onotseike@hotmail.comPaula Aliu
 using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 using System.Threading.Tasks;
 
 using Microsoft.AspNetCore.Http.Connections;
 using Microsoft.AspNetCore.SignalR.Client;
 
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 using WebRTC.Classes;
 using WebRTC.Enums;
@@ -40,6 +43,7 @@ namespace WebRTC.RTC
 
 
         private HubConnection SignalRHub { get; set; }
+        private JArray HubClients { get; set; }
 
         public RTCClient(ISignalingEvents<SignalingParameters> signalingEvents, ILogger logger = null)
         {
@@ -48,11 +52,11 @@ namespace WebRTC.RTC
             _logger = logger ?? new ConsoleLogger();
             State = ConnectionState.New;
 
-            SignalRHub = new HubConnectionBuilder().WithUrl("http://localhost:28022/WebRTCHub", HttpTransportType.WebSockets).Build();
-            SignalRHub.Closed += async (error) =>
-            {
-                await SignalRHub.StartAsync();
-            };
+            SignalRHub = new HubConnectionBuilder().WithUrl("http://localhost:28022/WebRTCHub").WithAutomaticReconnect().Build();
+            LoadAllClientSideFunctions();
+
+            LoadHubOverrideFunctions();
+
         }
 
         public ConnectionState State { get; private set; }
@@ -62,6 +66,7 @@ namespace WebRTC.RTC
         {
             _connectionParameters = connectionParameters;
             // SignalR Join Room
+            await SignalRHub.StartAsync();
             await SignalRHub.InvokeAsync("JoinHub", $"CLIENT_{new Random().Next(1, 20)}");
 
 
@@ -376,6 +381,35 @@ namespace WebRTC.RTC
 
         }
 
+        private void LoadHubOverrideFunctions()
+        {
+            SignalRHub.Closed += async (error) =>
+            {
+                await SignalRHub.StartAsync();
+            };
+            SignalRHub.Reconnecting += error =>
+            {
+                //Debug.Assert(connection.State == HubConnectionState.Reconnecting);
+                _logger.Debug(TAG, "SignalR Hub is in RECONNECTING STATE");
+
+                // Notify users the connection was lost and the client is reconnecting.
+                // Start queuing or dropping messages.
+
+                return Task.CompletedTask;
+            };
+        }
+
+        private void LoadAllClientSideFunctions()
+        {
+            SignalRHub.On<JArray>("UpdateHubClientsList", (_hubClientsList) =>
+            {
+
+                HubClients = _hubClientsList;
+                var count = _hubClientsList.Count;
+                _logger.Info(TAG, $"User Count is : {count}");
+                Debug.WriteLine($"Count {count}");
+            });
+        }
         #endregion
     }
 }
