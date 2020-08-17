@@ -40,10 +40,7 @@ namespace WebRTC.RTC
         private bool _initiator;
         private string _messageUrl;
         private string _leaveUrl;
-
-
-        private HubConnection SignalRHub { get; set; }
-        private JArray HubClients { get; set; }
+        
 
         public RTCClient(ISignalingEvents<SignalingParameters> signalingEvents, ILogger logger = null)
         {
@@ -51,11 +48,6 @@ namespace WebRTC.RTC
             _executor = ExecutorServiceFactory.CreateExecutorService(nameof(RTCClient));
             _logger = logger ?? new ConsoleLogger();
             State = ConnectionState.New;
-
-            SignalRHub = new HubConnectionBuilder().WithUrl("http://localhost:28022/WebRTCHub").WithAutomaticReconnect().Build();
-            LoadAllClientSideFunctions();
-
-            LoadHubOverrideFunctions();
 
         }
 
@@ -65,11 +57,6 @@ namespace WebRTC.RTC
         public async void Connect(RoomConnectionParameters connectionParameters)
         {
             _connectionParameters = connectionParameters;
-            // SignalR Join Room
-            await SignalRHub.StartAsync();
-            await SignalRHub.InvokeAsync("JoinHub", $"CLIENT_{new Random().Next(1, 20)}");
-
-
             _executor.Execute(ConnectToRoomInternal);
         }
 
@@ -80,6 +67,7 @@ namespace WebRTC.RTC
 
         public void SendOfferSdp(SessionDescription sdp)
         {
+            
             _executor.Execute(() =>
             {
                 if (State != ConnectionState.Connected)
@@ -373,43 +361,6 @@ namespace WebRTC.RTC
             return roomConnectionParameters.UrlParameters != null ? $"?{roomConnectionParameters.UrlParameters}" : "";
         }
 
-
-        #region SignalR Hub Connection Methods
-
-        private void SignalRConnectToRoomInternal()
-        {
-
-        }
-
-        private void LoadHubOverrideFunctions()
-        {
-            SignalRHub.Closed += async (error) =>
-            {
-                await SignalRHub.StartAsync();
-            };
-            SignalRHub.Reconnecting += error =>
-            {
-                //Debug.Assert(connection.State == HubConnectionState.Reconnecting);
-                _logger.Debug(TAG, "SignalR Hub is in RECONNECTING STATE");
-
-                // Notify users the connection was lost and the client is reconnecting.
-                // Start queuing or dropping messages.
-
-                return Task.CompletedTask;
-            };
-        }
-
-        private void LoadAllClientSideFunctions()
-        {
-            SignalRHub.On<JArray>("UpdateHubClientsList", (_hubClientsList) =>
-            {
-
-                HubClients = _hubClientsList;
-                var count = _hubClientsList.Count;
-                _logger.Info(TAG, $"User Count is : {count}");
-                Debug.WriteLine($"Count {count}");
-            });
-        }
-        #endregion
+      
     }
 }

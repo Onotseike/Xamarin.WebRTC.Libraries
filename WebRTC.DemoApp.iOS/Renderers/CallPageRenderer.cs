@@ -15,25 +15,34 @@ using WebRTC.DemoApp.iOS.Renderers;
 using WebRTC.DemoApp.iOS.ViewControllers;
 
 using WebRTC.DemoApp.iOS.Views;
+
+using WebRTC.DemoApp.SignalRClient;
+using WebRTC.DemoApp.SignalRClient.Abstraction;
+
 using WebRTC.Interfaces;
 using WebRTC.iOS;
 using WebRTC.iOS.Binding;
-using WebRTC.RTC;
-using WebRTC.RTC.Abstraction;
+//using WebRTC.iOS.Binding;
+//using WebRTC.RTC.Abstraction;
 
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
+using RoomConnectionParameters = WebRTC.DemoApp.SignalRClient.RoomConnectionParameters;
+using SignalingParameters = WebRTC.DemoApp.SignalRClient.SignalingParameters;
+
 [assembly: ExportRenderer(typeof(CallPage), typeof(CallPageRenderer))]
 namespace WebRTC.DemoApp.iOS.Renderers
 {
-    public class CallPageRenderer : PageRenderer, IVideoCallViewDelegate, IRTCEngineEvents, IRTCAudioSessionDelegate, ICallPageRenderer<RoomConnectionParameters, SignalingParameters, RTCController>
+    public class CallPageRenderer : PageRenderer, IVideoCallViewDelegate, IRTCEngineEvents, IRTCAudioSessionDelegate, ICallPageRenderer<RoomConnectionParameters, SignalingParameters, SRTCController>
     {
         #region Properties & Variables
 
         private string RoomId { get; set; }
-        private RTCController CallController { get; set; }
+
+        //private RTCController CallController { get; set; }
+        private SRTCController CallController { get; set; }
 
         private VideoCallView videoCallView;
         private AVAudioSessionPortOverride portOverride;
@@ -121,16 +130,16 @@ namespace WebRTC.DemoApp.iOS.Renderers
             CallController.StartVideoCall(localRenderer, remoteRenderer);
         }
 
-        public RTCController CreateController()
+        public SRTCController CreateController()
         {
-            return new RTCController(this);
+            return new SRTCController(this);
         }
 
-        public void Connect(RTCController controller)
+        public void Connect(SRTCController controller)
         {
             controller.Connect(new RoomConnectionParameters
             {
-                RoomId = RoomId,
+                RoomId = Guid.NewGuid().ToString(),//RoomId,
                 IsLoopback = false,
                 RoomUrl = "https://appr.tc/"
             });

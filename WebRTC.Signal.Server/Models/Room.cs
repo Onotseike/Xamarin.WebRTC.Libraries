@@ -21,6 +21,7 @@ namespace WebRTC.Signal.Server.Models
             RoomId = new Guid(_roomId);
             MaxOccupancy = _maxOccupancy;
             Occupants = new List<Client>();
+            IsVideo = true;
         }
 
         #region Function(s)

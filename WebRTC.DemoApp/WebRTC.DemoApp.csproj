@@ -22,5 +22,7 @@
   <ItemGroup>
     <Folder Include="SignalRClient\" />
     <Folder Include="SignalRClient\Abstraction\" />
+    <Folder Include="Helper\" />
+    <Folder Include="SignalRClient\Responses\" />
   </ItemGroup>
 </Project>

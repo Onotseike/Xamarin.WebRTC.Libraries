@@ -9,9 +9,15 @@
     <Folder Include="Constants\" />
     <Folder Include="Models\" />
     <Folder Include="Hubs\" />
+    <Folder Include="Models\Complex\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.SignalR.Core" Version="1.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebRTC\WebRTC.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 </Project>
