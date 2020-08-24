@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
+using WebRTC.Classes;
 
 namespace WebRTC.Signal.Server.Models
 {
@@ -23,6 +24,9 @@ namespace WebRTC.Signal.Server.Models
         
         [JsonProperty("Messages")]
         public List<SignalMessage> Messages { get; set; }
+        
+        [JsonProperty("IceCandidate")] 
+        public List<IceCandidate> Candidate { get; set; }
 
         #endregion
 
@@ -31,6 +35,7 @@ namespace WebRTC.Signal.Server.Models
             ClientId = _clientId;
             Username = _username;
             Messages = new List<SignalMessage>();
+            Candidate = new List<IceCandidate>();
         }
 
 

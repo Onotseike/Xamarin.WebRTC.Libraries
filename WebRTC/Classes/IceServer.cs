@@ -1,6 +1,9 @@
 ﻿// onotseike@hotmail.comPaula Aliu
 using System;
 using System.Text;
+
+using Newtonsoft.Json;
+
 using WebRTC.Enums;
 
 namespace WebRTC.Classes
@@ -20,10 +23,15 @@ namespace WebRTC.Classes
             TlsCertPolicy = tlsCertPolicy;
         }
 
-        public string[] Urls { get; }
-        public string Username { get; }
-        public string Password { get; }
-        public TlsCertPolicy TlsCertPolicy { get; }
+        public IceServer()
+        {
+
+        }
+        [JsonProperty("urls")] public string[] Urls { get; set; }
+        [JsonProperty("username")] public string Username { get; set; }
+        [JsonProperty("password")] public string Password { get; set; }
+        [JsonProperty("tlsCertPolicy")] public TlsCertPolicy TlsCertPolicy { get; }
+
 
         public override string ToString()
         {

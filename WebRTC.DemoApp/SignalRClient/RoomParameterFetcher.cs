@@ -1,8 +1,5 @@
 ﻿// onotseike@hotmail.comPaula Aliu
-using System;
-
 using WebRTC.DemoApp.SignalRClient.Abstraction;
-using WebRTC.RTC;
 
 namespace WebRTC.DemoApp.SignalRClient
 {
@@ -26,7 +23,7 @@ namespace WebRTC.DemoApp.SignalRClient
         public RoomParameterFetcher(string _roomUrl, string _roomMessage, ILogger _logger = null)
         {
             roomUrl = _roomUrl;
-            roomMessage = _roomUrl;
+            roomMessage = _roomMessage;
             logger = _logger ?? new ConsoleLogger();
         }
 

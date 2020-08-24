@@ -58,28 +58,34 @@ namespace WebRTC.DemoApp.SignalRClient
 
         private async void ConnectToHubRoom()
         {
-            //TODO: Call SignalR Hub Connect To Room; This returns The relevant Room Parameters and potential errors if available.
-            //await App.HubConnection.StartAsync();
-            var str = await App.HubConnection.InvokeAsync<string>("GetRoomParametersAsync", roomConnectionParameters.RoomId, true, "https://global.xirsys.net/_turn/DemoWebRTC");
-            var roomSObject = JObject.Parse(str);
-            var roomParams = roomSObject.ToObject<RoomParameterResponse>();
-            var _roomSignalingParameters = new SignalingParameters
+            try
             {
-                IsInitiator = roomParams.IsInitiator,
-                ClientId = roomParams.ClientId,
-                IceServers = roomParams.IceServers,
-                IceCandidates = roomParams.IceCandidates
-
-            };
-            executor.Execute(() =>
-            {
-                if (_roomSignalingParameters != null)
+                State = ConnectionState.New;
+                //TODO: Call SignalR Hub Connect To Room; This returns The relevant Room Parameters and potential errors if available.
+                //await App.HubConnection.StartAsync();
+                var str = await App.HubConnection.InvokeAsync<string>("GetRoomParametersAsync", roomConnectionParameters.RoomId, true, "https://global.xirsys.net/_turn/DemoWebRTC");
+                var roomSObject = JObject.Parse(str);
+                var roomParams = roomSObject.ToObject<RoomParameterResponse>();
+                var _roomSignalingParameters = new SignalingParameters
                 {
-                    ReportError($"ERROR");
-                    return;
-                }
-                SignalingParametersReady(_roomSignalingParameters);
-            });
+                    IsInitiator = roomParams.IsInitiator,
+                    ClientId = roomParams.ClientId,
+                    IceServers = roomParams.IceServers,
+                    IceCandidates = roomParams.IceCandidates,
+                    OfferSdp = roomParams.OfferSdp
+
+                };
+                executor.Execute(() =>
+                {
+                    SignalingParametersReady(_roomSignalingParameters);
+                });
+            }
+            catch (Exception ex)
+            {
+                ReportError($"ERROR {ex.Message}");
+                return;
+            }
+
         }
 
         private void SignalingParametersReady(SignalingParameters _roomSignalingParameters)
@@ -165,6 +171,7 @@ namespace WebRTC.DemoApp.SignalRClient
         }
 
 
+
         #endregion
 
         #region IRTCClient Implementations
@@ -183,7 +190,7 @@ namespace WebRTC.DemoApp.SignalRClient
         {
             executor.Execute(() =>
             {
-                if (State != ConnectionState.Connected)
+                if (App.HubConnection.State != HubConnectionState.Connected)//(State != ConnectionState.Connected)
                 {
                     ReportError("Sending offer SDP in non connected state.");
                     return;
@@ -193,6 +200,7 @@ namespace WebRTC.DemoApp.SignalRClient
 
                 //SendPostMessage(MessageType.Message, messageUrl, json);
                 //TODO : SignalR SDPOffer Method
+                //TODO : Here, the you call a method in the SignalR Hub passing in a List of clients you want to call. 
 
                 if (roomConnectionParameters.IsLoopback)
                 {
@@ -205,19 +213,21 @@ namespace WebRTC.DemoApp.SignalRClient
 
         public void SendLocalIceCandidate(IceCandidate _candidate)
         {
-            executor.Execute(() =>
+            executor.Execute(async () =>
             {
                 var json = SignalingMessage.CreateJson(_candidate);
                 if (isInitiator)
                 {
-                    if (State != ConnectionState.Connected)
+                    if (App.HubConnection.State != HubConnectionState.Connected)//(State != ConnectionState.Connected)
                     {
                         ReportError("Sending ICE candidate in non connected state.");
                         return;
                     }
 
                     //SendPostMessage(MessageType.Message, _messageUrl, json);
-                    //TODO: SignalR Send LocalIceCandidate as  Initiator 
+                    //TODO: SignalR Send LocalIceCandidate as  Initiator
+                    var isIceSent = await App.HubConnection.InvokeAsync<Tuple<bool, string>>("SendLocalIceCandidate", App.HubConnection.ConnectionId, json);
+                    logger.Info(TAG, $"{isIceSent}");
                 }
                 else
                 {
@@ -235,7 +245,7 @@ namespace WebRTC.DemoApp.SignalRClient
 
                 if (isInitiator)
                 {
-                    if (State != ConnectionState.Connected)
+                    if (App.HubConnection.State != HubConnectionState.Connected)//(State != ConnectionState.Connected)
                     {
                         ReportError("Sending ICE candidate removals in non connected state.");
                         return;

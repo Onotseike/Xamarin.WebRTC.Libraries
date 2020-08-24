@@ -4,11 +4,15 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
-
+using Microsoft.AspNetCore.Routing.Matching;
 using Microsoft.AspNetCore.SignalR;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using WebRTC.Classes;
+using WebRTC.Enums;
 using WebRTC.Signal.Server.Models;
 using WebRTC.Signal.Server.Models.Complex;
+using MediaConstraints = WebRTC.Signal.Server.Models.Complex.MediaConstraints;
 
 namespace WebRTC.Signal.Server.Hubs
 {
@@ -16,25 +20,15 @@ namespace WebRTC.Signal.Server.Hubs
     {
         #region Properties
 
-        public List<Room> Rooms { get; set; }
-        public List<Client> HubClients { get; set; }
-        public List<CallOffer> CallOffers { get; set; }
-
+        
         #endregion
-
-        public WebRTCHub()
-        {
-            Rooms = new List<Room>();
-            HubClients = new List<Client>();
-            CallOffers = new List<CallOffer>();
-        }
 
         #region Hub Override Method(s)
 
         public override Task OnDisconnectedAsync(Exception exception)
         {
             HangUp();
-            HubClients.RemoveAll(client => client.ClientId.ToString() == Context.ConnectionId);
+            HubObjects.Clients.RemoveAll(client => client.ClientId.ToString() == Context.ConnectionId);
             BroadcastHubClients();
 
             return base.OnDisconnectedAsync(exception);
@@ -46,9 +40,9 @@ namespace WebRTC.Signal.Server.Hubs
 
         public void JoinHub(string _username)
         {
-            if (!HubClients.Exists(client => client.ClientId.ToString() == Context.ConnectionId))
+            if (!HubObjects.Clients.Exists(client => client.ClientId.ToString() == Context.ConnectionId))
             {
-                HubClients.Add(new Client(Context.ConnectionId, _username));
+                HubObjects.Clients.Add(new Client(Context.ConnectionId, _username));
             }
             
 
@@ -60,8 +54,8 @@ namespace WebRTC.Signal.Server.Hubs
         {
             if (_isIntiator)
             {
-                var _room = Rooms.FirstOrDefault(room => room.RoomId.ToString() == _roomId);
-                var _client = HubClients.FirstOrDefault(client => client.ClientId.ToString() == _clientId);
+                var _room = HubObjects.Rooms.FirstOrDefault(room => room.RoomId.ToString() == _roomId);
+                var _client = HubObjects.Clients.FirstOrDefault(client => client.ClientId.ToString() == _clientId);
                 if (_room == null)
                 {
                     var _newRoom = new Room(_roomId, _maxOccupancy);
@@ -79,7 +73,8 @@ namespace WebRTC.Signal.Server.Hubs
                     else
                     {
                         JoinHub($"CLIENT_Anonymous");
-                        _client = HubClients.FirstOrDefault(client => client.ClientId.ToString() == Context.ConnectionId);
+                        _client = HubObjects.Clients.FirstOrDefault(client => client.ClientId.ToString() == Context
+                        .ConnectionId);
                         
                         if (_client == null) return Tuple.Create<bool, string>(false, $"ERROR : Client is not connected to the Hub");
 
@@ -105,7 +100,8 @@ namespace WebRTC.Signal.Server.Hubs
                         else
                         {
                             JoinHub($"CLIENT_Anonymous");
-                            _client = HubClients.FirstOrDefault(client => client.ClientId.ToString() == Context.ConnectionId);
+                            _client = HubObjects.Clients.FirstOrDefault(client => client.ClientId.ToString() == Context
+                            .ConnectionId);
                         
                             if (_client == null) return Tuple.Create<bool, string>(false, $"ERROR : Client is not connected to the Hub");
 
@@ -126,8 +122,8 @@ namespace WebRTC.Signal.Server.Hubs
 
         public void CallHubClient(string _targetClientId)
         {
-            var caller = HubClients.SingleOrDefault(client => client.ClientId.ToString() == Context.ConnectionId);
-            var callee = HubClients.SingleOrDefault(client => client.ClientId.ToString() == _targetClientId);
+            var caller = HubObjects.Clients.SingleOrDefault(client => client.ClientId.ToString() == Context.ConnectionId);
+            var callee = HubObjects.Clients.SingleOrDefault(client => client.ClientId.ToString() == _targetClientId);
 
             if (callee == null)
             {
@@ -152,7 +148,7 @@ namespace WebRTC.Signal.Server.Hubs
             }
             else
             {
-                CallOffers.Add(new CallOffer
+                HubObjects.CallOffers.Add(new CallOffer
                 {
                     Initiator = caller,
                     Participants = new List<Client> { callee }
@@ -164,8 +160,8 @@ namespace WebRTC.Signal.Server.Hubs
 
         public void AnwerCall(bool _acceptCall, string _targetClientId, int _maxOccupancy = 2)
         {
-            var caller = HubClients.SingleOrDefault(client => client.ClientId.ToString() == Context.ConnectionId);
-            var callee = HubClients.SingleOrDefault(client => client.ClientId.ToString() == _targetClientId);
+            var caller = HubObjects.Clients.SingleOrDefault(client => client.ClientId.ToString() == Context.ConnectionId);
+            var callee = HubObjects.Clients.SingleOrDefault(client => client.ClientId.ToString() == _targetClientId);
 
             // This can only happen if the server-side came down and clients were cleared, while the user
             // still held their browser session.
@@ -183,7 +179,8 @@ namespace WebRTC.Signal.Server.Hubs
                 return;
             }
 
-            var callOfferCount = CallOffers.RemoveAll(offer => offer.Initiator.ClientId == caller.ClientId && offer.Participants.FirstOrDefault(client => client.ClientId == callee.ClientId) != null);
+            var callOfferCount = HubObjects.CallOffers.RemoveAll(offer => offer.Initiator.ClientId == caller.ClientId && offer
+            .Participants.FirstOrDefault(client => client.ClientId == callee.ClientId) != null);
             if (callOfferCount < 1)
             {
                 Clients.Caller.SendAsync("CallEnded",_targetClientId, $"Participant with Clientid: {_targetClientId} has already hung up.)", callee.Username);
@@ -196,11 +193,11 @@ namespace WebRTC.Signal.Server.Hubs
                 return;
             }
 
-            CallOffers.RemoveAll(offer => offer.Initiator.ClientId == caller.ClientId);
+            HubObjects.CallOffers.RemoveAll(offer => offer.Initiator.ClientId == caller.ClientId);
 
             var newRoom = new Room(Guid.NewGuid().ToString(), _maxOccupancy);
             newRoom.AddClients(UpdateClientStates(caller, callee));
-            Rooms.Add(newRoom);
+            HubObjects.Rooms.Add(newRoom);
 
             Clients.Client(_targetClientId).SendAsync("CallAccepted", caller);
 
@@ -210,7 +207,7 @@ namespace WebRTC.Signal.Server.Hubs
 
         public void HangUp()
         {
-            var caller = HubClients.SingleOrDefault(client => client.ClientId.ToString() == Context.ConnectionId);
+            var caller = HubObjects.Clients.SingleOrDefault(client => client.ClientId.ToString() == Context.ConnectionId);
             if (caller == null) return;
 
             var room = IsHubClientInRoom(caller.ClientId.ToString());
@@ -224,19 +221,19 @@ namespace WebRTC.Signal.Server.Hubs
                 room.Occupants.RemoveAll(occupant => occupant.ClientId == caller.ClientId);
                 if (room.Occupants.Count < 2)
                 {
-                    Rooms.RemoveAll(_room => _room.RoomId == room.RoomId);
+                    HubObjects.Rooms.RemoveAll(_room => _room.RoomId == room.RoomId);
                 }
             }
 
-            CallOffers.RemoveAll(offer => offer.Initiator.ClientId == caller.ClientId || offer.Participants.Any(participant => participant.ClientId == caller.ClientId));
+            HubObjects.CallOffers.RemoveAll(offer => offer.Initiator.ClientId == caller.ClientId || offer.Participants.Any(participant => participant.ClientId == caller.ClientId));
             BroadcastHubClients();
 
         }
 
         public void SendSignal(string _signal, string _targetClientId)
         {
-            var caller = HubClients.SingleOrDefault(client => client.ClientId.ToString() == Context.ConnectionId);
-            var callee = HubClients.SingleOrDefault(client => client.ClientId.ToString() == _targetClientId);
+            var caller = HubObjects.Clients.SingleOrDefault(client => client.ClientId.ToString() == Context.ConnectionId);
+            var callee = HubObjects.Clients.SingleOrDefault(client => client.ClientId.ToString() == _targetClientId);
 
             if (caller == null || callee == null) return;
 
@@ -253,26 +250,28 @@ namespace WebRTC.Signal.Server.Hubs
 
         #region Helper Function(s)
 
-        private Room IsHubClientInRoom(string _clientId) => Rooms.Where(room => room.Occupants.Any(occupant => occupant.ClientId.ToString() == _clientId)).FirstOrDefault();
+        private Room IsHubClientInRoom(string _clientId) => HubObjects.Rooms.FirstOrDefault(room => room.Occupants.Any(occupant => 
+            occupant.ClientId.ToString() == _clientId));
 
         private void BroadcastHubClients()
         {
-            HubClients.ForEach(client => client.InRoom = (IsHubClientInRoom(client.ClientId) != null));
-            var _hubClients = JArray.FromObject(HubClients);
+            HubObjects.Clients.ForEach(client => client.InRoom = (IsHubClientInRoom(client.ClientId) != null));
+            var _hubClients = JArray.FromObject(HubObjects.Clients);
             Clients.All.SendAsync("UpdateHubClientsList", _hubClients);
             //Clients.All.UpdateHubClientsList(_hubClients);
         }
 
-        private CallOffer GetCallOffer(string _callerId) => CallOffers.SingleOrDefault(offer => offer.Initiator.ClientId.ToString() == _callerId);
+        private CallOffer GetCallOffer(string _callerId) => HubObjects.CallOffers.SingleOrDefault(offer => offer.Initiator
+        .ClientId.ToString() == _callerId);
 
         private Tuple<bool, string> UpdateCallOffer(Client _participant, Client _initiator)
         {
             var callOffer = GetCallOffer(_initiator.ClientId.ToString());
             if (callOffer != null)
             {
-                CallOffers.Remove(callOffer);
+                HubObjects.CallOffers.Remove(callOffer);
                 callOffer.Participants.Add(_participant);
-                CallOffers.Add(callOffer);
+                HubObjects.CallOffers.Add(callOffer);
                 return Tuple.Create(true, $"Participant with ClientId: {_participant.ClientId} has been added");
             }
             return Tuple.Create(false, $"Participant with ClientId : {_participant.ClientId} could not be added");
@@ -287,7 +286,17 @@ namespace WebRTC.Signal.Server.Hubs
             return Tuple.Create(_caller, _callee);
         }
 
-        
+        private IceCandidate RecreateIceCandidate(string _json)
+        {
+            var jsonDict = JsonConvert.DeserializeObject<Dictionary<string, string>>(_json);
+            if (jsonDict["type"].Equals("candidate"))
+            {
+                int.TryParse(jsonDict["label"], out int label);
+                return new IceCandidate(jsonDict["candidate"], jsonDict["id"], label);
+            }
+
+            return null;
+        }
         
         #endregion
 
@@ -315,6 +324,7 @@ namespace WebRTC.Signal.Server.Hubs
 
                     var _iceServers = await _turnClient.RequestServersAsync();
                     roomParameters.IceServers = _iceServers;
+                    roomParameters.OfferSdp = new SessionDescription(SessionDescription.GetSdpTypeFromString("offer"), "offer");
                     return JObject.FromObject(roomParameters).ToString();
                 }
             }
@@ -324,6 +334,42 @@ namespace WebRTC.Signal.Server.Hubs
             }
 
             return null;
+        }
+
+        public string SendLocalIceCandidate(string _clientId, string _candidate)
+        {
+            var candidate = RecreateIceCandidate(_candidate);
+            if (candidate == null)
+            {
+                return JObject.FromObject(Tuple.Create(false, $"SENDING ICE CANDIDATE ERROR: INVALID ICE CANDIDATE"))
+                .ToString();
+            }
+            var client = HubObjects.Clients.FirstOrDefault(client => client.ClientId == _clientId);
+            if (client == null)
+            {
+                return JObject.FromObject(Tuple.Create(false,
+                    $"SENDING ICE CANDIDATE ERROR: CLIENT WITH ID: {_clientId} IS NOT CONNECTED TO THE HUB")).ToString();
+            }
+
+            client.Candidate.Add(candidate);
+            HubObjects.Clients.RemoveAll(client => client.ClientId == _clientId);
+            HubObjects.Clients.Add(client);
+
+            if (client.InRoom)
+            {
+                foreach (var room in HubObjects.Rooms)
+                {
+                    var isUpdated = room.UpdateClient(client);
+                    if (isUpdated.Item1)
+                    {
+                        return JObject.FromObject(Tuple.Create(true, $"CLIENT WITH ID {_clientId} HAS UPDATED IT'S  ICE CANDIDATE")).ToString();
+                    }
+                }
+                
+            }
+            
+            return JObject.FromObject(Tuple.Create(false, $"CLIENT WITH ID {_clientId} HAS NOT UPDATED IT'S ICE CANDIDATE"))
+            .ToString();
         }
 
         #endregion

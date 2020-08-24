@@ -10,7 +10,7 @@ using CoreFoundation;
 using Foundation;
 
 using WebRTC.iOS;
-using WebRTC.RTC.Abstraction;
+using WebRTC.DemoApp.SignalRClient.Abstraction;
 
 namespace WebRTC.DemoApp.iOS.Helpers
 {

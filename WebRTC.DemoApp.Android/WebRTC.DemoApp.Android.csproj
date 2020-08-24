@@ -64,6 +64,9 @@
     <PackageReference Include="Square.OkHttp3">
       <Version>4.2.2</Version>
     </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client">
+      <Version>3.1.7</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -151,10 +154,6 @@
     <ProjectReference Include="..\WebRTC.Android\WebRTC.Android.csproj">
       <Project>{315A544B-BA4A-40E1-AD49-37EA261987FE}</Project>
       <Name>WebRTC.Android</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WebRTC.RTC\WebRTC.RTC.csproj">
-      <Project>{2DADD006-767A-482E-83B3-21F1D0C045F9}</Project>
-      <Name>WebRTC.RTC</Name>
     </ProjectReference>
     <ProjectReference Include="..\WebRTC\WebRTC.csproj">
       <Project>{0C591CC1-F9DB-4FE4-963C-3FFE4F79785B}</Project>

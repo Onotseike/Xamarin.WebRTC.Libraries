@@ -13,10 +13,10 @@ using WebRTC.Android.Extensions;
 using WebRTC.DemoApp;
 using WebRTC.DemoApp.Droid.Fragments;
 using WebRTC.DemoApp.Droid.Renderers;
+using WebRTC.DemoApp.SignalRClient;
+using WebRTC.DemoApp.SignalRClient.Abstraction;
 using WebRTC.Enums;
 using WebRTC.Interfaces;
-using WebRTC.RTC;
-using WebRTC.RTC.Abstraction;
 
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -28,7 +28,7 @@ using View = Android.Views.View;
 [assembly: ExportRenderer(typeof(CallPage), typeof(CallPageRenderer))]
 namespace WebRTC.DemoApp.Droid.Renderers
 {
-    public class CallPageRenderer : PageRenderer, ICallPageRenderer<RoomConnectionParameters, SignalingParameters, RTCController>
+    public class CallPageRenderer : PageRenderer, ICallPageRenderer<RoomConnectionParameters, SignalingParameters, SRTCController>
     {
         #region Properties and Variables
 
@@ -37,7 +37,7 @@ namespace WebRTC.DemoApp.Droid.Renderers
         private Activity CallPageActivity { get; set; }
         private View CallView { get; set; }
 
-        private RTCController CallController { get; set; }
+        private SRTCController CallController { get; set; }
 
         private SurfaceViewRenderer FullScreenRenderer { get; set; }
         private SurfaceViewRenderer PipScreenRenderer { get; set; }
@@ -63,9 +63,9 @@ namespace WebRTC.DemoApp.Droid.Renderers
         #region Implementations of ICallPageRenderer
 
 
-        public RTCController CreateController() => new RTCController(this);
+        public SRTCController CreateController() => new SRTCController(this);
 
-        public void Connect(RTCController _controller, Intent _intent) => _controller.Connect(new RoomConnectionParameters
+        public void Connect(SRTCController _controller, Intent _intent) => _controller.Connect(new RoomConnectionParameters
         {
             RoomId = RoomId,
             IsLoopback = false,

@@ -9,9 +9,7 @@ using Android.App;
 using Android.OS;
 
 using WebRTC.Android;
-using WebRTC.RTC.Abstraction;
-
-using Square.OkHttp3;
+using WebRTC.DemoApp.SignalRClient.Abstraction;
 
 namespace WebRTC.DemoApp.Droid.Helpers
 {

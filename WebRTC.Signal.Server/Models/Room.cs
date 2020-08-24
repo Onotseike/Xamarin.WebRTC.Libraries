@@ -57,11 +57,29 @@ namespace WebRTC.Signal.Server.Models
             return Tuple.Create(false, $"The Room with ID : {RoomId} has reached MAXIMUM Occupancy of {MaxOccupancy}");
         }
 
-        public Tuple<bool, string> RemoveClient(Client _client) => (bool)Occupants?.Remove(_client) ? Tuple.Create(true, $"The Client with ID : {_client.ClientId} was added as an occupant of the Room with RoomId : {RoomId}") : Tuple.Create(false, $"The Client with ID : {_client.ClientId} is not an Occupant of the Room with RoomId : {RoomId}");
+        public Tuple<bool, string> RemoveClient(Client _client) => (bool) Occupants?.Remove(_client) ? Tuple.Create(true,
+                    $"The Client with ID : {_client.ClientId} was added as an occupant of the Room with RoomId : {RoomId}")
+                : Tuple.Create(false, $"The Client with ID : {_client.ClientId} is not an Occupant of the Room with RoomId : {RoomId}");
 
         public Tuple<bool, string> IsClientAnOccupant(Client _client) => (bool)Occupants?.Any(occupant => occupant.ClientId == _client.ClientId) ? Tuple.Create(true, $"Client with ID : {_client.ClientId} is an Occupant of Room with RoomId : {RoomId}") : Tuple.Create(false, $"The Client with ID : {_client.ClientId} is not an Occupant of the Room with RoomId : {RoomId}");
 
+        public Tuple<bool, string> UpdateClient(Client _client)
+        {
+            var isOccupant = IsClientAnOccupant(_client);
+            if (isOccupant.Item1)
+            {
+                var removedCount = (int) Occupants?.RemoveAll(client => client.ClientId == _client.ClientId);
+                if (removedCount > 0)
+                {
+                    Occupants.Add(_client);
+                    return Tuple.Create( true, $"Client with  ID: {_client.ClientId} was updated");
+                }
+                return Tuple.Create( false, $"Client with  ID: {_client.ClientId} was not updated");
+            }
 
+            return isOccupant;
+        }
+        
         #endregion
 
         #region Exception(s)

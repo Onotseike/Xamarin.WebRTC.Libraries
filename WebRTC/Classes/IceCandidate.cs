@@ -1,5 +1,6 @@
 ﻿// onotseike@hotmail.comPaula Aliu
 using System;
+
 using Newtonsoft.Json;
 
 namespace WebRTC.Classes
@@ -11,6 +12,11 @@ namespace WebRTC.Classes
             Sdp = sdp;
             SdpMid = sdpMid;
             SdpMLineIndex = sdpMLineIndex;
+        }
+
+        public IceCandidate()
+        {
+
         }
 
         [JsonProperty("sdp")]
