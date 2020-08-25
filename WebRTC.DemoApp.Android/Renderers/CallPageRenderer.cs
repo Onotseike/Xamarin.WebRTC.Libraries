@@ -33,6 +33,8 @@ namespace WebRTC.DemoApp.Droid.Renderers
         #region Properties and Variables
 
         private string RoomId { get; set; }
+        private bool IsInitator { get; set; }
+
         private CallFragment CallFragment { get; set; }
         private Activity CallPageActivity { get; set; }
         private View CallView { get; set; }
@@ -148,6 +150,7 @@ namespace WebRTC.DemoApp.Droid.Renderers
 
             var callPage = (CallPage)e.NewElement;
             RoomId = callPage.RoomId;
+            IsInitator = callPage.IsInitator;
 
             try
             {

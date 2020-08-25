@@ -4,9 +4,16 @@
         <!-- Place new controls here -->
         <Entry x:Name="RoomIdEntry"
                Placeholder="Please enter a 6 digit room id"/>
-        <Button x:Name="StartCall"
+        <StackLayout Orientation="Horizontal">
+            <Button x:Name="StartCall"
                 BackgroundColor="BlanchedAlmond"
                 Text="Start Call"
                 Clicked="StartCall_Clicked"/>
+            <Button x:Name="JoinCall"
+                    BackgroundColor="Gainsboro"
+                    Text="JoinCall"
+                    Clicked="JoinCall_Clicked"/>
+        </StackLayout>
+
     </StackLayout>
 </ContentPage>

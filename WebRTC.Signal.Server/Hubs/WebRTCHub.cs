@@ -67,7 +67,9 @@ namespace WebRTC.Signal.Server.Hubs
                         }
 
                         _client.IsInitiator = true;
+                        _client.InRoom = true;
                         _newRoom.Occupants.Add(_client);
+                        HubObjects.Rooms.Add(_newRoom);
                         return Tuple.Create(true, _newRoom.RoomId.ToString());
                     }
                     else
@@ -76,10 +78,12 @@ namespace WebRTC.Signal.Server.Hubs
                         _client = HubObjects.Clients.FirstOrDefault(client => client.ClientId.ToString() == Context
                         .ConnectionId);
                         
-                        if (_client == null) return Tuple.Create<bool, string>(false, $"ERROR : Client is not connected to the Hub");
+                        if (_client == null) return Tuple.Create<bool, string>(false, $"ERROR : Client is not registered in the Hub");
 
                         _client.IsInitiator = true;
+                        _client.InRoom = true;
                         _newRoom.Occupants.Add(_client);
+                        HubObjects.Rooms.Add(_newRoom);
                         return Tuple.Create(true, _newRoom.RoomId.ToString()); 
                     }
                 }
@@ -94,7 +98,9 @@ namespace WebRTC.Signal.Server.Hubs
                             }
 
                             _client.IsInitiator = true;
+                            _client.InRoom = true;
                             _newRoom.Occupants.Add(_client);
+                            HubObjects.Rooms.Add(_newRoom);
                             return Tuple.Create(true, _newRoom.RoomId.ToString());
                         }
                         else
@@ -106,7 +112,9 @@ namespace WebRTC.Signal.Server.Hubs
                             if (_client == null) return Tuple.Create<bool, string>(false, $"ERROR : Client is not connected to the Hub");
 
                             _client.IsInitiator = true;
+                            _client.InRoom = true;
                             _newRoom.Occupants.Add(_client);
+                            HubObjects.Rooms.Add(_newRoom);
                             return Tuple.Create(true, _newRoom.RoomId.ToString()); 
                         }
                 }
@@ -114,10 +122,49 @@ namespace WebRTC.Signal.Server.Hubs
             else
             {
                 //TODO: Get Room by _roomId; 
-                //TODO: If room exists: add Client to room 
-                // As Participant and not initiator. provided room isn't fully occupied
+                var _room = HubObjects.Rooms.FirstOrDefault(room => room.RoomId.ToString() == _roomId);
+                var _client = HubObjects.Clients.FirstOrDefault(client => client.ClientId.ToString() == _clientId);
+
+                if (_room == null)
+                {
+                    return Tuple.Create(false, $"ERROR: Room with ID: {_roomId} does not exist.");
+                }
+                else
+                {
+                    if (_client != null)
+                    {
+                        if (_client.InRoom)
+                        {
+                            HangUp();
+                        }
+
+                        _client.IsInitiator = false;
+                        _client.InRoom = true;
+                        _room.Occupants.Add(_client);
+                        HubObjects.Rooms.RemoveAll(room => room.RoomId.ToString().Equals(_roomId));
+                        HubObjects.Rooms.Add(_room);
+                        return Tuple.Create(true, _room.RoomId.ToString());
+                        
+                    }
+                    else
+                    {
+                        JoinHub($"CLIENT_Anonymous");
+                        _client = HubObjects.Clients.FirstOrDefault(client => client.ClientId.ToString() == Context
+                            .ConnectionId);
+                        
+                        if (_client == null) return Tuple.Create<bool, string>(false, $"ERROR : Client is not connected to the Hub");
+
+                        _client.IsInitiator = false;
+                        _client.InRoom = true;
+                        _room.Occupants.Add(_client);
+                        HubObjects.Rooms.RemoveAll(room => room.RoomId.ToString().Equals(_roomId));
+                        HubObjects.Rooms.Add(_room);
+                        return Tuple.Create(true, _room.RoomId.ToString());
+
+                    }
+                }
+
             }
-            return Tuple.Create<bool, string>(false, "ERROR");
         }
 
         public void CallHubClient(string _targetClientId)
@@ -307,7 +354,7 @@ namespace WebRTC.Signal.Server.Hubs
         {
             if (_isInitiator)
             {
-                var addClientResponse = AddClientToRoom(Context.ConnectionId, _roomId, _isInitiator);
+                var addClientResponse = AddClientToRoom(Context.ConnectionId, _roomId, true);
                 if (addClientResponse.Item1)
                 {
                     var _turnClient = new TURNClient(_turnBaseUrl,"Onotseike:37aac6f4-cf3d-11ea-9990-0242ac150003");
@@ -316,7 +363,7 @@ namespace WebRTC.Signal.Server.Hubs
                         RoomId = addClientResponse.Item2,
                         ClientId = Context.ConnectionId,
                         RoomUrl = "",
-                        IsInitiator = _isInitiator,
+                        IsInitiator = true,
                         MediaConstraints = new MediaConstraints { Audio = true, Video = true},
                         IceServerUrl = _turnBaseUrl,
                         IsLoopBack = false
@@ -331,6 +378,26 @@ namespace WebRTC.Signal.Server.Hubs
             else
             {
                 //TODO: Receive or Join A call
+                var addClientResponse = AddClientToRoom(Context.ConnectionId, _roomId, false);
+                if (addClientResponse.Item1)
+                {
+                    var _turnClient = new TURNClient(_turnBaseUrl,"Onotseike:37aac6f4-cf3d-11ea-9990-0242ac150003");
+                    var roomParameters = new RoomParameters
+                    {
+                        RoomId = addClientResponse.Item2,
+                        ClientId = Context.ConnectionId,
+                        RoomUrl = "",
+                        IsInitiator = false,
+                        MediaConstraints = new MediaConstraints { Audio = true, Video = true},
+                        IceServerUrl = _turnBaseUrl,
+                        IsLoopBack = false
+                    };
+
+                    var _iceServers = await _turnClient.RequestServersAsync();
+                    roomParameters.IceServers = _iceServers;
+                    roomParameters.OfferSdp = new SessionDescription(SessionDescription.GetSdpTypeFromString("answer"), "answer");
+                    return JObject.FromObject(roomParameters).ToString();
+                }
             }
 
             return null;
@@ -370,6 +437,12 @@ namespace WebRTC.Signal.Server.Hubs
             
             return JObject.FromObject(Tuple.Create(false, $"CLIENT WITH ID {_clientId} HAS NOT UPDATED IT'S ICE CANDIDATE"))
             .ToString();
+        }
+
+        public string RemoveIceCandidates(string _candidates)
+        {
+            var candidates = RecreateIceCandidate(_candidates);
+            return _candidates;
         }
 
         #endregion

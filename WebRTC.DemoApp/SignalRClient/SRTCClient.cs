@@ -63,7 +63,7 @@ namespace WebRTC.DemoApp.SignalRClient
                 State = ConnectionState.New;
                 //TODO: Call SignalR Hub Connect To Room; This returns The relevant Room Parameters and potential errors if available.
                 //await App.HubConnection.StartAsync();
-                var str = await App.HubConnection.InvokeAsync<string>("GetRoomParametersAsync", roomConnectionParameters.RoomId, true, "https://global.xirsys.net/_turn/DemoWebRTC");
+                var str = await App.HubConnection.InvokeAsync<string>("GetRoomParametersAsync", roomConnectionParameters.RoomId, roomConnectionParameters.IsInitator, "https://global.xirsys.net/_turn/DemoWebRTC");
                 var roomSObject = JObject.Parse(str);
                 var roomParams = roomSObject.ToObject<RoomParameterResponse>();
                 var _roomSignalingParameters = new SignalingParameters
@@ -226,7 +226,7 @@ namespace WebRTC.DemoApp.SignalRClient
 
                     //SendPostMessage(MessageType.Message, _messageUrl, json);
                     //TODO: SignalR Send LocalIceCandidate as  Initiator
-                    var isIceSent = await App.HubConnection.InvokeAsync<Tuple<bool, string>>("SendLocalIceCandidate", App.HubConnection.ConnectionId, json);
+                    var isIceSent = await App.HubConnection.InvokeAsync<string>("SendLocalIceCandidate", App.HubConnection.ConnectionId, json);
                     logger.Info(TAG, $"{isIceSent}");
                 }
                 else
@@ -239,7 +239,7 @@ namespace WebRTC.DemoApp.SignalRClient
 
         public void SendLocalIceCandidateRemovals(IceCandidate[] _candidates)
         {
-            executor.Execute(() =>
+            executor.Execute(async () =>
             {
                 var json = SignalingMessage.CreateJson(_candidates);
 
@@ -253,6 +253,8 @@ namespace WebRTC.DemoApp.SignalRClient
 
                     //SendPostMessage(MessageType.Message, _messageUrl, json);
                     //TODO: SignalR Send message to Remove Ice Candidates as Initiator
+                    var isIceRemoved = await App.HubConnection.InvokeAsync<string>("RemoveIceCandidates", json);
+                    logger.Info(TAG, $"{isIceRemoved}");
                     if (roomConnectionParameters.IsLoopback)
                     {
                         signalingEvents.OnRemoteIceCandidatesRemoved(_candidates);

@@ -40,6 +40,7 @@ namespace WebRTC.DemoApp.iOS.Renderers
         #region Properties & Variables
 
         private string RoomId { get; set; }
+        private bool IsInitator { get; set; }
 
         //private RTCController CallController { get; set; }
         private SRTCController CallController { get; set; }
@@ -74,6 +75,7 @@ namespace WebRTC.DemoApp.iOS.Renderers
 
             var callPage = (CallPage)e.NewElement;
             RoomId = callPage.RoomId;
+            IsInitator = callPage.IsInitator;
 
             videoCallView = new VideoCallView(CGRect.Empty, !isSimulator);
             videoCallView.Delegate = this;
@@ -139,9 +141,9 @@ namespace WebRTC.DemoApp.iOS.Renderers
         {
             controller.Connect(new RoomConnectionParameters
             {
-                RoomId = Guid.NewGuid().ToString(),//RoomId,
-                IsLoopback = false,
-                RoomUrl = "https://appr.tc/"
+                RoomId = RoomId,
+                IsInitator = IsInitator,
+                IsLoopback = false
             });
         }
 
