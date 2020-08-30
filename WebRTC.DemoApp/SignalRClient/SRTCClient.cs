@@ -8,6 +8,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 using WebRTC.Classes;
+using WebRTC.DemoApp.Interfaces;
 using WebRTC.DemoApp.SignalRClient.Abstraction;
 using WebRTC.DemoApp.SignalRClient.Responses;
 using WebRTC.Enums;
@@ -50,6 +51,8 @@ namespace WebRTC.DemoApp.SignalRClient
             logger = _logger ?? new ConsoleLogger();
 
             State = ConnectionState.New;
+
+            App.Instance = this;
         }
 
         #endregion
@@ -188,7 +191,7 @@ namespace WebRTC.DemoApp.SignalRClient
 
         public void SendOfferSdp(SessionDescription _sessionDescriotion)
         {
-            executor.Execute(() =>
+            executor.Execute(async () =>
             {
                 if (App.HubConnection.State != HubConnectionState.Connected)//(State != ConnectionState.Connected)
                 {
@@ -200,6 +203,7 @@ namespace WebRTC.DemoApp.SignalRClient
 
                 //SendPostMessage(MessageType.Message, messageUrl, json);
                 //TODO : SignalR SDPOffer Method
+                var isOfferSent = await App.HubConnection.InvokeAsync<string>("SendOfferMessage", json);
                 //TODO : Here, the you call a method in the SignalR Hub passing in a List of clients you want to call. 
 
                 if (roomConnectionParameters.IsLoopback)
@@ -232,7 +236,9 @@ namespace WebRTC.DemoApp.SignalRClient
                 else
                 {
                     //_wsClient.Send(json);
-                    //TODO: SignalR Send LocalIceCandidate as  Participant 
+                    //TODO: SignalR Send LocalIceCandidate as  Participant
+                    var isIceSent = await App.HubConnection.InvokeAsync<string>("SendLocalIceCandidate", App.HubConnection.ConnectionId, json);
+                    logger.Info(TAG, $"{isIceSent}");
                 }
             });
         }
@@ -264,13 +270,19 @@ namespace WebRTC.DemoApp.SignalRClient
                 {
                     //_wsClient.Send(json);
                     //TODO: SignalR Send message to Remove Ice Candidates as Participant
+                    var isIceRemoved = await App.HubConnection.InvokeAsync<string>("RemoveIceCandidates", json);
+                    logger.Info(TAG, $"{isIceRemoved}");
+                    if (roomConnectionParameters.IsLoopback)
+                    {
+                        signalingEvents.OnRemoteIceCandidatesRemoved(_candidates);
+                    }
                 }
             });
         }
 
         public void SendAnswerSdp(SessionDescription _sessionDescription)
         {
-            executor.Execute(() =>
+            executor.Execute(async () =>
             {
                 if (roomConnectionParameters.IsLoopback)
                 {
@@ -283,11 +295,11 @@ namespace WebRTC.DemoApp.SignalRClient
 
                 //_wsClient.Send(json);
                 //TODO: SignalR SSPAnswer Method
+                var isAnswerSent = await App.HubConnection.InvokeAsync<string>("SendAnswerMessage", json);
             });
         }
 
         #endregion
-
 
         #region SignalR Client Function(s)
 

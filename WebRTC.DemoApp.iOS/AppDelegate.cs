@@ -6,7 +6,10 @@ using Foundation;
 
 using UIKit;
 
+using WebRTC.DemoApp.Interfaces;
 using WebRTC.DemoApp.iOS.Helpers;
+
+using Xamarin.Forms;
 
 namespace WebRTC.DemoApp.iOS
 {
@@ -27,6 +30,7 @@ namespace WebRTC.DemoApp.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             WebRTCPlatform.Init();
+            // DependencyService.Register<ISdpAnswerRecieved, SdpAnswerRecieved>();
 
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());

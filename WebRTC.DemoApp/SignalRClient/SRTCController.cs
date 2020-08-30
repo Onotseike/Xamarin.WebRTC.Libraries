@@ -39,6 +39,12 @@ namespace WebRTC.DemoApp.SignalRClient
             }
             else
             {
+                if (signalingParameters.OfferSdp != null)
+                {
+                    PeerConnectionClient.SetRemoteDescription(signalingParameters.OfferSdp);
+                    PeerConnectionClient.CreateAnswer();
+                }
+
                 if (signalingParameters.IceCandidates != null)
                 {
                     foreach (var _iceCandidate in signalingParameters.IceCandidates)

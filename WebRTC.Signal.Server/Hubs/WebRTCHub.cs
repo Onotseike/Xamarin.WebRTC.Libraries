@@ -49,7 +49,7 @@ namespace WebRTC.Signal.Server.Hubs
             BroadcastHubClients();
         }
 
-        public Tuple<bool, string> AddClientToRoom(string _clientId, string _roomId, bool _isIntiator, int 
+        public Tuple<bool, string, Room, Client> AddClientToRoom(string _clientId, string _roomId, bool _isIntiator, int 
         _maxOccupancy = 2)
         {
             if (_isIntiator)
@@ -70,7 +70,7 @@ namespace WebRTC.Signal.Server.Hubs
                         _client.InRoom = true;
                         _newRoom.Occupants.Add(_client);
                         HubObjects.Rooms.Add(_newRoom);
-                        return Tuple.Create(true, _newRoom.RoomId.ToString());
+                        return Tuple.Create(true, _newRoom.RoomId.ToString(), _newRoom, _client);
                     }
                     else
                     {
@@ -78,13 +78,13 @@ namespace WebRTC.Signal.Server.Hubs
                         _client = HubObjects.Clients.FirstOrDefault(client => client.ClientId.ToString() == Context
                         .ConnectionId);
                         
-                        if (_client == null) return Tuple.Create<bool, string>(false, $"ERROR : Client is not registered in the Hub");
+                        if (_client == null) return Tuple.Create<bool, string, Room, Client>(false, $"ERROR : Client is not registered in the Hub", null, null);
 
                         _client.IsInitiator = true;
                         _client.InRoom = true;
                         _newRoom.Occupants.Add(_client);
                         HubObjects.Rooms.Add(_newRoom);
-                        return Tuple.Create(true, _newRoom.RoomId.ToString()); 
+                        return Tuple.Create(true, _newRoom.RoomId.ToString(), _newRoom, _client); 
                     }
                 }
                 else
@@ -101,7 +101,7 @@ namespace WebRTC.Signal.Server.Hubs
                             _client.InRoom = true;
                             _newRoom.Occupants.Add(_client);
                             HubObjects.Rooms.Add(_newRoom);
-                            return Tuple.Create(true, _newRoom.RoomId.ToString());
+                            return Tuple.Create(true, _newRoom.RoomId.ToString(), _newRoom, _client );
                         }
                         else
                         {
@@ -109,13 +109,13 @@ namespace WebRTC.Signal.Server.Hubs
                             _client = HubObjects.Clients.FirstOrDefault(client => client.ClientId.ToString() == Context
                             .ConnectionId);
                         
-                            if (_client == null) return Tuple.Create<bool, string>(false, $"ERROR : Client is not connected to the Hub");
+                            if (_client == null) return Tuple.Create<bool, string, Room, Client>(false, $"ERROR : Client is not connected to the Hub", null, null);
 
                             _client.IsInitiator = true;
                             _client.InRoom = true;
                             _newRoom.Occupants.Add(_client);
                             HubObjects.Rooms.Add(_newRoom);
-                            return Tuple.Create(true, _newRoom.RoomId.ToString()); 
+                            return Tuple.Create(true, _newRoom.RoomId.ToString(), _newRoom, _client); 
                         }
                 }
             }
@@ -127,7 +127,9 @@ namespace WebRTC.Signal.Server.Hubs
 
                 if (_room == null)
                 {
-                    return Tuple.Create(false, $"ERROR: Room with ID: {_roomId} does not exist.");
+                    return Tuple.Create<bool, string, Room, Client>(false, $"ERROR: Room with ID: {_roomId} does not exist.", 
+                    null, 
+                    null);
                 }
                 else
                 {
@@ -143,7 +145,8 @@ namespace WebRTC.Signal.Server.Hubs
                         _room.Occupants.Add(_client);
                         HubObjects.Rooms.RemoveAll(room => room.RoomId.ToString().Equals(_roomId));
                         HubObjects.Rooms.Add(_room);
-                        return Tuple.Create(true, _room.RoomId.ToString());
+                        return Tuple.Create(true, _room.RoomId.ToString(), _room, _room.Occupants.FirstOrDefault
+                        (occupant => occupant.IsInitiator));
                         
                     }
                     else
@@ -152,14 +155,15 @@ namespace WebRTC.Signal.Server.Hubs
                         _client = HubObjects.Clients.FirstOrDefault(client => client.ClientId.ToString() == Context
                             .ConnectionId);
                         
-                        if (_client == null) return Tuple.Create<bool, string>(false, $"ERROR : Client is not connected to the Hub");
+                        if (_client == null) return Tuple.Create<bool, string, Room, Client>(false, $"ERROR : Client is not connected to the Hub", null, null);
 
                         _client.IsInitiator = false;
                         _client.InRoom = true;
                         _room.Occupants.Add(_client);
                         HubObjects.Rooms.RemoveAll(room => room.RoomId.ToString().Equals(_roomId));
                         HubObjects.Rooms.Add(_room);
-                        return Tuple.Create(true, _room.RoomId.ToString());
+                        return Tuple.Create(true, _room.RoomId.ToString(), _room, _room.Occupants.FirstOrDefault
+                        (occupant => occupant.IsInitiator));
 
                     }
                 }
@@ -345,6 +349,35 @@ namespace WebRTC.Signal.Server.Hubs
             return null;
         }
         
+        private IceCandidate[] RecreateIceCandidates(string _json)
+        {
+            var jsonDict = JsonConvert.DeserializeObject<Dictionary<string, string>>(_json);
+            if (jsonDict["type"].Equals("remove-candidates"))
+            {
+                return JObject.Parse(jsonDict["candidates"]).ToObject<IceCandidate[]>();
+            }
+
+            return null;
+        }
+
+        private SessionDescription RecreateSessionDescription(string _json)
+        {
+            var jsonDict = JsonConvert.DeserializeObject<Dictionary<string, string>>(_json);
+            var type = jsonDict["type"];
+            switch (type)
+            {
+                case "offer" : 
+                    var offerSdp = new SessionDescription(SdpType.Offer, jsonDict["sdp"]);
+                    return offerSdp;
+                    
+                case "answer" :
+                    var answerSdp = new SessionDescription(SdpType.Answer, jsonDict["sdp"]);
+                    return answerSdp;
+            }
+
+            return null;
+        }
+        
         #endregion
 
         #region WebRTC Functions
@@ -371,7 +404,7 @@ namespace WebRTC.Signal.Server.Hubs
 
                     var _iceServers = await _turnClient.RequestServersAsync();
                     roomParameters.IceServers = _iceServers;
-                    roomParameters.OfferSdp = new SessionDescription(SessionDescription.GetSdpTypeFromString("offer"), "offer");
+                    //roomParameters.OfferSdp = new SessionDescription(SessionDescription.GetSdpTypeFromString("offer"), "offer");
                     return JObject.FromObject(roomParameters).ToString();
                 }
             }
@@ -395,7 +428,7 @@ namespace WebRTC.Signal.Server.Hubs
 
                     var _iceServers = await _turnClient.RequestServersAsync();
                     roomParameters.IceServers = _iceServers;
-                    roomParameters.OfferSdp = new SessionDescription(SessionDescription.GetSdpTypeFromString("answer"), "answer");
+                    roomParameters.OfferSdp = addClientResponse.Item4.SessionDescriptionOffer;
                     return JObject.FromObject(roomParameters).ToString();
                 }
             }
@@ -403,7 +436,7 @@ namespace WebRTC.Signal.Server.Hubs
             return null;
         }
 
-        public string SendLocalIceCandidate(string _clientId, string _candidate)
+        public async Task<string> SendLocalIceCandidate(string _clientId, string _candidate)
         {
             var candidate = RecreateIceCandidate(_candidate);
             if (candidate == null)
@@ -411,7 +444,7 @@ namespace WebRTC.Signal.Server.Hubs
                 return JObject.FromObject(Tuple.Create(false, $"SENDING ICE CANDIDATE ERROR: INVALID ICE CANDIDATE"))
                 .ToString();
             }
-            var client = HubObjects.Clients.FirstOrDefault(client => client.ClientId == _clientId);
+            var client = HubObjects.Clients.FirstOrDefault(_client => _client.ClientId == _clientId);
             if (client == null)
             {
                 return JObject.FromObject(Tuple.Create(false,
@@ -429,6 +462,8 @@ namespace WebRTC.Signal.Server.Hubs
                     var isUpdated = room.UpdateClient(client);
                     if (isUpdated.Item1)
                     {
+                        await Clients.AllExcept(Context.ConnectionId)
+                            .SendAsync("OnLocalICECandidateReceived", _candidate);
                         return JObject.FromObject(Tuple.Create(true, $"CLIENT WITH ID {_clientId} HAS UPDATED IT'S  ICE CANDIDATE")).ToString();
                     }
                 }
@@ -439,9 +474,75 @@ namespace WebRTC.Signal.Server.Hubs
             .ToString();
         }
 
+        public async Task<string> SendOfferMessage(string _offerSdp)
+        {
+            var offerSDP = RecreateSessionDescription(_offerSdp);
+            if (offerSDP == null)
+            {
+                return JObject.FromObject(Tuple.Create(false, $"SENDING SDP OFFER  ERROR: INVALID OFFER SDP."))
+                    .ToString();
+            }
+
+            var client = HubObjects.Clients.FirstOrDefault(_client => _client.ClientId.Equals(Context.ConnectionId));
+            if (client == null)
+            {
+                return JObject.FromObject(Tuple.Create(false, $"SENDING SDP OFFER ERROR: CLIENT WITH ID: {Context.ConnectionId} IS NOT CONNECTED TO THE HUB"))
+                    .ToString();
+            }
+            
+            client.SessionDescriptionOffer = offerSDP;
+            HubObjects.Clients.RemoveAll(client => client.ClientId.Equals(Context.ConnectionId));
+            HubObjects.Clients.Add(client);
+            
+            if (client.InRoom)
+            {
+                foreach (var room in HubObjects.Rooms)
+                {
+                    var isUpdated = room.UpdateClient(client);
+                    if (isUpdated.Item1)
+                    {
+                        await Clients.AllExcept(Context.ConnectionId).SendAsync
+                            ("OnOfferSDPReceived", _offerSdp);
+                        return JObject.FromObject(Tuple.Create(true, $"CLIENT WITH ID {Context.ConnectionId} HAS UPDATED IT'S  SDP OFFER")).ToString();
+                    }
+                }
+                
+            }
+            
+            return JObject.FromObject(Tuple.Create(false, $"CLIENT WITH ID {Context.ConnectionId} HAS NOT UPDATED IT'S  SDP OFFER")).ToString();
+
+        }
+
+        public async Task<string> SendAnswerMessage(string _answerSdp)
+        {
+            var answerSDP = RecreateSessionDescription(_answerSdp);
+            if (answerSDP == null)
+            {
+                return JObject.FromObject(Tuple.Create(false, $"SENDING SDP OFFER  ERROR: INVALID ANSWER SDP."))
+                    .ToString();
+            }
+
+            await Clients.AllExcept(Context.ConnectionId).SendAsync("OnAnswerSDPRecieved", _answerSdp);
+            return _answerSdp;
+
+        }
+        
         public string RemoveIceCandidates(string _candidates)
         {
-            var candidates = RecreateIceCandidate(_candidates);
+            var candidates = RecreateIceCandidates(_candidates);
+            Clients.AllExcept(Context.ConnectionId).SendAsync("OnICECandidatesRemoved", _candidates);
+            if (candidates == null)
+            {
+                return JObject.FromObject(Tuple.Create(false, $"SENDING ICE CANDIDATE ERROR: INVALID ICE CANDIDATE"))
+                    .ToString();
+            }
+            var client = HubObjects.Clients.FirstOrDefault(_client => _client.ClientId == Context.ConnectionId);
+            if (client == null)
+            {
+                return JObject.FromObject(Tuple.Create(false,
+                    $"SENDING ICE CANDIDATE ERROR: CLIENT WITH ID: {Context.ConnectionId} IS NOT CONNECTED TO THE HUB"))
+                    .ToString();
+            }
             return _candidates;
         }
 

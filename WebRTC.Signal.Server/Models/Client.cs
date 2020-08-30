@@ -27,6 +27,12 @@ namespace WebRTC.Signal.Server.Models
         
         [JsonProperty("IceCandidate")] 
         public List<IceCandidate> Candidate { get; set; }
+        
+        [JsonProperty("Offer")] 
+        public SessionDescription SessionDescriptionOffer { get; set; }
+        
+        [JsonProperty("Answer")] 
+        public SessionDescription SessionDescriptionAnswer { get; set; }
 
         #endregion
 

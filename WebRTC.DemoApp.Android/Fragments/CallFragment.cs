@@ -5,11 +5,13 @@
 
 using Android.Content;
 using Android.OS;
-using Android.Support.V4.App;
+//using Android.Support.V4.App;
+using AndroidX.AppCompat.App;
 using Android.Views;
 using Android.Widget;
 
 using WebRTC.Enums;
+using AndroidX.Fragment.App;
 
 namespace WebRTC.DemoApp.Droid.Fragments
 {

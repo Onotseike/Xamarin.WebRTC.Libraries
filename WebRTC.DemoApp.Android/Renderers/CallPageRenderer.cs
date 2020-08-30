@@ -70,6 +70,7 @@ namespace WebRTC.DemoApp.Droid.Renderers
         public void Connect(SRTCController _controller, Intent _intent) => _controller.Connect(new RoomConnectionParameters
         {
             RoomId = RoomId,
+            IsInitator = IsInitator,
             IsLoopback = false,
             RoomUrl = "https://appr.tc/"
         });
@@ -212,7 +213,6 @@ namespace WebRTC.DemoApp.Droid.Renderers
             Connect(CallController, CallPageActivity.Intent);
 
         }
-
 
         private void SetSwappedFeeds(bool isSwappedFeed)
         {

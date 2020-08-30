@@ -6,8 +6,11 @@ using Microsoft.AspNetCore.SignalR.Client;
 
 using Newtonsoft.Json.Linq;
 
+using WebRTC.DemoApp.Interfaces;
+using WebRTC.DemoApp.SignalRClient;
 using WebRTC.DemoApp.SignalRClient.Abstraction;
 
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 using ILogger = WebRTC.DemoApp.SignalRClient.Abstraction.ILogger;
@@ -22,11 +25,23 @@ namespace WebRTC.DemoApp
 
         public static HubConnection HubConnection { get; set; }
 
+        protected ISdpAnswerRecieved SdpAnswerRecieved { get; set; }
+        public static SRTCClient Instance { get; set; }
+
         #endregion
 
         public App()
         {
-            HubConnection = new HubConnectionBuilder().WithUrl("http://localhost:28022/WebRTCHub").WithAutomaticReconnect().Build();
+            SdpAnswerRecieved = DependencyService.Get<ISdpAnswerRecieved>();
+            if (DeviceInfo.Platform == DevicePlatform.Android)
+            {
+                HubConnection = new HubConnectionBuilder().WithUrl("http://10.0.2.2:28022/WebRTCHub").WithAutomaticReconnect().Build();
+            }
+            else
+            {
+                HubConnection = new HubConnectionBuilder().WithUrl("http://localhost:28022/WebRTCHub").WithAutomaticReconnect().Build();
+            }
+
             LoadAllClientSideFunctions();
 
             LoadHubOverrideFunctions();
@@ -82,6 +97,14 @@ namespace WebRTC.DemoApp
 
 
             });
+
+            HubConnection.On<string>("OnAnswerSDPRecieved", (_answerSdp) => { Instance.OnWebSocketMessage(_answerSdp); });
+
+            HubConnection.On<string>("OnOfferSDPReceived", (_offerSdp) => { Instance.OnWebSocketMessage(_offerSdp); });
+
+            HubConnection.On<string>("OnLocalICECandidateReceived", (_iceCandidate) => { Instance.OnWebSocketMessage(_iceCandidate); });
+
+            HubConnection.On<string>("OnICECandidatesRemoved", (_candidates) => { Instance.OnWebSocketMessage(_candidates); });
         }
         #endregion
     }
