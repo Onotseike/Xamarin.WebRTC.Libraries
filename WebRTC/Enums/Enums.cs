@@ -79,7 +79,6 @@ namespace WebRTC.Enums
         Closed
     }
 
-
     public enum TlsCertPolicy : ulong
     {
         Secure,
@@ -107,6 +106,7 @@ namespace WebRTC.Enums
         Closed,
         Count
     }
+    
     public enum PeerConnectionState : long
     {
         New,
@@ -124,12 +124,12 @@ namespace WebRTC.Enums
         Complete
     }
 
-
     public enum StatsOutputLevel : long
     {
         Standard,
         Debug
     }
+    
     public enum RtpMediaType : long
     {
         Audio,

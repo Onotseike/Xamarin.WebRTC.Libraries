@@ -13,6 +13,7 @@ namespace WebRTC.iOS
         public RtpSenderNative(IRTCRtpSender rtpSender) : base(rtpSender)
         {
             _rtpSender = rtpSender;
+            
         }
 
         public string SenderId => _rtpSender.SenderId;

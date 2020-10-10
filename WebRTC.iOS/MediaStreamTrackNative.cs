@@ -18,12 +18,13 @@ namespace WebRTC.iOS
 
         public string Kind => _track.Kind;
         public string Label => _track.TrackId;
-
+        
         public bool IsEnabled
         {
             get => _track.IsEnabled;
             set => _track.IsEnabled = value;
         }
+
 
         public MediaStreamTrackState State => _track.ReadyState.ToNet();
     }

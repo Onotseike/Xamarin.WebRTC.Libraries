@@ -28,7 +28,7 @@
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
     <CodesignKey>iPhone Developer</CodesignKey>
-    <MtouchSdkVersion>13.6</MtouchSdkVersion>
+    <MtouchSdkVersion>14.0</MtouchSdkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -145,7 +145,7 @@
       <Version>0.5.1.1</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.AspNetCore.SignalR.Client">
-      <Version>3.1.7</Version>
+      <Version>3.1.8</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
